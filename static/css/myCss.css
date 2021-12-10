@@ -2,6 +2,11 @@ body {
     background: url("../images/bg.png");
 }
 
+/*---------animate-----------*/
+.animate__animated.animate__flip {
+    --animate-duration: 2s;
+}
+
 /*---------padding---------*/
 .m-padded-mini {
     padding: 0.2em !important;
