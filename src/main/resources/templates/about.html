@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <title>关于我</title>
+</head>
+<body>
+<!--导航-->
+<nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+</nav>
+
+
+
+<!--中间内容-->
+<div class="m-container  m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <div class="ui">
+                    <img src="https://picsum.photos/id/1008/800/600" alt="" class="ui rounded image">
+                </div>
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+                <!--关于我说明-->
+                <div class="ui attached segment">
+                    <p class="m-text">Well，欢迎光临。 一个啥也不是的学生党，喜欢电脑，喜欢游戏，喜欢音乐，喜欢动漫，喜欢睡觉。 最喜欢的编辑器是 IDEA。</p>
+                    <p class="m-text">万物皆允，喜欢思考，喜欢哲学</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic  left pointing label">文学</div>
+                    <div class="ui orange basic left pointing label">音乐</div>
+                    <div class="ui orange basic left pointing label">编程</div>
+                    <div class="ui orange basic left pointing label">哲学</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic  left pointing label">思考</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">写作</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">火锅</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">后摇</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">MySql</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">JavaScript</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">Spring</div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="2895241570" data-position="bottom center"><i class="qq icon"></i></a>
+                </div>
+                <div class="ui wechatQR flowing popup transition hidden">
+                    <img src="../static/images/Wpay.JPG" alt="" class="ui rounded image" style="width: 120px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!--底部footer-->
+<footer th:replace="~{_fragments :: footer}" class="ui inverted vertical segment m-padded-tb-massive">
+</footer>
+
+<th:block th:repalce="~{_fragments :: script}">
+</th:block>
+
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide')
+    })
+    $('.qq').popup()
+    $('.wechat').popup({
+        popup : $('.wechatQR') ,
+        position : 'bottom center'
+    })
+
+</script>
+</body>
+</html>

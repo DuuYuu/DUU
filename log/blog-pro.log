@@ -1,29 +1,49 @@
-2021-12-10 23:08:19.539  INFO 12236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 12236 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:08:19.540  INFO 12236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:08:20.604  WARN 12236 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:08:23.109  WARN 12236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:08:23.395  WARN 12236 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-12-10 23:08:23.653  INFO 12236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 4.902 seconds (JVM running for 6.436)
-2021-12-10 23:15:03.229  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9244 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:15:03.231  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:15:04.671  WARN 9244 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:15:07.901  WARN 9244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:15:08.594  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.297 seconds (JVM running for 8.143)
-2021-12-10 23:15:17.811 ERROR 9244 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+2021-12-11 13:18:14.722  INFO 5608 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 5608 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 13:18:14.730  INFO 5608 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 13:18:16.352  WARN 5608 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 13:18:21.615  WARN 5608 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 13:18:23.237  INFO 5608 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 9.887 seconds (JVM running for 13.192)
+2021-12-11 13:19:10.801  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2076 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 13:19:10.803  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 13:19:12.143  WARN 2076 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 13:19:15.926  WARN 2076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 13:19:17.178  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.396 seconds (JVM running for 9.612)
+2021-12-11 13:19:34.983  INFO 2076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : ---------doBefore------
+2021-12-11 13:19:34.992  INFO 2076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : {}index
+2021-12-11 13:19:34.993  INFO 2076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : ---------doAfter------
+2021-12-11 13:32:41.519  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2076 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 13:32:41.520  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 13:32:41.938  WARN 2076 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 13:32:42.554  WARN 2076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 13:32:43.074  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 1.629 seconds (JVM running for 815.507)
+2021-12-11 13:32:45.110  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2076 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 13:32:45.110  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 13:32:45.373  WARN 2076 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 13:32:45.745  WARN 2076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 13:32:46.180  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 1.125 seconds (JVM running for 818.614)
+2021-12-11 14:17:59.954  INFO 2076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/2/do', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[2, do]}
+2021-12-11 14:17:59.960  INFO 2076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:18:02.645  INFO 2076 --- [http-nio-8081-exec-2] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/2/do', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[2, do]}
+2021-12-11 14:18:02.646  INFO 2076 --- [http-nio-8081-exec-2] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:46:41.996  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2076 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 14:46:41.996  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 14:46:42.615  WARN 2076 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 14:46:43.489  WARN 2076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 14:46:44.068  INFO 2076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 2.176 seconds (JVM running for 5256.502)
+2021-12-11 14:46:47.337  INFO 2076 --- [http-nio-8081-exec-2] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:46:47.345  INFO 2076 --- [http-nio-8081-exec-2] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:46:47.355 ERROR 2076 --- [http-nio-8081-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-2] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -64,21 +84,18 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:16:33.699 ERROR 9244 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+2021-12-11 14:46:47.360 ERROR 2076 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -119,21 +136,25 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:16:40.909 ERROR 9244 --- [http-nio-8081-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+2021-12-11 14:47:06.032  INFO 8876 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8876 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 14:47:06.033  INFO 8876 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 14:47:07.307  WARN 8876 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 14:47:10.554  WARN 8876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 14:47:11.504  INFO 8876 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.522 seconds (JVM running for 8.492)
+2021-12-11 14:47:33.776  INFO 8876 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:47:33.785  INFO 8876 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:47:33.963 ERROR 8876 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -174,41 +195,18 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:16:42.618  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9244 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:16:42.619  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:16:43.355  WARN 9244 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:16:43.969  WARN 9244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:16:44.170  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 1.634 seconds (JVM running for 103.72)
-2021-12-10 23:16:46.200  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9244 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:16:46.201  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:16:46.549  WARN 9244 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:16:46.790  WARN 9244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:16:46.932  INFO 9244 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 0.802 seconds (JVM running for 106.482)
-2021-12-10 23:30:08.571  INFO 3680 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3680 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:30:08.573  INFO 3680 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:30:10.186  WARN 3680 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:30:13.325  WARN 3680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:30:14.139  INFO 3680 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.539 seconds (JVM running for 8.4)
-2021-12-10 23:30:37.986  INFO 9260 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9260 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:30:37.988  INFO 9260 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:30:39.613  WARN 9260 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:30:42.785  WARN 9260 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:30:43.496  INFO 9260 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.739 seconds (JVM running for 8.525)
-2021-12-10 23:30:54.783 ERROR 9260 --- [http-nio-8081-exec-1] c.a.d.h.ControllerExceptionHandler       : Request URL : http://localhost:8081/,Exception : {}
+2021-12-11 14:47:33.970 ERROR 8876 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -249,22 +247,250 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:30:54.789  WARN 9260 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
-2021-12-10 23:35:00.780 ERROR 9260 --- [http-nio-8081-exec-4] c.a.d.h.ControllerExceptionHandler       : Request URL : http://localhost:8081/,Exception : {}
+2021-12-11 14:49:25.255  INFO 7144 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 7144 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 14:49:25.257  INFO 7144 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 14:49:26.285  WARN 7144 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 14:49:28.953  WARN 7144 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 14:49:29.986  INFO 7144 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.428 seconds (JVM running for 7.246)
+2021-12-11 14:49:43.357  INFO 7144 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:49:43.364  INFO 7144 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:54:21.178  INFO 7144 --- [http-nio-8081-exec-8] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:54:21.179  INFO 7144 --- [http-nio-8081-exec-8] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:54:24.922  INFO 7144 --- [http-nio-8081-exec-3] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:54:24.923  INFO 7144 --- [http-nio-8081-exec-3] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:54:25.755  INFO 7144 --- [http-nio-8081-exec-4] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:54:25.756  INFO 7144 --- [http-nio-8081-exec-4] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 14:57:22.541  INFO 4048 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4048 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 14:57:22.544  INFO 4048 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 14:57:24.233  WARN 4048 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 14:57:27.277  WARN 4048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 14:57:28.392  INFO 4048 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.388 seconds (JVM running for 10.375)
+2021-12-11 14:57:28.760  INFO 4048 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 14:57:28.768  INFO 4048 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:09:07.488  INFO 4048 --- [http-nio-8081-exec-9] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:09:07.488  INFO 4048 --- [http-nio-8081-exec-9] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:21:19.535  INFO 1420 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 1420 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:21:19.537  INFO 1420 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:21:21.003  WARN 1420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:21:24.351  WARN 1420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:21:25.830  INFO 1420 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.369 seconds (JVM running for 10.373)
+2021-12-11 15:21:54.155  INFO 1420 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:21:54.165  INFO 1420 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:28:42.561  INFO 6700 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 6700 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:28:42.563  INFO 6700 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:28:44.283  WARN 6700 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:28:53.288  INFO 4076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4076 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:28:53.290  INFO 4076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:28:54.429  WARN 4076 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:28:57.155  WARN 4076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:28:58.196  INFO 4076 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.498 seconds (JVM running for 9.736)
+2021-12-11 15:28:58.610  INFO 4076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:28:58.620  INFO 4076 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:29:20.446  INFO 5000 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 5000 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:29:20.447  INFO 5000 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:29:22.004  WARN 5000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:29:24.579  WARN 5000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:29:25.575  INFO 5000 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.267 seconds (JVM running for 8.346)
+2021-12-11 15:29:37.475  INFO 5000 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:29:37.485  INFO 5000 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:33:04.680  INFO 10080 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10080 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:33:04.682  INFO 10080 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:33:05.953  WARN 10080 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:33:09.249  WARN 10080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:33:10.392  INFO 10080 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.488 seconds (JVM running for 8.957)
+2021-12-11 15:33:15.990  INFO 10080 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:33:15.998  INFO 10080 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:40:45.894  INFO 4776 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4776 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:40:45.895  INFO 4776 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:40:47.092  WARN 4776 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:40:51.044  WARN 4776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:40:52.817  INFO 4776 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.771 seconds (JVM running for 9.58)
+2021-12-11 15:40:59.135  INFO 4776 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:40:59.144  INFO 4776 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:41:02.231  INFO 4776 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:41:02.231  INFO 4776 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:42:25.768  INFO 4052 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4052 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:42:25.769  INFO 4052 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:42:27.226  WARN 4052 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:42:30.172  WARN 4052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:42:31.301  INFO 4052 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.714 seconds (JVM running for 9.139)
+2021-12-11 15:42:35.537  INFO 4052 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:42:35.546  INFO 4052 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:43:41.979  INFO 3864 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3864 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:43:41.981  INFO 3864 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:43:43.216  WARN 3864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:43:45.993  WARN 3864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:43:47.052  INFO 3864 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.21 seconds (JVM running for 8.549)
+2021-12-11 15:44:00.862  INFO 3864 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:44:00.870  INFO 3864 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:48:22.757  INFO 2068 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2068 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:48:22.758  INFO 2068 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:48:23.990  WARN 2068 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:48:27.253  WARN 2068 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:48:28.487  INFO 2068 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.535 seconds (JVM running for 8.182)
+2021-12-11 15:48:38.409  INFO 2068 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:48:38.418  INFO 2068 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:52:46.986  INFO 2068 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:52:46.987  INFO 2068 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:52:52.574  INFO 2068 --- [http-nio-8081-exec-8] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:52:52.574  INFO 2068 --- [http-nio-8081-exec-8] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:53:29.457  INFO 12084 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 12084 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:53:29.459  INFO 12084 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:53:30.662  WARN 12084 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:53:33.650  WARN 12084 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:53:34.670  INFO 12084 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.231 seconds (JVM running for 8.435)
+2021-12-11 15:56:08.047  INFO 10020 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10020 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:56:08.050  INFO 10020 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:56:09.486  WARN 10020 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:56:12.381  WARN 10020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:56:13.577  INFO 10020 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.742 seconds (JVM running for 9.045)
+2021-12-11 15:56:18.007  INFO 10020 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:56:18.015  INFO 10020 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 15:57:39.792  INFO 4004 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4004 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 15:57:39.793  INFO 4004 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 15:57:40.901  WARN 4004 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 15:57:43.603  WARN 4004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 15:57:44.620  INFO 4004 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.711 seconds (JVM running for 8.145)
+2021-12-11 15:57:58.683  INFO 4004 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 15:57:58.692  INFO 4004 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 16:02:02.986  INFO 4664 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4664 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:02:02.988  INFO 4664 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:02:04.285  WARN 4664 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:02:07.516  WARN 4664 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:02:09.044  INFO 4664 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.826 seconds (JVM running for 8.526)
+2021-12-11 16:02:12.853  INFO 4664 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/blog', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.Blog', args=[]}
+2021-12-11 16:02:12.861  INFO 4664 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : blog
+2021-12-11 16:03:34.609  INFO 10088 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10088 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:03:34.610  INFO 10088 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:03:35.670  WARN 10088 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:03:38.432  WARN 10088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:03:39.460  INFO 10088 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.541 seconds (JVM running for 7.106)
+2021-12-11 16:03:43.130  INFO 10088 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/blog', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.Blog', args=[]}
+2021-12-11 16:03:43.137  INFO 10088 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : blog
+2021-12-11 16:03:43.524 ERROR 10088 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-11 16:03:43.532 ERROR 10088 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -305,37 +531,137 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:35:00.781  WARN 9260 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
-2021-12-10 23:35:34.116  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3008 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:35:34.118  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:35:35.176  WARN 3008 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:35:37.545  WARN 3008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:35:38.097  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 4.719 seconds (JVM running for 6.146)
-2021-12-10 23:36:09.619  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3008 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:36:09.620  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:36:10.034  WARN 3008 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:36:10.395  WARN 3008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:36:10.566  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 1.014 seconds (JVM running for 38.614)
-2021-12-10 23:36:12.536  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3008 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:36:12.536  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:36:12.827  WARN 3008 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:36:13.033  WARN 3008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:36:13.159  INFO 3008 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 0.683 seconds (JVM running for 41.208)
-2021-12-10 23:36:20.972 ERROR 3008 --- [http-nio-8081-exec-1] c.a.d.h.ControllerExceptionHandler       : Request URL : http://localhost:8081/,Exception : {}
+2021-12-11 16:04:53.694  INFO 6236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 6236 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:04:53.696  INFO 6236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:04:54.900  WARN 6236 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:04:57.647  WARN 6236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:04:58.732  INFO 6236 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.743 seconds (JVM running for 7.459)
+2021-12-11 16:05:02.846  INFO 6236 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/blog', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.Blog', args=[]}
+2021-12-11 16:05:02.857  INFO 6236 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : blog
+2021-12-11 16:05:03.265 ERROR 6236 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
-java.lang.ArithmeticException: / by zero
-	at com.atduu.duublog.web.IndexController.index(IndexController.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-11 16:05:03.271 ERROR 6236 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
@@ -376,9 +702,255 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-12-10 23:36:20.978  WARN 3008 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
-2021-12-10 23:46:35.716  INFO 9176 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9176 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
-2021-12-10 23:46:35.718  INFO 9176 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
-2021-12-10 23:46:36.779  WARN 9176 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
-2021-12-10 23:46:39.251  WARN 9176 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-10 23:46:39.837  INFO 9176 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 4.824 seconds (JVM running for 6.264)
+2021-12-11 16:07:57.967  INFO 2896 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2896 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:07:57.968  INFO 2896 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:07:59.902  WARN 2896 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:08:03.401  WARN 2896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:08:04.403  INFO 2896 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.947 seconds (JVM running for 10.645)
+2021-12-11 16:08:04.852  INFO 2896 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 16:08:04.860  INFO 2896 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 16:08:05.300 ERROR 2896 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-11 16:08:05.309 ERROR 2896 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "animated animate" (template: "_fragments" - line 21, col 45)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionPreprocessor.preprocess(StandardExpressionPreprocessor.java:86)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:120)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-12-11 16:09:12.244  INFO 5056 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 5056 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:09:12.246  INFO 5056 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:09:13.277  WARN 5056 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:09:15.872  WARN 5056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:09:16.864  INFO 5056 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.352 seconds (JVM running for 6.896)
+2021-12-11 16:09:27.790  INFO 5056 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 16:09:27.798  INFO 5056 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 16:09:40.536  INFO 5056 --- [http-nio-8081-exec-4] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/blog', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.Blog', args=[]}
+2021-12-11 16:09:40.537  INFO 5056 --- [http-nio-8081-exec-4] com.atduu.duublog.aspect.LogAspect       : Result : blog
+2021-12-11 16:27:21.081  INFO 1668 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 1668 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:27:21.082  INFO 1668 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:27:22.226  WARN 1668 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:27:25.512  WARN 1668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:27:26.612  INFO 1668 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.416 seconds (JVM running for 8.183)
+2021-12-11 16:29:18.305  INFO 4748 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4748 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:29:18.307  INFO 4748 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:29:19.358  WARN 4748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:29:22.058  WARN 4748 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:29:23.109  INFO 4748 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.541 seconds (JVM running for 7.071)
+2021-12-11 16:32:24.239  INFO 2224 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2224 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:32:24.241  INFO 2224 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:32:25.364  WARN 2224 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:32:28.166  WARN 2224 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:32:29.233  INFO 2224 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 5.693 seconds (JVM running for 7.394)
+2021-12-11 16:46:40.073  INFO 10916 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10916 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:46:40.075  INFO 10916 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:46:41.295  WARN 10916 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:46:44.769  WARN 10916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:46:45.942  INFO 10916 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.718 seconds (JVM running for 8.627)
+2021-12-11 16:52:12.378  INFO 3092 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3092 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 16:52:12.380  INFO 3092 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 16:52:13.686  WARN 3092 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 16:52:17.359  WARN 3092 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 16:52:18.578  INFO 3092 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 7.112 seconds (JVM running for 8.922)
+2021-12-11 17:03:04.584  INFO 3092 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:03:04.595  INFO 3092 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 17:04:52.588  INFO 3832 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3832 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 17:04:52.589  INFO 3832 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 17:04:53.826  WARN 3832 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 17:04:56.824  WARN 3832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 17:04:58.035  INFO 3832 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 6.154 seconds (JVM running for 7.712)
+2021-12-11 17:04:58.422  INFO 3832 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:04:58.432  INFO 3832 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 17:05:50.370  INFO 3832 --- [http-nio-8081-exec-3] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:05:50.370  INFO 3832 --- [http-nio-8081-exec-3] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 17:10:40.528  INFO 12044 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 12044 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 17:10:40.532  INFO 12044 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 17:10:42.136  WARN 12044 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 17:10:45.844  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 17:10:47.664  INFO 12044 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 8.493 seconds (JVM running for 10.539)
+2021-12-11 17:11:16.337  INFO 12044 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:11:16.345  INFO 12044 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 17:11:44.886  INFO 7564 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 7564 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 17:11:44.888  INFO 7564 --- [restartedMain] com.atduu.duublog.DuublogApplication     : The following profiles are active: pro
+2021-12-11 17:11:48.194  WARN 7564 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu.duublog]' package. Please check your configuration.
+2021-12-11 17:11:51.813  WARN 7564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 17:11:52.845  INFO 7564 --- [restartedMain] com.atduu.duublog.DuublogApplication     : Started DuublogApplication in 8.955 seconds (JVM running for 10.546)
+2021-12-11 17:12:01.384  INFO 7564 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:12:01.392  INFO 7564 --- [http-nio-8081-exec-1] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 17:13:46.569  INFO 7564 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.duublog.web.IndexController.index', args=[]}
+2021-12-11 17:13:46.569  INFO 7564 --- [http-nio-8081-exec-6] com.atduu.duublog.aspect.LogAspect       : Result : index
+2021-12-11 20:52:52.207  INFO 9132 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9132 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 20:52:52.215  INFO 9132 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: pro
+2021-12-11 20:52:53.798  WARN 9132 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu]' package. Please check your configuration.
+2021-12-11 20:52:58.754  WARN 9132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 20:53:00.335  INFO 9132 --- [restartedMain] com.atduu.DuublogApplication             : Started DuublogApplication in 9.092 seconds (JVM running for 11.097)
+2021-12-11 20:54:45.876  INFO 10208 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10208 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 20:54:45.877  INFO 10208 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: pro
+2021-12-11 20:54:47.066  WARN 10208 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu]' package. Please check your configuration.
+2021-12-11 20:54:50.496  WARN 10208 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 20:54:51.708  INFO 10208 --- [restartedMain] com.atduu.DuublogApplication             : Started DuublogApplication in 6.644 seconds (JVM running for 8.608)
+2021-12-11 21:05:47.701  INFO 11508 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 11508 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 21:05:47.703  INFO 11508 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: pro
+2021-12-11 21:05:49.026  WARN 11508 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu]' package. Please check your configuration.
+2021-12-11 21:05:53.080  WARN 11508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 21:05:54.369  INFO 11508 --- [restartedMain] com.atduu.DuublogApplication             : Started DuublogApplication in 7.599 seconds (JVM running for 9.44)
+2021-12-11 21:12:28.377  INFO 1380 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 1380 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2021-12-11 21:12:28.378  INFO 1380 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: pro
+2021-12-11 21:12:29.631  WARN 1380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.atduu]' package. Please check your configuration.
+2021-12-11 21:12:33.569  WARN 1380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-11 21:12:34.919  INFO 1380 --- [restartedMain] com.atduu.DuublogApplication             : Started DuublogApplication in 7.537 seconds (JVM running for 9.469)
