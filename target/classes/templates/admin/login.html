@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <!--移动端预览设置-->
@@ -43,6 +43,8 @@
 
                     <div class="ui error message"></div>
 
+                    <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></div>
+
                 </form>
             </div>
         </div>
@@ -60,6 +62,22 @@
     $('.ui.dropdown').dropdown({
         on : 'hover'
     });
+    $('.ui.form').form({
+        fields : {
+            username: {
+                identifier: 'username',
+                rules: [{
+                    type: 'empty',
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'empty',
+                }]
+            }
+        }
+    })
 
 </script>
 </body>

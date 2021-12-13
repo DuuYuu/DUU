@@ -1,4 +1,4 @@
-package com.atduu.web;
+package com.atduu.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.atduu.web.admin;
+package com.atduu.controller.admin;
 
 import com.atduu.pojo.User;
 import com.atduu.service.UserService;

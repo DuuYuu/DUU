@@ -14,6 +14,8 @@ mybatis:
   type-aliases-package: com.atduu.pojo
   mapper-locations: classpath:mapper/*.xml
 
+
+
 logging:
   level:
     root: warn
