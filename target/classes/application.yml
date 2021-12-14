@@ -3,9 +3,3 @@ spring:
     mode: HTML
   profiles:
     active: dev
-
-#分页pageHelper
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true

@@ -1,7 +1,8 @@
 package com.atduu.service;
 
 import com.atduu.pojo.Type;
-import com.github.pagehelper.PageInfo;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -11,18 +12,21 @@ import java.util.List;
  **/
 public interface TypeService {
 
-    int saveType(Type type);
+    Type saveType(Type type);
 
     Type getType(Long id);
 
     List<Type> selectAll();
 
-    PageInfo<Type> findAllTypesByPages( int pageNum , int pageSize);
+    Page<Type> findAllTypesByPages(Pageable pageable);
 
-    int updateType(Long id , Type type);
+    Type updateType(Long id , Type type);
 
     Boolean isExist(String name);
 
-    int deleteType(Long id);
+    void deleteType(Long id);
+
+    //获取首页展示的分类
+    List<Type> listTypeTop(Integer size);
 
 }

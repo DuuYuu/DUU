@@ -4152,7 +4152,7 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: User
 2021-12-12 17:19:42.251 DEBUG 5204 --- [http-nio-8080-exec-9] c.a.m.TypeMapper.queryForPageTotalCount  : ==> Parameters: 
 2021-12-12 17:19:42.307 ERROR 5204 --- [http-nio-8080-exec-9] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/types,Exception : {}
 
-org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
 	at com.sun.proxy.$Proxy109.selectOne(Unknown Source)
@@ -4236,7 +4236,7 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
+Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
 	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.validateResultMapsCount(DefaultResultSetHandler.java:290)
 	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
 	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
@@ -4257,7 +4257,7 @@ Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no 
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
 	... 81 common frames omitted
 
-2021-12-12 17:19:42.308  WARN 5204 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.]
+2021-12-12 17:19:42.308  WARN 5204 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.]
 2021-12-12 17:22:55.279  INFO 8308 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8308 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 17:22:55.281 DEBUG 8308 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 17:22:55.281  INFO 8308 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -4293,7 +4293,7 @@ Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no 
 2021-12-12 17:23:27.969 DEBUG 8308 --- [http-nio-8080-exec-7] c.a.m.TypeMapper.queryForPageTotalCount  : ==> Parameters: 
 2021-12-12 17:23:27.991 ERROR 8308 --- [http-nio-8080-exec-7] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/types,Exception : {}
 
-org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
 	at com.sun.proxy.$Proxy109.selectOne(Unknown Source)
@@ -4377,7 +4377,7 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
+Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.
 	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.validateResultMapsCount(DefaultResultSetHandler.java:290)
 	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
 	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
@@ -4398,7 +4398,7 @@ Caused by: org.apache.ibatis.executor.ExecutorException: A query was run and no 
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
 	... 81 common frames omitted
 
-2021-12-12 17:23:27.993  WARN 8308 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.mapper.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.]
+2021-12-12 17:23:27.993  WARN 8308 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.atduu.dao.TypeMapper.queryForPageTotalCount'.  It's likely that neither a Result Type nor a Result Map was specified.]
 2021-12-12 17:25:18.167  INFO 11996 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 11996 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 17:25:18.169 DEBUG 11996 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 17:25:18.170  INFO 11996 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -4742,8 +4742,8 @@ org.springframework.web.bind.MissingServletRequestParameterException: Required r
 2021-12-12 18:10:20.499 DEBUG 13064 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:10:20.508 DEBUG 13064 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:10:20.524 DEBUG 13064 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:10:20.527 DEBUG 13064 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type ; LIMIT ?
-2021-12-12 18:10:20.528 DEBUG 13064 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 2(Integer)
+2021-12-12 18:10:20.527 DEBUG 13064 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type ; LIMIT ?
+2021-12-12 18:10:20.528 DEBUG 13064 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 2(Integer)
 2021-12-12 18:10:20.626 ERROR 13064 --- [http-nio-8080-exec-1] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/types/1,Exception : {}
 
 org.springframework.jdbc.BadSqlGrammarException: 
@@ -4906,9 +4906,9 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2021-12-12 18:17:56.848 DEBUG 13280 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:17:56.856 DEBUG 13280 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:17:56.868 DEBUG 13280 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:17:56.871 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:17:56.871 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 2(Integer)
-2021-12-12 18:17:56.874 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 18:17:56.871 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:17:56.871 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 2(Integer)
+2021-12-12 18:17:56.874 DEBUG 13280 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 18:30:18.198  INFO 3108 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3108 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 18:30:18.200 DEBUG 3108 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 18:30:18.201  INFO 3108 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -4940,9 +4940,9 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2021-12-12 18:30:37.018 DEBUG 3108 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:30:37.029 DEBUG 3108 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:30:37.044 DEBUG 3108 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:30:37.046 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:30:37.047 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 18:30:37.051 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 18:30:37.046 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:30:37.047 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 18:30:37.051 DEBUG 3108 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 18:33:34.464  INFO 11592 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 11592 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 18:33:34.465 DEBUG 11592 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 18:33:34.466  INFO 11592 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -4999,9 +4999,9 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2021-12-12 18:35:41.675 DEBUG 7716 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:35:41.683 DEBUG 7716 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:35:41.694 DEBUG 7716 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:35:41.697 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:35:41.697 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 18:35:41.700 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 18:35:41.697 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:35:41.697 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 18:35:41.700 DEBUG 7716 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 18:45:13.411  INFO 2244 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 2244 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 18:45:13.412 DEBUG 2244 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 18:45:13.413  INFO 2244 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -5033,9 +5033,9 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2021-12-12 18:45:31.225 DEBUG 2244 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:45:31.234 DEBUG 2244 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:45:31.247 DEBUG 2244 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:45:31.250 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:45:31.251 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:45:31.254 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:45:31.250 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:45:31.251 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:45:31.254 DEBUG 2244 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:45:31.753 ERROR 2244 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/admin/types": An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
@@ -5248,45 +5248,45 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-12-12 18:50:39.394 DEBUG 9928 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:39.404 DEBUG 9928 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:39.417 DEBUG 9928 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:39.421 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:50:39.422 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:50:39.427 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:50:39.421 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:50:39.422 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:50:39.427 DEBUG 9928 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:50:46.845 DEBUG 9928 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:46.845 DEBUG 9928 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:46.848 DEBUG 9928 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:46.849 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 18:50:46.850 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 18:50:46.852 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 18:50:46.849 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 18:50:46.850 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 18:50:46.852 DEBUG 9928 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 18:50:48.185 DEBUG 9928 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:48.186 DEBUG 9928 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:48.189 DEBUG 9928 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:48.190 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:50:48.191 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:50:48.194 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:50:48.190 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:50:48.191 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:50:48.194 DEBUG 9928 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:50:49.746 DEBUG 9928 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:49.747 DEBUG 9928 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:49.749 DEBUG 9928 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:49.750 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 18:50:49.750 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 18:50:49.751 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 18:50:49.750 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 18:50:49.750 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 18:50:49.751 DEBUG 9928 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 18:50:52.957 DEBUG 9928 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:52.958 DEBUG 9928 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:52.961 DEBUG 9928 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:52.962 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:50:52.963 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:50:52.965 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:50:52.962 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:50:52.963 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:50:52.965 DEBUG 9928 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:50:56.723 DEBUG 9928 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:56.723 DEBUG 9928 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:56.726 DEBUG 9928 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:56.726 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 18:50:56.727 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 18:50:56.728 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 18:50:56.726 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 18:50:56.727 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 18:50:56.728 DEBUG 9928 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 18:50:59.267 DEBUG 9928 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:50:59.267 DEBUG 9928 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:50:59.270 DEBUG 9928 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:50:59.270 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:50:59.271 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:50:59.273 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:50:59.270 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:50:59.271 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:50:59.273 DEBUG 9928 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:59:12.046  INFO 7496 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 7496 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 18:59:12.047 DEBUG 7496 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 18:59:12.048  INFO 7496 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -5318,9 +5318,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-12-12 18:59:46.777 DEBUG 7496 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 18:59:46.786 DEBUG 7496 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 18:59:46.798 DEBUG 7496 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 18:59:46.801 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 18:59:46.802 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 18:59:46.806 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 18:59:46.801 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 18:59:46.802 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 18:59:46.806 DEBUG 7496 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 18:59:47.180 ERROR 7496 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/admin/types": An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
@@ -5476,9 +5476,9 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 19:00:30.688 DEBUG 7496 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:00:30.689 DEBUG 7496 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:00:30.692 DEBUG 7496 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:00:30.692 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 19:00:30.693 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 19:00:30.695 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 19:00:30.692 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 19:00:30.693 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 19:00:30.695 DEBUG 7496 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 19:00:30.701 ERROR 7496 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "/admin/types": An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
@@ -5662,9 +5662,9 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 19:03:47.520 DEBUG 5544 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:03:47.528 DEBUG 5544 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:03:47.540 DEBUG 5544 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:03:47.543 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 19:03:47.543 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 19:03:47.546 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 19:03:47.543 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 19:03:47.543 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 19:03:47.546 DEBUG 5544 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 19:03:47.930 ERROR 5544 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/admin/types": An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/types.html]")
@@ -5848,33 +5848,33 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 19:05:34.092 DEBUG 3796 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:05:34.104 DEBUG 3796 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:05:34.114 DEBUG 3796 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:05:34.117 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 19:05:34.118 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 19:05:34.121 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 19:05:34.117 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 19:05:34.118 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 19:05:34.121 DEBUG 3796 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 19:05:36.858 DEBUG 3796 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:05:36.859 DEBUG 3796 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:05:36.864 DEBUG 3796 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:05:36.865 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 19:05:36.866 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 19:05:36.867 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 19:05:36.865 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 19:05:36.866 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 19:05:36.867 DEBUG 3796 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 19:05:38.106 DEBUG 3796 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:05:38.106 DEBUG 3796 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:05:38.109 DEBUG 3796 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:05:38.110 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 19:05:38.111 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 19:05:38.113 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 19:05:38.110 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 19:05:38.111 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 19:05:38.113 DEBUG 3796 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 19:05:40.093 DEBUG 3796 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:05:40.094 DEBUG 3796 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:05:40.097 DEBUG 3796 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:05:40.098 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 19:05:40.099 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 19:05:40.101 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 19:05:40.098 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 19:05:40.099 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 19:05:40.101 DEBUG 3796 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 19:05:41.684 DEBUG 3796 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 19:05:41.685 DEBUG 3796 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 19:05:41.688 DEBUG 3796 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 19:05:41.689 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 19:05:41.689 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 19:05:41.691 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 19:05:41.689 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 19:05:41.689 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 19:05:41.691 DEBUG 3796 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:09:07.667  INFO 8460 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8460 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:09:07.675 DEBUG 8460 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:09:07.676  INFO 8460 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -5956,78 +5956,78 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:17:01.123 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:17:01.131 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:17:01.163 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:17:01.169 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:17:01.169 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:17:01.172 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
-2021-12-12 20:17:31.998 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:17:31.999 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 陀思妥耶夫斯基(String)
-2021-12-12 20:17:32.022 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:17:01.169 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:17:01.169 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:17:01.172 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:17:31.998 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:17:31.999 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 陀思妥耶夫斯基(String)
+2021-12-12 20:17:32.022 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:17:32.056 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:17:32.057 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:17:32.060 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:17:32.061 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:17:32.062 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:17:32.064 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:17:32.061 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:17:32.062 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:17:32.064 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:17:33.834 DEBUG 13220 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:17:33.835 DEBUG 13220 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:17:33.838 DEBUG 13220 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:17:33.839 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:17:33.840 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 20:17:33.842 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:17:33.839 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:17:33.840 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 20:17:33.842 DEBUG 13220 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:17:37.774 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:17:37.775 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:17:37.777 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:17:37.778 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:17:37.779 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:17:37.781 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:17:37.778 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:17:37.779 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:17:37.781 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:18:44.989 DEBUG 13220 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:44.989 DEBUG 13220 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:44.992 DEBUG 13220 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:44.992 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:18:44.993 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:18:44.995 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:18:44.992 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:18:44.993 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:18:44.995 DEBUG 13220 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:18:48.073 DEBUG 13220 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:48.073 DEBUG 13220 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:48.076 DEBUG 13220 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:48.076 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:18:48.077 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:18:48.078 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:18:48.076 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:18:48.077 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:18:48.078 DEBUG 13220 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:18:49.750 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:49.751 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:49.753 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:49.755 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:18:49.756 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 20:18:49.757 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:18:49.755 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:18:49.756 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 20:18:49.757 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:18:50.733 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:50.735 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:50.738 DEBUG 13220 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:50.740 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:18:50.740 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:18:50.743 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:18:50.740 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:18:50.740 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:18:50.743 DEBUG 13220 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:18:52.260 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:52.261 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:52.264 DEBUG 13220 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:52.265 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:18:52.265 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 20:18:52.267 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:18:52.265 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:18:52.265 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 20:18:52.267 DEBUG 13220 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:18:55.247 DEBUG 13220 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:55.247 DEBUG 13220 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:55.251 DEBUG 13220 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:55.252 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:18:55.252 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:18:55.254 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:18:55.252 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:18:55.252 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:18:55.254 DEBUG 13220 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:18:58.941 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:18:58.941 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:18:58.944 DEBUG 13220 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:18:58.944 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:18:58.945 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
-2021-12-12 20:18:58.946 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:18:58.944 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:18:58.945 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Long), 4(Integer)
+2021-12-12 20:18:58.946 DEBUG 13220 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:19:02.007 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:19:02.007 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:19:02.010 DEBUG 13220 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:19:02.010 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:19:02.011 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 4(Integer)
-2021-12-12 20:19:02.012 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 4
+2021-12-12 20:19:02.010 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:19:02.011 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 4(Integer)
+2021-12-12 20:19:02.012 DEBUG 13220 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 4
 2021-12-12 20:24:33.830  INFO 12432 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 12432 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:24:33.832 DEBUG 12432 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:24:33.832  INFO 12432 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6059,15 +6059,15 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:24:47.141 DEBUG 12432 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:24:47.150 DEBUG 12432 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:24:47.160 DEBUG 12432 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:24:47.163 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:24:47.164 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:24:47.169 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:24:47.163 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:24:47.164 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:24:47.169 DEBUG 12432 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:24:53.751 DEBUG 12432 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:24:53.752 DEBUG 12432 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:24:53.755 DEBUG 12432 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:24:53.756 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:24:53.756 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:24:53.758 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:24:53.756 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:24:53.756 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:24:53.758 DEBUG 12432 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:25:19.517  INFO 6012 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 6012 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:25:19.518 DEBUG 6012 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:25:19.519  INFO 6012 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6099,45 +6099,45 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:25:34.523 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:34.536 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:34.550 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:34.553 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:25:34.553 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:25:34.556 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:25:34.553 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:25:34.553 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:25:34.556 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:25:37.883 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:37.884 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:37.887 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:37.888 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:25:37.888 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:25:37.890 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:25:37.888 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:25:37.888 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:25:37.890 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:25:39.586 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:39.587 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:39.590 DEBUG 6012 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:39.590 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:25:39.591 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:25:39.595 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:25:39.590 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:25:39.591 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:25:39.595 DEBUG 6012 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:25:43.685 DEBUG 6012 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:43.686 DEBUG 6012 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:43.688 DEBUG 6012 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:43.689 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:25:43.689 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:25:43.691 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:25:43.689 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:25:43.689 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:25:43.691 DEBUG 6012 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:25:45.357 DEBUG 6012 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:45.358 DEBUG 6012 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:45.363 DEBUG 6012 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:45.364 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:25:45.365 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:25:45.367 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:25:45.364 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:25:45.365 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:25:45.367 DEBUG 6012 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:25:48.547 DEBUG 6012 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:48.548 DEBUG 6012 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:48.550 DEBUG 6012 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:48.551 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:25:48.551 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:25:48.552 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:25:48.551 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:25:48.551 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:25:48.552 DEBUG 6012 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:25:52.098 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:25:52.099 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:25:52.101 DEBUG 6012 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:25:52.102 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:25:52.102 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:25:52.104 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:25:52.102 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:25:52.102 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:25:52.104 DEBUG 6012 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:30:10.906  INFO 8596 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8596 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:30:10.908 DEBUG 8596 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:30:10.908  INFO 8596 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6169,84 +6169,84 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:30:23.943 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:23.951 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:23.965 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:23.967 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:30:23.968 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:30:23.971 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:30:23.967 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:30:23.968 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:30:23.971 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:30:43.572 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:43.573 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:43.576 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:43.576 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:30:43.577 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:30:43.579 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:30:43.576 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:30:43.577 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:30:43.579 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:30:45.593 DEBUG 8596 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:45.593 DEBUG 8596 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:45.596 DEBUG 8596 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:45.597 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:30:45.598 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:30:45.600 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:30:45.597 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:30:45.598 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:30:45.600 DEBUG 8596 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:30:46.662 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:46.662 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:46.665 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:46.665 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:30:46.665 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:30:46.670 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:30:46.665 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:30:46.665 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:30:46.670 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:30:52.173 DEBUG 8596 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:52.174 DEBUG 8596 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:52.176 DEBUG 8596 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:52.176 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:30:52.177 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:30:52.178 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:30:52.176 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:30:52.177 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:30:52.178 DEBUG 8596 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:30:53.478 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:53.479 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:53.482 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:53.483 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:30:53.483 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:30:53.484 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:30:53.483 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:30:53.483 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:30:53.484 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:30:54.965 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:30:54.966 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:30:54.969 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:30:54.970 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:30:54.971 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:30:54.972 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:30:54.970 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:30:54.971 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:30:54.972 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:31:00.455 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:00.456 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:00.459 DEBUG 8596 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:00.459 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:31:00.460 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:31:00.463 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:31:19.529 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:31:19.529 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 再见，繁星(String)
-2021-12-12 20:31:19.533 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:31:00.459 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:31:00.460 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:31:00.463 DEBUG 8596 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:31:19.529 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:31:19.529 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 再见，繁星(String)
+2021-12-12 20:31:19.533 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:31:19.562 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:19.563 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:19.565 DEBUG 8596 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:19.565 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:31:19.566 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:31:19.567 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:31:19.565 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:31:19.566 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:31:19.567 DEBUG 8596 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:31:21.035 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:21.036 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:21.039 DEBUG 8596 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:21.040 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:31:21.040 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:31:21.041 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:31:21.040 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:31:21.040 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:31:21.041 DEBUG 8596 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:31:22.313 DEBUG 8596 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:22.314 DEBUG 8596 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:22.316 DEBUG 8596 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:22.317 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:31:22.317 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:31:22.319 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:31:22.317 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:31:22.317 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:31:22.319 DEBUG 8596 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:31:24.677 DEBUG 8596 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:24.678 DEBUG 8596 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:24.681 DEBUG 8596 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:24.683 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
-2021-12-12 20:31:24.683 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:31:24.685 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:31:24.683 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?, ?
+2021-12-12 20:31:24.683 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:31:24.685 DEBUG 8596 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:31:28.153 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:31:28.154 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:31:28.156 DEBUG 8596 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:31:28.157 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
-2021-12-12 20:31:28.157 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:31:28.158 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:31:28.157 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: select * from t_type LIMIT ?
+2021-12-12 20:31:28.157 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:31:28.158 DEBUG 8596 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:34:09.740  INFO 9020 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 9020 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:34:09.742 DEBUG 9020 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:34:09.742  INFO 9020 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6278,219 +6278,219 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:34:24.274 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:24.282 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:24.295 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:24.299 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:34:24.300 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:34:24.303 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:34:24.299 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:34:24.300 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:34:24.303 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:34:30.462 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:30.463 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:30.466 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:30.467 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:34:30.468 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:34:30.469 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 2
+2021-12-12 20:34:30.467 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:34:30.468 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:34:30.469 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 2
 2021-12-12 20:34:32.252 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:32.253 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:32.256 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:32.256 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:34:32.257 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:34:32.259 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:34:40.821 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:34:40.822 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 伯特成为了光明(String)
-2021-12-12 20:34:40.826 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:34:32.256 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:34:32.257 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:34:32.259 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:34:40.821 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:34:40.822 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 伯特成为了光明(String)
+2021-12-12 20:34:40.826 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:34:40.858 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:40.858 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:40.862 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:40.863 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:34:40.864 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:34:40.868 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:34:40.863 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:34:40.864 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:34:40.868 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:34:45.818 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:45.818 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:45.820 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:45.821 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:34:45.822 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:34:45.823 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 3
+2021-12-12 20:34:45.821 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:34:45.822 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:34:45.823 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 3
 2021-12-12 20:34:46.855 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:46.855 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:46.858 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:46.860 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:34:46.860 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:34:46.862 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:34:54.394 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:34:54.394 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 漫长的告白(String)
-2021-12-12 20:34:54.399 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:34:46.860 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:34:46.860 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:34:46.862 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:34:54.394 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:34:54.394 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 漫长的告白(String)
+2021-12-12 20:34:54.399 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:34:54.413 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:34:54.414 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:34:54.417 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:34:54.418 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:34:54.419 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:34:54.421 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:35:09.979 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:35:09.980 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 加缪(String)
-2021-12-12 20:35:09.982 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:34:54.418 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:34:54.419 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:34:54.421 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:09.979 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:35:09.980 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 加缪(String)
+2021-12-12 20:35:09.982 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:35:09.998 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:09.998 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:10.001 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:10.002 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:10.002 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:10.005 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:35:19.991 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:35:19.992 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 哈瑞大冒险(String)
-2021-12-12 20:35:19.997 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:35:10.002 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:10.002 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:10.005 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:19.991 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:35:19.992 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 哈瑞大冒险(String)
+2021-12-12 20:35:19.997 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:35:20.012 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:20.012 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:20.015 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:20.016 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:20.016 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:20.018 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:20.016 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:20.016 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:20.018 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:21.084 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:21.085 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:21.087 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:21.088 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:21.089 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:21.091 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:21.088 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:21.089 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:21.091 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:22.706 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:22.706 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:22.709 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:22.722 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:22.723 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
-2021-12-12 20:35:22.725 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:35:22.722 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:22.723 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
+2021-12-12 20:35:22.725 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:35:24.128 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:24.128 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:24.131 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:24.131 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:24.132 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:24.133 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:24.131 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:24.132 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:24.133 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:27.623 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:27.623 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:27.626 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:27.627 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:27.628 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:27.629 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:27.627 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:27.628 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:27.629 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:28.608 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:28.609 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:28.612 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:28.613 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:28.614 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:28.615 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:28.613 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:28.614 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:28.615 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:29.208 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:29.208 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:29.211 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:29.213 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:29.213 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:29.215 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:29.213 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:29.213 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:29.215 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:30.452 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:30.453 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:30.456 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:30.458 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:30.459 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:30.460 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:30.458 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:30.459 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:30.460 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:31.366 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:31.366 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:31.368 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:31.369 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:31.370 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:31.371 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:31.369 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:31.370 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:31.371 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:32.264 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:32.264 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:32.267 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:32.268 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:32.268 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:32.269 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:32.268 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:32.268 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:32.269 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:33.845 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:33.846 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:33.849 DEBUG 9020 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:33.850 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:33.850 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
-2021-12-12 20:35:33.852 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:35:33.850 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:33.850 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
+2021-12-12 20:35:33.852 DEBUG 9020 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:35:35.220 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:35.220 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:35.223 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:35.224 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:35.224 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:35.226 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:35.224 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:35.224 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:35.226 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:39.492 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:39.493 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:39.495 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:39.496 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:35:39.496 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:35:39.498 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:39.496 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:35:39.496 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:35:39.498 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:35:41.799 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:35:41.799 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:35:41.802 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:35:41.803 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:35:41.803 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:35:41.804 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:35:41.803 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:35:41.803 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:35:41.804 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:20.209 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:20.210 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:20.212 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:20.212 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:38:20.213 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:38:20.215 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:20.212 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:38:20.213 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:38:20.215 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:21.079 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:21.080 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:21.082 DEBUG 9020 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:21.083 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:21.083 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:21.084 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:21.083 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:21.083 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:21.084 DEBUG 9020 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:22.367 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:22.367 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:22.370 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:22.370 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:38:22.371 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:38:22.372 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:22.370 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:38:22.371 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:38:22.372 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:24.075 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:24.076 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:24.079 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:24.080 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:24.081 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:24.082 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:24.080 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:24.081 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:24.082 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:25.020 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:25.021 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:25.023 DEBUG 9020 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:25.023 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:38:25.024 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:38:25.025 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:25.023 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:38:25.024 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:38:25.025 DEBUG 9020 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:25.573 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:25.573 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:25.575 DEBUG 9020 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:25.576 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:25.577 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:25.579 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:25.576 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:25.577 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:25.579 DEBUG 9020 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:26.243 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:26.244 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:26.246 DEBUG 9020 --- [http-nio-8080-exec-9] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:26.247 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:38:26.247 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:38:26.248 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:26.247 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:38:26.247 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:38:26.248 DEBUG 9020 --- [http-nio-8080-exec-9] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:26.745 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:26.746 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:26.748 DEBUG 9020 --- [http-nio-8080-exec-3] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:26.749 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:26.750 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:26.752 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:26.749 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:26.750 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:26.752 DEBUG 9020 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:27.576 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:27.577 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:27.579 DEBUG 9020 --- [http-nio-8080-exec-2] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:27.580 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:38:27.580 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:38:27.581 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:27.580 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:38:27.580 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:38:27.581 DEBUG 9020 --- [http-nio-8080-exec-2] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:28.201 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:28.201 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:28.203 DEBUG 9020 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:28.204 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:28.205 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:28.206 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:28.204 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:28.205 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:28.206 DEBUG 9020 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:38:29.046 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:29.047 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:29.050 DEBUG 9020 --- [http-nio-8080-exec-8] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:29.051 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:29.051 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
-2021-12-12 20:38:29.052 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 1
+2021-12-12 20:38:29.051 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:29.051 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 10(Long), 5(Integer)
+2021-12-12 20:38:29.052 DEBUG 9020 --- [http-nio-8080-exec-8] com.atduu.dao.TypeMapper.findAll      : <==      Total: 1
 2021-12-12 20:38:30.309 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:38:30.310 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:38:30.312 DEBUG 9020 --- [http-nio-8080-exec-10] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:38:30.313 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:38:30.314 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:38:30.315 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:38:30.313 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:38:30.314 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:38:30.315 DEBUG 9020 --- [http-nio-8080-exec-10] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:51:39.215  INFO 3660 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3660 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:51:39.217 DEBUG 3660 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:51:39.217  INFO 3660 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6522,33 +6522,33 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:51:48.626 DEBUG 3660 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:51:48.635 DEBUG 3660 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:51:48.649 DEBUG 3660 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:51:48.653 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
-2021-12-12 20:51:48.654 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
-2021-12-12 20:51:48.659 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:52:18.027 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:52:18.028 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 音乐泉湖(String)
-2021-12-12 20:52:18.033 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:51:48.653 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?, ?
+2021-12-12 20:51:48.654 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Long), 5(Integer)
+2021-12-12 20:51:48.659 DEBUG 3660 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:52:18.027 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:52:18.028 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 音乐泉湖(String)
+2021-12-12 20:52:18.033 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:52:18.077 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:52:18.078 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:52:18.080 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:52:18.082 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:52:18.082 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:52:18.085 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:52:18.082 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:52:18.082 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:52:18.085 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:54:29.314 DEBUG 3660 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:54:29.315 DEBUG 3660 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:54:29.317 DEBUG 3660 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:54:29.319 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:54:29.319 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:54:29.321 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:54:46.633 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:54:46.634 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 殷殷作响(String)
-2021-12-12 20:54:46.636 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:54:29.319 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:54:29.319 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:54:29.321 DEBUG 3660 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:54:46.633 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:54:46.634 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 殷殷作响(String)
+2021-12-12 20:54:46.636 DEBUG 3660 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:54:46.653 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:54:46.653 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:54:46.655 DEBUG 3660 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:54:46.657 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:54:46.657 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:54:46.660 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:54:46.657 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:54:46.657 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:54:46.660 DEBUG 3660 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 20:58:24.947  INFO 11396 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 11396 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 20:58:24.949 DEBUG 11396 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 20:58:24.949  INFO 11396 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6580,18 +6580,18 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-12-12 20:58:40.022 DEBUG 11396 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:58:40.031 DEBUG 11396 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:58:40.043 DEBUG 11396 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:58:40.048 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:58:40.049 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:58:40.052 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
-2021-12-12 20:58:50.099 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
-2021-12-12 20:58:50.100 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : ==> Parameters: null, 音乐泉湖(String)
-2021-12-12 20:58:50.103 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.mapper.TypeMapper.save         : <==    Updates: 1
+2021-12-12 20:58:40.048 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:58:40.049 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:58:40.052 DEBUG 11396 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:58:50.099 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==>  Preparing: insert into t_type values (?,?)
+2021-12-12 20:58:50.100 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : ==> Parameters: null, 音乐泉湖(String)
+2021-12-12 20:58:50.103 DEBUG 11396 --- [http-nio-8080-exec-3] com.atduu.dao.TypeMapper.save         : <==    Updates: 1
 2021-12-12 20:58:50.147 DEBUG 11396 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 20:58:50.148 DEBUG 11396 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 20:58:50.151 DEBUG 11396 --- [http-nio-8080-exec-5] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 20:58:50.152 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 20:58:50.152 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 20:58:50.154 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 20:58:50.152 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 20:58:50.152 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 20:58:50.154 DEBUG 11396 --- [http-nio-8080-exec-5] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:18:32.800  INFO 1700 --- [restartedMain] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 1700 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
 2021-12-12 21:18:32.802 DEBUG 1700 --- [restartedMain] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
 2021-12-12 21:18:32.803  INFO 1700 --- [restartedMain] com.atduu.DuublogApplication             : The following profiles are active: dev
@@ -6770,15 +6770,15 @@ Caused by: org.apache.ibatis.exceptions.TooManyResultsException: Expected one re
 2021-12-12 21:37:41.690 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:37:41.698 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:37:41.714 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:37:41.719 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:37:41.719 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:37:41.722 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:37:41.719 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:37:41.719 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:37:41.722 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:39:07.523 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:39:07.524 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:39:07.527 DEBUG 7708 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:39:07.528 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:39:07.529 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:39:07.532 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:39:07.528 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:39:07.529 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:39:07.532 DEBUG 7708 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:39:12.740 DEBUG 7708 --- [http-nio-8080-exec-3] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 21:39:12.741 DEBUG 7708 --- [http-nio-8080-exec-3] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 21:39:12.742 DEBUG 7708 --- [http-nio-8080-exec-3] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1
@@ -6886,9 +6886,9 @@ java.lang.ClassCastException: java.lang.Integer cannot be cast to com.atduu.pojo
 2021-12-12 21:41:28.057 DEBUG 11388 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:41:28.068 DEBUG 11388 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:41:28.086 DEBUG 11388 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:41:28.091 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:41:28.092 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:41:28.094 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:41:28.091 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:41:28.092 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:41:28.094 DEBUG 11388 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:41:41.010 DEBUG 11388 --- [http-nio-8080-exec-6] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 21:41:41.011 DEBUG 11388 --- [http-nio-8080-exec-6] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 21:41:41.013 DEBUG 11388 --- [http-nio-8080-exec-6] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1
@@ -7004,9 +7004,9 @@ java.lang.ClassCastException: java.lang.Integer cannot be cast to com.atduu.pojo
 2021-12-12 21:44:56.675 DEBUG 2312 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:44:56.684 DEBUG 2312 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:44:56.696 DEBUG 2312 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:44:56.700 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:44:56.700 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:44:56.703 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:44:56.700 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:44:56.700 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:44:56.703 DEBUG 2312 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:45:01.513 DEBUG 2312 --- [http-nio-8080-exec-1] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 21:45:01.514 DEBUG 2312 --- [http-nio-8080-exec-1] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 21:45:01.516 DEBUG 2312 --- [http-nio-8080-exec-1] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1
@@ -7041,9 +7041,9 @@ java.lang.ClassCastException: java.lang.Integer cannot be cast to com.atduu.pojo
 2021-12-12 21:49:33.423 DEBUG 10316 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:49:33.432 DEBUG 10316 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:49:33.447 DEBUG 10316 --- [http-nio-8080-exec-6] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:49:33.451 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:49:33.452 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:49:33.455 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:49:33.451 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:49:33.452 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:49:33.455 DEBUG 10316 --- [http-nio-8080-exec-6] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:49:42.403 DEBUG 10316 --- [http-nio-8080-exec-8] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 21:49:42.403 DEBUG 10316 --- [http-nio-8080-exec-8] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 21:49:42.405 DEBUG 10316 --- [http-nio-8080-exec-8] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1
@@ -7257,9 +7257,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2021-12-12 21:54:05.239 DEBUG 11704 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:54:05.240 DEBUG 11704 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:54:05.243 DEBUG 11704 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:54:05.248 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:54:05.249 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:54:05.251 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:54:05.248 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:54:05.249 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:54:05.251 DEBUG 11704 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:54:06.640 ERROR 11704 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "/admin/type-input": An error happened during template parsing (template: "class path resource [templates//admin/type-input.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/type-input.html]")
@@ -7637,9 +7637,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2021-12-12 21:58:24.038 DEBUG 3808 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 21:58:24.046 DEBUG 3808 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 21:58:24.060 DEBUG 3808 --- [http-nio-8080-exec-4] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 21:58:24.064 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 21:58:24.064 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 21:58:24.067 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 21:58:24.064 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 21:58:24.064 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 21:58:24.067 DEBUG 3808 --- [http-nio-8080-exec-4] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 21:58:25.248 ERROR 3808 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "/admin/type-input": An error happened during template parsing (template: "class path resource [templates//admin/type-input.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//admin/type-input.html]")
@@ -8101,9 +8101,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2021-12-12 22:08:42.865 DEBUG 7464 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 22:08:42.873 DEBUG 7464 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 22:08:42.886 DEBUG 7464 --- [http-nio-8080-exec-1] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 22:08:42.891 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 22:08:42.892 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 22:08:42.895 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 22:08:42.891 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 22:08:42.892 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 22:08:42.895 DEBUG 7464 --- [http-nio-8080-exec-1] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 22:08:53.205 DEBUG 7464 --- [http-nio-8080-exec-5] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 22:08:53.206 DEBUG 7464 --- [http-nio-8080-exec-5] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 22:08:53.208 DEBUG 7464 --- [http-nio-8080-exec-5] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1
@@ -8225,9 +8225,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2021-12-12 22:32:31.118 DEBUG 11568 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==>  Preparing: SELECT count(0) FROM t_type
 2021-12-12 22:32:31.126 DEBUG 11568 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : ==> Parameters: 
 2021-12-12 22:32:31.150 DEBUG 11568 --- [http-nio-8080-exec-7] c.atduu.mapper.TypeMapper.findAll_COUNT  : <==      Total: 1
-2021-12-12 22:32:31.154 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
-2021-12-12 22:32:31.154 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : ==> Parameters: 5(Integer)
-2021-12-12 22:32:31.157 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.mapper.TypeMapper.findAll      : <==      Total: 5
+2021-12-12 22:32:31.154 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==>  Preparing: SELECT * FROM t_type order by id desc LIMIT ?
+2021-12-12 22:32:31.154 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : ==> Parameters: 5(Integer)
+2021-12-12 22:32:31.157 DEBUG 11568 --- [http-nio-8080-exec-7] com.atduu.dao.TypeMapper.findAll      : <==      Total: 5
 2021-12-12 22:32:50.628 DEBUG 11568 --- [http-nio-8080-exec-9] c.a.mapper.TypeMapper.findTypeByName     : ==>  Preparing: select * from t_type where name = ?;
 2021-12-12 22:32:50.629 DEBUG 11568 --- [http-nio-8080-exec-9] c.a.mapper.TypeMapper.findTypeByName     : ==> Parameters: 音乐泉湖(String)
 2021-12-12 22:32:50.631 DEBUG 11568 --- [http-nio-8080-exec-9] c.a.mapper.TypeMapper.findTypeByName     : <==      Total: 1

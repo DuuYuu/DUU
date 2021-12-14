@@ -1,12 +1,15 @@
 package com.atduu.service.impl;
 
 import com.atduu.NotFoundException;
-import com.atduu.mapper.TypeMapper;
+import com.atduu.dao.TypeDao;
 import com.atduu.pojo.Type;
 import com.atduu.service.TypeService;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,49 +23,36 @@ import java.util.List;
 public class TypeServiceImpl implements TypeService {
 
     @Autowired
-    TypeMapper typeMapper;
+    TypeDao typeDao;
 
     @Transactional
     @Override
-    public int saveType(Type type) {
-        return typeMapper.save(type);
+    public Type saveType(Type type) {
+        return typeDao.save(type);
     }
 
     @Transactional
     @Override
     public Type getType(Long id) {
-        return typeMapper.findTypeById(id);
+        return typeDao.findById(id).orElse(null);
     }
 
     @Transactional
     @Override
     public  List<Type> selectAll(){
-        return typeMapper.findAll();
+        return typeDao.findAll();
     }
 
-    /**
-     * 带分页信息查询
-     * @param pageNum
-     * @param pageSize
-     * @return
-     */
     @Transactional
     @Override
-    public PageInfo<Type> findAllTypesByPages(int pageNum , int pageSize){
-
-        String orderBy = "id desc"; //根据id降序
-
-        PageHelper.startPage(pageNum, pageSize,orderBy);
-
-        List<Type> lists = typeMapper.findAll();
-
-        return new PageInfo<Type>(lists);
+    public Page<Type> findAllTypesByPages(Pageable pageable){
+        return typeDao.findAll(pageable);
     }
 
 
     @Transactional
     @Override
-    public int updateType(Long id, Type type) {
+    public Type updateType(Long id, Type type) {
 
         Type t = getType(id);
 
@@ -70,14 +60,17 @@ public class TypeServiceImpl implements TypeService {
             throw new NotFoundException("不存在该分类");
         }
 
-        return typeMapper.updateType(type);
+        BeanUtils.copyProperties(type, t );
+
+        return typeDao.save(t);
+
     }
 
     @Transactional
     @Override
     public Boolean isExist(String name) {
 
-        Type type = typeMapper.findTypeByName(name);
+        Type type = typeDao.findByName(name);
 
         if( type != null ){
             return true;
@@ -89,9 +82,20 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public int deleteType(Long id) {
+    public void deleteType(Long id) {
 
-        return typeMapper.deleteTypeById(id);
+        typeDao.deleteById(id);
 
+    }
+
+    @Transactional
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+
+        Sort sort =  Sort.by(Sort.Direction.DESC,"blogs.size");
+
+        Pageable pageable =  PageRequest.of(0, size, sort);
+
+        return typeDao.findTop(pageable);
     }
 }

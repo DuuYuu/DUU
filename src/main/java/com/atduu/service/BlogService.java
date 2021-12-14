@@ -2,9 +2,8 @@ package com.atduu.service;
 
 import com.atduu.pojo.Blog;
 import com.atduu.vo.BlogQuery;
-import com.github.pagehelper.PageInfo;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 /**
  * Created  by DuuYuu on 2021/12/13 15:48
@@ -13,14 +12,14 @@ public interface BlogService {
 
     Blog getBlogById(Long id);
 
-    List<Blog> getAllBlog(Blog blog);
+    Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
 
-    PageInfo<Blog> findBlogByPages(BlogQuery blog , int pageNum , int pageSize);
+    Page<Blog> listBlog(Pageable pageable);
 
-    int saveBlog(Blog blog);
+    Blog saveBlog(Blog blog);
 
-    int updateBlog(Long id , Blog blog);
+    Blog updateBlog(Long id , Blog blog);
 
-    int deleteBlog(Long id);
+    void deleteBlog(Long id);
 
 }

@@ -5,9 +5,16 @@ package com.atduu.pojo;
  **/
 public class Const {
 
-    /**
-     * 页面数据条数
-     */
+    //后台分页的每页个数
     public static final int PAGE_SIZE = 5;
+
+    //首页每页的博客数量
+    public static final int INDEX_PAGE_SIZE = 10;
+
+    //首页分类总数量
+    public static final int INDEX_TYPES_COUNT = 6;
+
+    //首页标签总数量
+    public static final int INDEX_TAGS_COUNT = 10;
 
 }

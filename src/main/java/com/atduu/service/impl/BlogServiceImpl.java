@@ -1,16 +1,25 @@
 package com.atduu.service.impl;
 
 import com.atduu.NotFoundException;
-import com.atduu.mapper.BlogMapper;
+import com.atduu.dao.BlogDao;
 import com.atduu.pojo.Blog;
+import com.atduu.pojo.Type;
 import com.atduu.service.BlogService;
+import com.atduu.util.MyUtils;
 import com.atduu.vo.BlogQuery;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,56 +30,93 @@ import java.util.List;
 public class BlogServiceImpl implements BlogService {
 
     @Autowired
-    private BlogMapper blogMapper;
+    private BlogDao blogDao;
 
+    @Transactional
     @Override
     public Blog getBlogById(Long id) {
-        return blogMapper.queryBlogById(id);
+        return blogDao.findById(id).orElse(null);
     }
 
+
+    /**
+     * 后端展示分页
+     * @param pageable
+     * @param blog
+     * @return
+     */
+    @Transactional
     @Override
-    public List<Blog> getAllBlog(Blog blog) {
-        return blogMapper.queryAllBlogs(blog);
+    public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
+        return blogDao.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+
+                List<Predicate> predicates = new ArrayList<>();
+
+                if(!"".equals(blog.getTitle()) && blog.getTitle() !=null){
+                    predicates.add(cb.like(root.<String>get("title"), "%" + blog.getTitle() + "%"));
+                }
+
+                if (blog.getTypeId() !=null){
+                    predicates.add(cb.equal(root.<Type>get("type").get("id"), blog.getTypeId() ));
+                }
+                if (blog.isRecommend()){
+                    predicates.add(cb.equal(root.<Boolean>get("recommend"), blog.isRecommend()));
+                }
+
+                query.where(predicates.toArray(new Predicate[predicates.size()]));
+
+                return null;
+            }
+        },pageable);
     }
 
+    /**
+     * 前端展示分页
+     * @param pageable
+     * @return
+     */
+    @Transactional
     @Override
-    public PageInfo<Blog> findBlogByPages(BlogQuery blog, int pageNum, int pageSize) {
-
-        String orderBy = "id desc"; //根据id降序
-
-        PageHelper.startPage(pageNum, pageSize,orderBy);
-
-        List<Blog> list = blogMapper.queryBlogByTitleOrTypeIdOrRecommend(blog);
-
-        return new PageInfo<Blog>(list);
-
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogDao.findAll(pageable);
     }
 
     @Transactional
     @Override
-    public int saveBlog(Blog blog) {
-        blog.setCreateTime(new Date());
-        blog.setUpdateTime(new Date());
+    public Blog saveBlog(Blog blog) {
+
         blog.setViews(0);
-        return blogMapper.save(blog);
+
+        blog.setCreateTime(new Date());
+
+        blog.setUpdateTime(new Date());
+
+        return blogDao.save(blog);
     }
 
     @Transactional
     @Override
-    public int updateBlog(Long id, Blog blog) {
+    public Blog updateBlog(Long id, Blog blog) {
 
-        Blog b =  blogMapper.queryBlogById(id);
+        Blog b = blogDao.findById(id).get();
 
-        if(b==null){
+        if (b == null){
             throw new NotFoundException("该博客不存在");
         }
 
-        return blogMapper.update(blog);
+        //过滤了属性值为空的属性
+        BeanUtils.copyProperties( blog , b, MyUtils.getNullPropertyNames(blog));
+
+        b.setUpdateTime(new Date());
+
+        return blogDao.save(b);
     }
 
     @Transactional
     @Override
-    public int deleteBlog(Long id) {
-        return blogMapper.delete(id);
+    public void deleteBlog(Long id) {
+        blogDao.deleteById(id);
     }
 }

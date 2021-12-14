@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>500</title>
+    <title>500 Page</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
 </head>
 <body>
-<h1>500</h1>
+
+<div class="about">
+    <a class="bg_links social portfolio" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links social dribbble" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
+</div>
+
+<nav>
+    <div class="menu">
+        <p class="website_name">Duu</p>
+        <div class="menu_links">
+            <a href="" class="link">about</a>
+            <a href="" class="link">projects</a>
+            <a href="" class="link">contacts</a>
+        </div>
+        <div class="menu_icon">
+            <span class="icon"></span>
+        </div>
+    </div>
+</nav>
+
+<section class="wrapper">
+
+    <div class="container">
+
+        <div id="scene" class="scene" data-hover-only="false">
+
+
+            <div class="circle" data-depth="1.2"></div>
+
+            <div class="one" data-depth="0.9">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <div class="two" data-depth="0.60">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <div class="three" data-depth="0.40">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <p class="p404" data-depth="0.50">500</p>
+            <p class="p404" data-depth="0.10">500</p>
+
+        </div>
+
+        <div class="text">
+            <article>
+                <p>出事啦！程序员儿正在抢修~😭😭😭</p>
+                <button>返回首页</button>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<th:block th:repalce="~{_fragments :: script}">
+</th:block>
+<script th:src="@{/js/jquery.min.js}"></script>
+
 </body>
 </html>

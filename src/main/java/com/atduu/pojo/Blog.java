@@ -1,15 +1,18 @@
 package com.atduu.pojo;
 
+import com.sun.istack.Nullable;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -21,7 +24,11 @@ public class Blog {
     private Long id;
 
     private String title;  //标题
+
+    @Basic(fetch = FetchType.LAZY)//懒加载
+    @Lob   //大字段类型
     private String content;  //内容
+
     private String firstPicture;  //首图
     private String flag;  //标签
     private Integer views; //浏览数
@@ -30,6 +37,7 @@ public class Blog {
     private boolean commentAble;  //是否可评论
     private boolean published;  //是否发布
     private boolean recommend;  //是否推荐
+    private String description;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;    //创建时间
@@ -52,5 +60,34 @@ public class Blog {
 
     @Transient
     private String tagIds;
+
+
+
+
+
+
+    public void init(){
+        this.tagIds = convertToStrings(this.getTags());
+    }
+
+    private String convertToStrings(@Nullable List<Tag> tags){
+        if(!tags.isEmpty()){
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags){
+                if (flag){
+                    ids.append(",");
+                }else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        }else {
+            return tagIds;
+        }
+    }
+
+
 
 }

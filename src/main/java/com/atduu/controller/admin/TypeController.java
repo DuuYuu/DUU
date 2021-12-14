@@ -3,11 +3,17 @@ package com.atduu.controller.admin;
 import com.atduu.pojo.Const;
 import com.atduu.pojo.Type;
 import com.atduu.service.TypeService;
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
@@ -21,9 +27,9 @@ public class TypeController {
     private TypeService typeService;
 
     @GetMapping("/types")
-    public String types(@RequestParam(defaultValue = "1",value = "pageNum") int pageNum, Model model){
-
-        PageInfo<Type> page = typeService.findAllTypesByPages(pageNum, Const.PAGE_SIZE);
+    public String tags(@PageableDefault(size = Const.PAGE_SIZE , sort = {"id"} ,direction = Sort.Direction.DESC) Pageable pageable,
+                       Model model){
+        Page<Type> page = typeService.findAllTypesByPages(pageable);
 
         model.addAttribute("page" , page);
 
@@ -32,6 +38,7 @@ public class TypeController {
 
     @GetMapping("/types/input")
     public String input(){
+
         return "/admin/type-input";
 
     }
@@ -55,17 +62,17 @@ public class TypeController {
         }
 
         if(id == -1){
-            int i = typeService.saveType(type);
+            Type t = typeService.saveType(type);
 
-            if(i > 0){
+            if(t != null){
                 attributes.addFlashAttribute("message", "新增成功");
             }else {
                 attributes.addFlashAttribute("message", "新增失败");
             }
         }else {
-            int i = typeService.updateType(id, type);
+            Type t = typeService.updateType(id, type);
 
-            if(i > 0){
+            if(t != null ){
                 attributes.addFlashAttribute("message", "更新成功");
             }else {
                 attributes.addFlashAttribute("message", "更新失败");
@@ -79,13 +86,7 @@ public class TypeController {
     @GetMapping("/types/{id}/delete")
     public String deleteType(@PathVariable Long id ,RedirectAttributes attributes){
 
-        int i = typeService.deleteType(id);
-
-        if(i > 0){
-            attributes.addFlashAttribute("message", "删除成功");
-        }else {
-            attributes.addFlashAttribute("message", "删除失败");
-        }
+        typeService.deleteType(id);
 
         return "redirect:/admin/types";
     }

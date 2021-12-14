@@ -1,21 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>出错啦</title>
+    <title>Error Page</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
 </head>
 <body>
-<h1>出错啦</h1>
 
-<div>
-    <div th:utext="'&lt;!--'" th:remove="tag"></div>
-    <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"></div>
-    <div th:utext="'Exception message : ' + ${exception.message}" th:remove="tag"></div>
-    <ul th:remove="tag">
-        <li th:each="st : ${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
-    </ul>
-    <div th:utext="'--&gt;'" th:remove="tag"></div>
+<div class="about">
+    <a class="bg_links social portfolio" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links social dribbble" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="#">
+        <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
 </div>
+
+<nav>
+    <div class="menu">
+        <p class="website_name">Duu</p>
+        <div class="menu_links">
+            <a href="" class="link">about</a>
+            <a href="" class="link">projects</a>
+            <a href="" class="link">contacts</a>
+        </div>
+        <div class="menu_icon">
+            <span class="icon"></span>
+        </div>
+    </div>
+</nav>
+
+<section class="wrapper">
+
+    <div class="container">
+
+        <div id="scene" class="scene" data-hover-only="false">
+
+
+            <div class="circle" data-depth="1.2"></div>
+
+            <div class="one" data-depth="0.9">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <div class="two" data-depth="0.60">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <div class="three" data-depth="0.40">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+
+            <p class="p404" data-depth="0.50">Error</p>
+            <p class="p404" data-depth="0.10">Error</p>
+
+        </div>
+
+        <div class="text">
+            <article>
+                <p>出错啦！请联系管理员儿~😥😥😥</p>
+                <button>返回首页</button>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<th:block th:repalce="~{_fragments :: script}">
+</th:block>
+<script th:src="@{/js/jquery.min.js}"></script>
 
 </body>
 </html>

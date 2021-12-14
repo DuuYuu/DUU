@@ -77,11 +77,9 @@
                 <tr>
                     <th colspan="6">
                         <div class="ui pagination menu"  th:if="${page.totalPages}>1">
-<!--                            <a th:href="@{/admin/types(pageNum=${page.getPrePage()})}" class="icon item" >-->
                             <a th:href="@{/admin/tags(page=${page.number}-1)}" th:unless="${page.isFirst()}" class="icon item">
                                 <i class="left chevron icon"></i>
                             </a>
-<!--                            <a th:href="@{/admin/types(pageNum=${page.getNextPage()})}" class="icon item" th:unless="${page.isIsLastPage()}">-->
                             <a th:href="@{/admin/tags(page=${page.number}+1)}" th:unless="${page.isLast()}" class="icon item" >
                                 <i class="right chevron icon"></i>
                             </a>

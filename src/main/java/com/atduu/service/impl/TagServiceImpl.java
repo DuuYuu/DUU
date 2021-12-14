@@ -1,17 +1,19 @@
 package com.atduu.service.impl;
 
 import com.atduu.NotFoundException;
-import com.atduu.mapper.TagMapper;
+import com.atduu.dao.TagDao;
 import com.atduu.pojo.Tag;
 import com.atduu.service.TagService;
+import com.atduu.util.MyUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +23,7 @@ import java.util.List;
 public class TagServiceImpl implements TagService {
 
     @Autowired
-    TagMapper tagMapper;
+    TagDao tagMapper;
 
     @Transactional
     @Override
@@ -44,29 +46,18 @@ public class TagServiceImpl implements TagService {
     @Transactional
     @Override
     public List<Tag> listTag(String ids) {
-        return tagMapper.findAllById(convertToList(ids));
+
+        List<Long> listId = MyUtils.convertToList(ids);
+
+        return tagMapper.findAllById(listId);
+
     }
-
-    private List<Long> convertToList(String ids){
-        List<Long> list = new ArrayList<>();
-        if("".equals(ids) && ids!=null){
-
-            String[] idarray = ids.split(",");
-
-            for (int i =0 ;i<idarray.length;i++){
-                list.add(new Long(idarray[i]));
-            }
-        }
-        return  list;
-    }
-
 
     @Transactional
     @Override
     public Page<Tag> findAllTagsByPages(Pageable pageable){
         return tagMapper.findAll(pageable);
     }
-
 
     @Transactional
     @Override
@@ -78,9 +69,9 @@ public class TagServiceImpl implements TagService {
             throw new NotFoundException("不存在该分类");
         }
 
-        BeanUtils.copyProperties(tag, t );
+        BeanUtils.copyProperties(t, tag );
 
-        return tagMapper.save(tag);
+        return tagMapper.save(t);
     }
 
     @Transactional
@@ -103,5 +94,15 @@ public class TagServiceImpl implements TagService {
 
          tagMapper.deleteById(id);
 
+    }
+
+    @Override
+    public List<Tag> listTagTop(Integer size) {
+
+        Sort sort = Sort.by(Sort.Direction.DESC , "blogs.size");
+
+        Pageable pageable = PageRequest.of(0, size, sort);
+
+        return tagMapper.findTop(pageable);
     }
 }

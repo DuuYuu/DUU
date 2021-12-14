@@ -46,7 +46,7 @@
 </div>
 
 <!--中间内容-->
-<div class="m-container-small  m-padded-tb-big">
+<div class="m-container m-padded-tb-big">
     <div class="ui container">
         <div class="ui secondary segment form">
             <input type="hidden" name="page">
@@ -55,13 +55,16 @@
                     <input type="text" name="title" placeholder="标题">
                 </div>
                 <div class="field">
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="typeId" >
-                        <i class="dropdown icon"></i>
-                        <div class="default text">分类</div>
-                        <div class="menu" >
-                            <div th:each="type :${types}" class="item" th:data-value="${type.id}" th:text="${type.name}"></div>
+                    <div class="ui labeled action input">
+                        <div class="ui type selection dropdown">
+                            <input type="hidden" name="typeId" >
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu" >
+                                <div th:each="type :${types}" class="item" th:data-value="${type.id}" th:text="${type.name}"></div>
+                            </div>
                         </div>
+                        <button id="clear-btn" class="ui compact button">清空分类</button>
                     </div>
                 </div>
                 <div class="field">
@@ -83,16 +86,18 @@
                     <th>标题</th>
                     <th>类型</th>
                     <th>推荐</th>
+                    <th>状态</th>
                     <th>更新时间</th>
                     <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="blog , iterStae :${page.getList()}">
+                <tr th:each="blog , iterStae :${page.content}">
                     <td th:text="${iterStae.count}">1</td>
                     <td th:text="${blog.title}">哈利波特的一生</td>
                     <td th:text="${blog.type.name}">文学</td>
                     <td th:text="${blog.recommend} ? '是' : '否' ">是</td>
+                    <td th:text="${blog.published} ? '发布' : '草稿' ">是</td>
                     <td th:text="${blog.updateTime}">2021-12-9 09:23</td>
                     <td>
                         <a th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal button">编辑</a>
@@ -103,15 +108,15 @@
                 <tfoot>
                 <tr>
                     <th colspan="6">
-                        <div class="ui pagination menu"  th:if="${page.getTotal()}>1">
-                            <a onclick="page(this)" th:attr="data-page=${page.getPrePage()}" th:unless="${page.isIsFirstPage()}" class="icon item">
+                        <div class="ui pagination menu"  th:if="${page.totalPages}>1">
+                            <a onclick="page(this)" th:attr="data-page=${page.number}-1" th:unless="${page.isFirst()}" class="icon item">
                                 <i class="left chevron icon"></i>
                             </a>
-                            <a onclick="page(this)" th:attr="data-page=${page.getNextPage()}" th:unless="${page.isIsLastPage()}" class="icon item" >
+                            <a onclick="page(this)" th:attr="data-page=${page.number}+1" th:unless="${page.isLast()}" class="icon item" >
                                 <i class="right chevron icon"></i>
                             </a>
                         </div>
-                        <a th:href="@{/admin/blogs/input}" class="ui right floated  teal  button">新增</a>
+                        <a th:href="@{/admin/blogs/{id}/input(id=-1)}" class="ui right floated  teal  button">新增</a>
                     </th>
                 </tr>
                 </tfoot>
@@ -186,13 +191,16 @@
         });
     }
     $("#search-btn").click(function () {
+        $("[name='page']").val(0);
         loaddata();
     })
-    $('.close')
-        .on('click',function () {
-            $(this)
-                .closest('#message').transition('fade');
-        })
+    $('.close').on('click',function () {
+        $(this).closest('#message').transition('fade');
+    })
+    $('#clear-btn').on('click',function () {
+        $('.ui.type.dropdown').dropdown('clear')
+    })
+
 
 </script>
 </body>
