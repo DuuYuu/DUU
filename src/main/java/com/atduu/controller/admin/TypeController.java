@@ -1,6 +1,6 @@
 package com.atduu.controller.admin;
 
-import com.atduu.pojo.Const;
+import com.atduu.Const.Const;
 import com.atduu.pojo.Type;
 import com.atduu.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;

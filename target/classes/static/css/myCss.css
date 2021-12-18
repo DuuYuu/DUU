@@ -96,6 +96,10 @@ body {
     color: #333 !important;
 }
 
+.m-teal {
+    color: #00B5AD !important;
+}
+
 /*-----------margin--------------*/
 .m-margin-top-small {
     margin-top: 0.5em !important;

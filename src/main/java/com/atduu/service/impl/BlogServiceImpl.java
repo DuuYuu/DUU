@@ -5,12 +5,15 @@ import com.atduu.dao.BlogDao;
 import com.atduu.pojo.Blog;
 import com.atduu.pojo.Type;
 import com.atduu.service.BlogService;
+import com.atduu.util.MarkdownUtils;
 import com.atduu.util.MyUtils;
 import com.atduu.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -83,6 +86,11 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.findAll(pageable);
     }
 
+    @Override
+    public Page<Blog> listBlog (String query , Pageable pageable) {
+        return blogDao.findByQuery(query,pageable);
+    }
+
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
@@ -118,5 +126,32 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public void deleteBlog(Long id) {
         blogDao.deleteById(id);
+    }
+
+    @Override
+    public List<Blog> listRecommendBlogTop(Integer size) {
+
+        Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
+
+        Pageable pageable = PageRequest.of(0,size,sort);
+
+        return blogDao.findTop(pageable);
+
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+
+        Blog blog = blogDao.findById(id).get();
+
+        Blog b = new Blog();
+
+        BeanUtils.copyProperties(blog, b);
+
+        String content = b.getContent();
+
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
+        return b;
     }
 }

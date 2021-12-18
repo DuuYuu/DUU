@@ -1,6 +1,6 @@
 package com.atduu.controller.admin;
 
-import com.atduu.pojo.Const;
+import com.atduu.Const.Const;
 import com.atduu.pojo.Tag;
 import com.atduu.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.atduu.controller.admin;
 
 import com.atduu.pojo.Blog;
-import com.atduu.pojo.Const;
+import com.atduu.Const.Const;
 import com.atduu.pojo.Type;
 import com.atduu.pojo.User;
 import com.atduu.service.BlogService;
@@ -60,7 +60,6 @@ public class BlogController {
 
         return LIST;
     }
-
 
     @PostMapping("/blogs/search")
     public String search(@PageableDefault(size = Const.PAGE_SIZE , sort = {"updateTime"} ,
