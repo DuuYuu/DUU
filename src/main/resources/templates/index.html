@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="_fragments :: head(~{::title})">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
 </head>
 <body>
     <!--导航-->
-    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h1 class="ui teal header item animate__animated animate__flip">Duu</h1>
+                <a th:href="@{/index}" class="m-mobile-hide active item m-item" >首页</a>
+                <a th:href="@{/types/-1}" class="m-mobile-hide item m-item">分类</a>
+                <a th:href="@{/tags/-1}" class="m-mobile-hide item m-item">标签</a>
+                <a th:href="@{/archives}" class="m-mobile-hide item m-item">归档</a>
+                <a th:href="@{/about}" class="m-mobile-hide item m-item"><i class="mini info icon"></i>关于我</a>
+                <!--搜索-->
+                <div class="right item m-mobile-hide m-item">
+                    <form name="search" action="#"  method="post" th:action="@{/search}" target="_blank">
+                        <div class="ui icon inverted transparent input">
+                            <input type="text"  name="query" placeholder="Search..." th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui  menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
     </nav>
 
     <!--中间内容-->
@@ -27,33 +55,40 @@
                     </div>
 
                     <!--内容-->
-                    <div class="ui attached segment">
+                    <div class="ui top attached  teal segment">
                         <div class="ui padded vertical segment m-padded-tb-large m-mobile-lr-clear" th:each="blog: ${page.content}">
                             <div class="ui middle aligned mobile reversed stackable grid">
                                 <!--标题等-->
                                 <div class="eleven wide column">
                                     <!--标题-->
-                                    <h3 class="ui header"><a th:href="@{/blog/{id}(id=${blog.id})}" class="m-black" th:text="${blog.title}"></a></h3>
+                                    <h3 class="ui header"><a th:href="@{/blog/{id}(id=${blog.id})}"  class="m-black" th:text="${blog.title}"></a></h3>
                                     <!--段落-->
                                     <p class="m-text" th:text="|${blog.description}......|"></p>
                                     <div class="ui stackable grid">
-                                        <div class="eleven wide column">
-                                            <div class="ui mini horizontal link list">
-                                                <div class="item">
-                                                    <img th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
-                                                    <div class="content"><a href="#" class="header m-text-thin" th:text="${blog.user.nickname}"></a></div>
-                                                </div>
-                                                <div class="item">
-                                                    <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm:ss')}"></span>
-                                                </div>
-                                                <div class="item">
-                                                    <i class="eye icon"></i>
-                                                    <span th:text="${blog.views}"></span>
+                                        <div class="row">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header m-text-thin" th:text="${blog.user.nickname}"></a></div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyy-MM-dd')}"></span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i>
+                                                        <span th:text="${blog.views}"></span>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">分类</a>
+                                            </div>
                                         </div>
-                                        <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">分类</a>
+                                        <div class="row">
+                                            <div class="column">
+                                                <a th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic teal left pointing label m-padded-mini m-text-thin" th:each="tag : ${blog.tags}" th:text="${tag.name}"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -91,13 +126,13 @@
                             <div class="ui two column grid">
                                 <div class="column"><i class="idea icon"></i>分类</div>
                                 <div class="right aligned column">
-                                    <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                                    <a th:href="@{/types/-1}" target="_blank">more<i class="angle double right icon"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="ui teal segment">
                             <div class="ui fluid vertical menu">
-                                <a href="#" class="item" th:each="type :${types}">
+                                <a th:href="@{/types/{id}(id=${type.id})}" target="_blank" class="item" th:each="type :${types}">
                                     <span th:text="${type.name}"></span>
                                     <div class="ui teal left pointing label" th:text="${#arrays.length(type.blogs)}"></div>
                                 </a>
@@ -111,14 +146,14 @@
                             <div class="ui two column grid" >
                                 <div class="column"><i class="tags icon"></i>标签</div>
                                 <div class="right aligned column">
-                                    <a href="#" target="_blank">
+                                    <a  th:href="@{/tags/-1}" target="_blank">
                                         more<i class="angle double right icon"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="ui teal segment">
-                            <a href="#" target="_blank" class="ui teal basic pointing label m-margin-tb-tiny" th:each="tag :${tags}">
+                            <a th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic pointing label m-margin-tb-tiny" th:each="tag :${tags}">
                                 <span th:text="${tag.name}"></span>
                                 <div class="detail" th:text="${#arrays.length(tag.blogs)}"></div>
                             </a>
@@ -150,17 +185,49 @@
     <br>
 
     <!--底部footer-->
-    <footer th:replace="~{_fragments :: footer}" class="ui inverted vertical segment m-padded-tb-massive">
+    <footer  class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/QR.JPG" class="ui rounded image" alt="" style="width: 110px" th:src="@{/images/QR.JPG}">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">最新文章</h4>
+                    <div id="newblog_container">
+                        <div class="ui inverted link list" th:fragment="newblogList">
+                            <a th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newblogs}" th:text="${blog.title}"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item" >Email: <span th:text="#{index.email}"></span></a>
+                        <a href="#" class="item">QQ: 2895241570</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Duu</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流...</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duu Designed by Duu</p>
+        </div>
     </footer>
 
-    <div th:repalce="~{_fragments :: script}"></div>
-
-
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide')
         })
-    </script>
 
+        $('#newblog_container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </body>
 </html>

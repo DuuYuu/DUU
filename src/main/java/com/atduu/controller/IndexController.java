@@ -27,7 +27,7 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
-    @GetMapping({"/","/index"})
+    @GetMapping("/index")
     public String index(@PageableDefault( size = Const.INDEX_PAGE_SIZE , sort = {"updateTime"} ,
             direction = Sort.Direction.DESC) Pageable pageable , Model model){
 
@@ -64,12 +64,12 @@ public class IndexController {
 
     }
 
+    @GetMapping("/footer/newblog")
+    public String newblogs(Model model){
 
+        model.addAttribute("newblogs" , blogService.listRecommendBlogTop(3));
 
-
-
-
-
-
+        return "index :: newblogList";
+    }
 
 }

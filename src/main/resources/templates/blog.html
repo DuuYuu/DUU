@@ -56,27 +56,29 @@
                 <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}"></div>
             </div>
 
-            <!--赞赏-->
-            <div class="ui center aligned basic segment">
-                <button id="payBtn" class="ui orange basic circular button">赞赏</button>
-            </div>
-            <div id="payQR" class="ui payQR flowing popup transition hidden">
-                <div class="ui orange basic label">
-                    <div class="ui images" style="font-size: inherit !important;">
-                        <div class="image">
-                            <img src="../static/images/Wpay.JPG" th:src="@{/images/Wpay.JPG}" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>微信</div>
-                        </div>
-                        <div class="image">
-                            <img src="../static/images/Zpay.JPG" th:src="@{/images/Zpay.JPG}" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>支付宝</div>
+            <div th:if="${blog.appreciation}">
+                <!--赞赏-->
+                <div class="ui center aligned basic segment">
+                    <button id="payBtn" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div id="payQR" class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="image">
+                                <img src="../static/images/Wpay.JPG" th:src="@{/images/Wpay.JPG}" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>微信</div>
+                            </div>
+                            <div class="image">
+                                <img src="../static/images/Zpay.JPG" th:src="@{/images/Zpay.JPG}" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>支付宝</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="ui attached positive message">
+        <div th:if="${blog.shareStatement}" class="ui attached positive message">
             <!--博客信息-->
             <div class="ui middle aligned grid">
                 <div class="eleven wide column">
@@ -93,7 +95,7 @@
             </div>
         </div>
 
-        <div class="ui bottom attached segment">
+        <div class="ui bottom attached segment" th:if="${blog.commentAble}">
             <!--留言区域列表-->
             <div id="comment-container" class="ui teal segment">
                 <div th:fragment="commentList">
@@ -104,7 +106,10 @@
                                 <img src="https://picsum.photos/id/100/100/100" th:src="@{${comment.avatar}}">
                             </a>
                             <div class="content">
-                                <a class="author" th:text="${comment.nickname}">Matt</a>
+                                <a class="author">
+                                    <span  th:text="${comment.nickname}"></span>
+                                    <div class="ui mini basic teal left point label m-padded-mini" th:if="${comment.adminComment}">博主</div>
+                                </a>
                                 <div class="metadata">
                                     <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss')}"></span>
                                 </div>
@@ -123,6 +128,7 @@
                                     <div class="content">
                                         <a class="author">
                                             <span th:text="${reply.nickname}"></span>
+                                            <div class="ui mini basic teal left point label m-padded-mini" th:if="${reply.adminComment}">博主</div>
                                             <span class="m-teal" th:text="| @${reply.parentComment.nickname}|"></span>
                                         </a>
                                         <div class="metadata">
@@ -152,13 +158,13 @@
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="nickname" placeholder="姓名">
+                            <input type="text" name="nickname" placeholder="姓名" th:value="${session.user}!=null ? ${session.user.nickname}">
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="mail icon"></i>
-                            <input type="email" name="email" placeholder="邮箱">
+                            <input type="email" name="email" placeholder="邮箱" th:value="${session.user}!=null ? ${session.user.email}">
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
@@ -287,7 +293,7 @@
             "content" : $("[name = 'content']").val(),
         },function (responseTxt, statusTxt, xhr) {
 
-            $(window).scrollTo($('#comment-container'),500);
+            // $(window).scrollTo($('#comment-container'),500);
 
             clearContent();
         })
@@ -308,22 +314,9 @@
 
         $("[name = 'parentComment.id']").val(commentId);
 
-        $(window).scrollTo($('#comment-form'),500);
+        // $(window).scrollTo($('#comment-form'),500);
 
     }
-
-    // 手机看文章
-    // var serurl =  "http://www/do.com";
-    // var url = @{/blogs/{id}(id=${blog.id}})}"";
-    //
-    // var qrcode = new QRCode("qrcode", {
-    //     text: serurl + url,
-    //     width: 110,
-    //     height: 110,
-    //     colorDark : "#ffffff",
-    //     colorLight : "#000000",
-    //     correctLevel : QRCode.CorrectLevel.H
-    // });
 
 </script>
 </body>

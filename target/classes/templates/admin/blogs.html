@@ -39,7 +39,7 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" class="item">发布</a>
+            <a th:href="@{/admin/blogs/input}" class="item">发布</a>
             <a class="teal active item">列表</a>
         </div>
     </div>
@@ -200,8 +200,6 @@
     $('#clear-btn').on('click',function () {
         $('.ui.type.dropdown').dropdown('clear')
     })
-
-
 </script>
 </body>
 </html>

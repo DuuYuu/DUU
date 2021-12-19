@@ -25,7 +25,7 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
 
-        Sort sort = Sort.by(Sort.Direction.DESC, "createTime");
+        Sort sort = Sort.by(Sort.Direction.ASC, "createTime");
 
         List<Comment> comments = commentDao.findByBlogIdAndParentCommentNull(blogId, sort);
 
