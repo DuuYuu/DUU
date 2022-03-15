@@ -6,10 +6,10 @@ package com.atduu.Const;
 public class Const {
 
     //后台分页的每页个数
-    public static final int PAGE_SIZE = 5;
+    public static final int PAGE_SIZE = 10;
 
     //首页每页的博客数量
-    public static final int INDEX_PAGE_SIZE = 10;
+    public static final int INDEX_PAGE_SIZE = 8;
 
     //首页分类总数量
     public static final int INDEX_TYPES_COUNT = 6;
@@ -17,11 +17,11 @@ public class Const {
     //首页标签总数量
     public static final int INDEX_TAGS_COUNT = 10;
 
-    //首页推荐的博客总数量
-    public static final int INDEX_RECOMMEND_BLOG_COUNT = 7;
+    //首页推荐的博客总数量(置顶)
+    public static final int INDEX_RECOMMEND_BLOG_COUNT = 3;
 
     //评论默认头像
-    public static final String COMMENT_DEFAULT_AVATAR = "https://picsum.photos/id/102/100/100";
+    public static final String COMMENT_DEFAULT_AVATAR = "https://picsum.photos/id/1027/100/100";
 
 
 

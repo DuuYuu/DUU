@@ -2,14 +2,14 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Error Page</title>
+    <title>页面出错啦/(ㄒoㄒ)/~~请联系管理员儿~~</title>
 
     <link rel="stylesheet" th:href="@{/css/style.css}">
 
 </head>
 <body>
 
-<div class="about">
+<!-- <div class="about">
     <a class="bg_links social portfolio" href="#">
         <span class="icon"></span>
     </a>
@@ -20,19 +20,19 @@
         <span class="icon"></span>
     </a>
     <a class="bg_links logo"></a>
-</div>
+</div> -->
 
 <nav>
     <div class="menu">
         <p class="website_name">Duu</p>
-        <div class="menu_links">
+        <!-- <div class="menu_links">
             <a href="" class="link">about</a>
             <a href="" class="link">projects</a>
             <a href="" class="link">contacts</a>
-        </div>
-        <div class="menu_icon">
+        </div> -->
+        <!-- <div class="menu_icon">
             <span class="icon"></span>
-        </div>
+        </div> -->
     </div>
 </nav>
 
@@ -61,13 +61,13 @@
                 </div>
             </div>
 
-            <div class="three" data-depth="0.40">
+            <!-- <div class="three" data-depth="0.40">
                 <div class="content">
                     <span class="piece"></span>
                     <span class="piece"></span>
                     <span class="piece"></span>
                 </div>
-            </div>
+            </div> -->
 
             <p class="p404" data-depth="0.50">Error</p>
             <p class="p404" data-depth="0.10">Error</p>
@@ -77,15 +77,15 @@
         <div class="text">
             <article>
                 <p>出错啦！请联系管理员儿~😥😥😥</p>
-                <button>返回首页</button>
+                <a th:href="@{/index}"><button>返回首页</button></a>
             </article>
         </div>
 
     </div>
 </section>
 
-<th:block th:repalce="~{_fragments :: script}">
-</th:block>
+<!-- <th:block th:repalce="~{_fragments :: script}">
+</th:block> -->
 <script th:src="@{/js/jquery.min.js}"></script>
 
 </body>

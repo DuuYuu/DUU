@@ -37,4 +37,5 @@ public interface BlogService {
 
     Long countBlog();
 
+    Boolean checkPwd(Long id, String ans);
 }

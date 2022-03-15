@@ -32,11 +32,13 @@ public class Blog {
     private String firstPicture;  //首图
     private String flag;  //标签
     private Integer views; //浏览数
+    private String ques = "-1";  //文章的加密问题
+    private String ans;  //加密答案
+
     private boolean appreciation;  //是否开启赞赏
-    private boolean shareStatement;  //是否分享声明
     private boolean commentAble;  //是否可评论
     private boolean published;  //是否发布
-    private boolean recommend;  //是否推荐
+    private boolean recommend;  //是否推荐 (置顶)
     private String description;
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -55,15 +57,11 @@ public class Blog {
     @ManyToOne
     private User user;
 
-    @OneToMany(mappedBy = "blog")
+    @OneToMany(mappedBy = "blog" , cascade = CascadeType.ALL)
     private List<Comment> comments = new ArrayList<>();
 
     @Transient
     private String tagIds;
-
-
-
-
 
 
     public void init(){
@@ -87,7 +85,5 @@ public class Blog {
             return tagIds;
         }
     }
-
-
 
 }

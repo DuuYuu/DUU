@@ -1,0 +1,320 @@
+2022-03-03 22:34:56.729  INFO 24440 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 24440 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:34:56.737  INFO 24440 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:35:03.768  WARN 24440 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:35:04.867  INFO 24440 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.191 seconds (JVM running for 11.496)
+2022-03-03 22:35:05.119  INFO 24440 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:35:05.134  INFO 24440 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:38:31.726  INFO 35760 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 35760 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:38:31.730  INFO 35760 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:38:39.075  WARN 35760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:38:40.036  INFO 35760 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.452 seconds (JVM running for 11.606)
+2022-03-03 22:38:40.354  INFO 35760 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:38:40.367  INFO 35760 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:38:40.807 ERROR 35760 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "about": Could not parse as expression: "/images/sun.png" (template: "about" - line 37, col 33)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/images/sun.png" (template: "about" - line 37, col 33)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-03 22:38:40.814 ERROR 35760 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/images/sun.png" (template: "about" - line 37, col 33)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/images/sun.png" (template: "about" - line 37, col 33)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-03 22:40:15.290  INFO 33684 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 33684 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:40:15.295  INFO 33684 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:40:22.928  WARN 33684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:40:24.020  INFO 33684 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.725 seconds (JVM running for 11.433)
+2022-03-03 22:40:25.783  INFO 33684 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:40:25.796  INFO 33684 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:40:26.192 ERROR 33684 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "about": Could not parse as expression: "/static/images/sun.png" (template: "about" - line 37, col 33)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/static/images/sun.png" (template: "about" - line 37, col 33)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-03 22:40:26.197 ERROR 33684 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/static/images/sun.png" (template: "about" - line 37, col 33)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/static/images/sun.png" (template: "about" - line 37, col 33)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-03 22:44:56.084  INFO 30536 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 30536 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:44:56.089  INFO 30536 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:45:02.600  WARN 30536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:45:03.485  INFO 30536 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.246 seconds (JVM running for 10.022)
+2022-03-03 22:45:22.946  INFO 30536 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:45:22.960  INFO 30536 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:45:32.635  INFO 30536 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:45:32.636  INFO 30536 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:45:42.095  INFO 30536 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:45:42.498  INFO 30536 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:46:01.042  INFO 30536 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:46:01.075  INFO 30536 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:47:41.116  INFO 23540 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 23540 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:47:41.121  INFO 23540 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:47:47.882  WARN 23540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:47:48.863  INFO 23540 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.607 seconds (JVM running for 10.197)
+2022-03-03 22:47:49.019  INFO 23540 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 22:47:49.031  INFO 23540 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 22:48:51.971  INFO 23540 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:48:52.193  INFO 23540 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:49:23.759  INFO 23540 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:49:23.791  INFO 23540 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:53:37.584  INFO 37220 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 37220 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 22:53:37.589  INFO 37220 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 22:53:44.544  WARN 37220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 22:53:45.669  INFO 37220 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.259 seconds (JVM running for 11.276)
+2022-03-03 22:53:51.442  INFO 37220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:53:51.641  INFO 37220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:53:59.394  INFO 37220 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:53:59.419  INFO 37220 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:54:09.801  INFO 37220 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:54:09.835  INFO 37220 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:54:16.745  INFO 37220 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:54:16.767  INFO 37220 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:54:26.450  INFO 37220 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 2, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:54:26.464  INFO 37220 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 22:54:43.274  INFO 37220 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 22:54:43.294  INFO 37220 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 23:01:37.782  INFO 37280 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 37280 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-03-03 23:01:37.787  INFO 37280 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-03-03 23:01:43.959  WARN 37280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-03 23:01:44.894  INFO 37280 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.945 seconds (JVM running for 9.578)
+2022-03-03 23:02:52.036  INFO 37280 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 23:02:52.278  INFO 37280 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 23:03:03.559  INFO 37280 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 23:03:03.601  INFO 37280 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-03-03 23:03:37.610  INFO 37280 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/about', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-03-03 23:03:37.613  INFO 37280 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : about
+2022-03-03 23:04:05.340  INFO 37280 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-03-03 23:04:05.373  INFO 37280 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : index

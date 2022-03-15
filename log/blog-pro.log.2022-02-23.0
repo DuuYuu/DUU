@@ -1,0 +1,287 @@
+2022-02-23 20:35:07.379  INFO 4888 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 4888 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 20:35:07.390  INFO 4888 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 20:35:14.093  WARN 4888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 20:35:15.005  INFO 4888 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.539 seconds (JVM running for 10.379)
+2022-02-23 20:38:54.936  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/footer/newblog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.newblogs', args=[{}]}
+2022-02-23 20:38:55.037  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index :: newblogList
+2022-02-23 20:42:45.213  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/footer/newblog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.newblogs', args=[{}]}
+2022-02-23 20:42:45.225  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index :: newblogList
+2022-02-23 20:54:31.470  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-02-23 20:54:31.473  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : about
+2022-02-23 20:54:42.847  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 20:54:42.898  WARN 4888 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 20:54:42.927  WARN 4888 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 20:54:42.944  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:18:21.622  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/4', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 4, {}]}
+2022-02-23 21:18:21.765  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:18:28.347  INFO 4888 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/6', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 6, {}]}
+2022-02-23 21:18:28.372  INFO 4888 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:18:37.160  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:18:37.227  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:18:43.403  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:18:43.448  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:18:46.659  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:18:46.705  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:42:16.187  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:42:16.247  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:42:19.210  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/13', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[13, {}]}
+2022-02-23 21:42:19.500  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:42:20.257  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/13', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[13, {}]}
+2022-02-23 21:42:20.374  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:42:36.030  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.post', args=[com.atduu.pojo.Comment@47ce981a, org.apache.catalina.session.StandardSessionFacade@3c0fe540]}
+2022-02-23 21:42:36.117  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : redirect:/comments/13
+2022-02-23 21:42:36.127  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/13', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[13, {}]}
+2022-02-23 21:42:36.139  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:51:08.125  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/4', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 4, {}]}
+2022-02-23 21:51:08.156  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:51:13.086  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:51:13.145  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:52:31.874  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/13', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[13, {}]}
+2022-02-23 21:52:31.912  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:52:32.758  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/13', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[13, {}]}
+2022-02-23 21:52:32.775  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:52:36.715  INFO 4888 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/types/-1', ip='127.0.0.1', classMethod='class com.atduu.controller.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], -1, {}]}
+2022-02-23 21:52:36.745  INFO 4888 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : types
+2022-02-23 21:52:46.272  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/2', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 2, {}]}
+2022-02-23 21:52:46.293  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:52:53.723  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/9', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[9, {}]}
+2022-02-23 21:52:53.752  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:52:54.309  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/9', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[9, {}]}
+2022-02-23 21:52:54.314  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:52:56.562  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/9', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[9, {}]}
+2022-02-23 21:52:56.585  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:52:57.392  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/9', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[9, {}]}
+2022-02-23 21:52:57.399  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:53:05.541  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/2', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 2, {}]}
+2022-02-23 21:53:05.555  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:53:07.778  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/9', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[9, {}]}
+2022-02-23 21:53:07.811  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:53:08.322  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/9', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[9, {}]}
+2022-02-23 21:53:08.326  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:53:10.127  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/9', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[9, {}]}
+2022-02-23 21:53:10.145  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:53:10.980  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/9', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[9, {}]}
+2022-02-23 21:53:10.986  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:53:13.071  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/8', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 8, {}]}
+2022-02-23 21:53:13.085  INFO 4888 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:53:16.134  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/12', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[12, {}]}
+2022-02-23 21:53:16.175  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:53:16.746  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/12', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[12, {}]}
+2022-02-23 21:53:16.750  INFO 4888 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:53:22.708  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/12', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[12, {}]}
+2022-02-23 21:53:22.734  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:53:23.587  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/12', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[12, {}]}
+2022-02-23 21:53:23.593  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:53:29.270  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/4', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 4, {}]}
+2022-02-23 21:53:29.284  INFO 4888 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:54:33.615  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/archives', ip='127.0.0.1', classMethod='class com.atduu.controller.ArchiveShowController.archives', args=[{}]}
+2022-02-23 21:54:33.681  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : archives
+2022-02-23 21:54:49.788  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/3', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[3, {}]}
+2022-02-23 21:54:49.818  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:54:55.661  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/3', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[3, {}]}
+2022-02-23 21:54:55.699  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:54:59.081  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/6', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[6, {}]}
+2022-02-23 21:54:59.138  INFO 4888 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:55:00.132  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/6', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[6, {}]}
+2022-02-23 21:55:00.137  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:55:06.583  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/12', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[12, {}]}
+2022-02-23 21:55:06.603  INFO 4888 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:55:07.482  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/12', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[12, {}]}
+2022-02-23 21:55:07.488  INFO 4888 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:55:11.395  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/blog/10', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.Blog', args=[10, {}]}
+2022-02-23 21:55:11.430  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-23 21:55:12.275  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/10', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[10, {}]}
+2022-02-23 21:55:12.281  INFO 4888 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-23 21:55:48.721  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/search', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.search', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 星河, {}]}
+2022-02-23 21:55:48.745  INFO 4888 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : search
+2022-02-23 21:56:04.275  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/search', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.search', args=[Page request [number: 0, size 10, sort: updateTime: DESC], das , {}]}
+2022-02-23 21:56:04.278  INFO 4888 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : search
+2022-02-23 21:58:03.692  INFO 15900 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 15900 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 21:58:03.699  INFO 15900 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 21:58:10.287  WARN 15900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 21:58:11.210  INFO 15900 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.431 seconds (JVM running for 9.983)
+2022-02-23 21:58:32.974  INFO 15900 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/about', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-02-23 21:58:32.997  INFO 15900 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-02-23 21:58:41.620  INFO 15900 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 21:58:41.877  WARN 15900 --- [http-nio-8081-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 21:58:41.901  WARN 15900 --- [http-nio-8081-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 21:58:41.913  INFO 15900 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 21:59:20.679  INFO 15900 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/types/5', ip='127.0.0.1', classMethod='class com.atduu.controller.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 5, {}]}
+2022-02-23 21:59:20.710  INFO 15900 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : types
+2022-02-23 21:59:27.019  INFO 15900 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/4', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 4, {}]}
+2022-02-23 21:59:27.059  INFO 15900 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 21:59:29.419  INFO 15900 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/types/5', ip='127.0.0.1', classMethod='class com.atduu.controller.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 5, {}]}
+2022-02-23 21:59:29.440  INFO 15900 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : types
+2022-02-23 22:00:02.972  INFO 15900 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/tags/14135', ip='127.0.0.1', classMethod='class com.atduu.controller.TagShowController.Tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 14135, {}]}
+2022-02-23 22:00:02.985  INFO 15900 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : tags
+2022-02-23 22:03:36.843  INFO 16696 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 16696 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 22:03:36.847  INFO 16696 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 22:03:42.951  WARN 16696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 22:03:43.981  INFO 16696 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.963 seconds (JVM running for 9.445)
+2022-02-23 22:14:43.835  INFO 8608 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8608 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 22:14:43.839  INFO 8608 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 22:14:50.614  WARN 8608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 22:14:51.541  INFO 8608 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.827 seconds (JVM running for 10.672)
+2022-02-23 22:17:41.604  INFO 17752 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 17752 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 22:17:41.609  INFO 17752 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 22:17:47.997  WARN 17752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 22:17:49.121  INFO 17752 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.414 seconds (JVM running for 9.991)
+2022-02-23 22:18:02.609  INFO 17752 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-23 22:18:02.912  WARN 17752 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 22:18:02.940  WARN 17752 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-23 22:18:02.954  INFO 17752 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-02-23 22:19:01.983  INFO 6308 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 6308 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 22:19:01.987  INFO 6308 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 22:19:07.472  WARN 6308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 22:19:08.353  INFO 6308 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.322 seconds (JVM running for 8.835)
+2022-02-23 22:25:36.563  INFO 6308 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/footer/newblog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.newblogs', args=[{}]}
+2022-02-23 22:25:36.625  INFO 6308 --- [http-nio-8081-exec-10] com.atduu.aspect.LogAspect               : Result : index :: newblogList
+2022-02-23 22:29:03.286  INFO 18328 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 18328 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-23 22:29:03.290  INFO 18328 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-23 22:29:09.293  WARN 18328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-23 22:29:10.222  INFO 18328 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.891 seconds (JVM running for 9.363)
+2022-02-23 22:29:15.535 ERROR 18328 --- [http-nio-8081-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-2] Exception processing template "admin/blogs": Exception evaluating SpringEL expression: "page.content" (template: "admin/blogs" - line 99, col 29)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.content" (template: "admin/blogs" - line 99, col 29)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'content' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 59 common frames omitted
+
+2022-02-23 22:29:15.541 ERROR 18328 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.content" (template: "admin/blogs" - line 99, col 29)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'content' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

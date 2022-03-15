@@ -66,10 +66,10 @@ public class TagServiceImpl implements TagService {
         Tag t = getTag(id);
 
         if(t == null){
-            throw new NotFoundException("不存在该分类");
+            throw new NotFoundException("不存在该标签");
         }
 
-        BeanUtils.copyProperties(t, tag );
+        BeanUtils.copyProperties(tag , t);
 
         return tagMapper.save(t);
     }

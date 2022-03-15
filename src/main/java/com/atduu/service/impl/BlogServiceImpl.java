@@ -59,8 +59,8 @@ public class BlogServiceImpl implements BlogService {
                 if (blog.getTypeId() !=null){
                     predicates.add(cb.equal(root.<Type>get("type").get("id"), blog.getTypeId() ));
                 }
-                if (blog.isRecommend()){
-                    predicates.add(cb.equal(root.<Boolean>get("recommend"), blog.isRecommend()));
+                if (blog.isPublished()){
+                    predicates.add(cb.equal(root.<Boolean>get("published"), blog.isPublished()));
                 }
 
                 query.where(predicates.toArray(new Predicate[predicates.size()]));
@@ -183,5 +183,15 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Long countBlog() {
         return blogDao.count();
+    }
+
+    /*检查文章密码*/
+    @Override
+    public Boolean checkPwd(Long id, String ans) {
+        if (blogDao.findByIdAndAns( id , ans ) != null){
+            return true;
+        }else {
+            return false;
+        }
     }
 }

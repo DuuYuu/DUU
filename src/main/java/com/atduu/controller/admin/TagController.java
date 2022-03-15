@@ -51,7 +51,7 @@ public class TagController {
     }
 
     @PostMapping("/tags/{id}/edit")
-    public String type(Tag tag , @PathVariable Long id ,RedirectAttributes attributes,Model model){
+    public String tag( Tag tag , @PathVariable Long id ,RedirectAttributes attributes,Model model){
 
         if(tagService.isExist(tag.getName())){
 
@@ -84,7 +84,7 @@ public class TagController {
 
 
     @GetMapping("/tags/{id}/delete")
-    public String deleteType(@PathVariable Long id , RedirectAttributes attributes){
+    public String deleteTag(@PathVariable Long id , RedirectAttributes attributes){
 
         tagService.deleteTag(id);
 

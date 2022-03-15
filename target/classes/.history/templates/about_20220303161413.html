@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Duu - 个人网站,用于创作个人小说、分享心得、交流兴趣等。" />
+    <meta name="keywords" content="个人网站, 小说, 影子, Duu, 反乌托邦, 耽, 个人博客, 简约, 漂亮, 玫瑰" />
+    <title>( •̀ ω •́ )✧关于我呢~~~你的灵魂原也是个深渊,绝不比大海少一点辛酸~~~~duuyuu~~~~~duuyuu~~~</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/APlayer.min.css" th:href="@{/css/APlayer.min.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body class="about-body">
+
+
+
+    <!--导航-->
+    <div class="blog-top-nav">
+        <!--导航-->
+        <div class="about-top">
+            <a th:href="@{/index}" class="m-cursor" target="_blank">
+                <h4 class="ui inverted m-pink header item about-padded-tb m-text-thin">| 进入 |</h4>
+            </a>
+        </div>
+
+        <div class="center">
+            <p class="about-btitle animate__animated animate__flip">Duu</p>
+            <p class="about-stitle">Love What You Love </p>
+        </div>
+
+        <div class="about-down animate__animated animate__infinite">
+            <i class="m-white m-down-opacity large angle double down icon"></i>
+        </div>
+
+        <canvas class="background"  style="width: 100%;height: 100%;"></canvas>
+    </div>
+
+
+    <!-- 音乐 -->
+    <div class="about-music ">
+
+        <svg style="padding: 0; margin: 0;" width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150">
+            <style>
+                .path-0 {
+                    animation: pathAnim-0 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-0 {
+                    0% {
+                        d: path("M 0,700 C 0,700 0,233 0,233 C 45.5360824742268,256.53221649484533 91.0721649484536,280.0644329896907 156,260 C 220.9278350515464,239.93556701030928 305.24742268041234,176.2744845360825 376,193 C 446.75257731958766,209.7255154639175 503.9381443298969,306.83762886597935 558,314 C 612.0618556701031,321.16237113402065 663,238.375 712,211 C 761,183.625 808.0618556701031,211.66237113402062 869,204 C 929.9381443298969,196.33762886597938 1004.7525773195873,152.97551546391753 1080,145 C 1155.2474226804127,137.02448453608247 1230.9278350515465,164.43556701030926 1291,185 C 1351.0721649484535,205.56443298969074 1395.5360824742268,219.2822164948454 1440,233 C 1440,233 1440,700 1440,700 Z");
+                    }
+
+                    25% {
+                        d: path("M 0,700 C 0,700 0,233 0,233 C 71.30725331369662,270.9276509572901 142.61450662739324,308.85530191458025 196,296 C 249.38549337260676,283.14469808541975 284.84922680412365,219.50644329896906 345,206 C 405.15077319587635,192.49355670103094 489.988586156112,229.11892488954345 561,244 C 632.011413843888,258.88107511045655 689.1964285714286,252.01785714285717 736,257 C 782.8035714285714,261.98214285714283 819.2256995581738,278.809646539028 867,257 C 914.7743004418262,235.19035346097203 973.9007731958764,174.7435567010309 1046,158 C 1118.0992268041236,141.2564432989691 1203.171207658321,168.21612665684833 1271,188 C 1338.828792341679,207.78387334315167 1389.4143961708396,220.39193667157582 1440,233 C 1440,233 1440,700 1440,700 Z");
+                    }
+
+                    50% {
+                        d: path("M 0,700 C 0,700 0,233 0,233 C 64.74263622974964,258.435382916053 129.48527245949927,283.87076583210603 183,283 C 236.51472754050073,282.12923416789397 278.8015463917526,254.95231958762884 329,256 C 379.1984536082474,257.04768041237116 437.3085419734904,286.3199558173785 514,265 C 590.6914580265096,243.6800441826215 685.9642857142857,171.7678571428571 747,186 C 808.0357142857143,200.2321428571429 834.8343151693668,300.60861561119293 888,303 C 941.1656848306332,305.39138438880707 1020.6984536082473,209.79768041237114 1083,195 C 1145.3015463917527,180.20231958762886 1190.3718703976438,246.20066273932252 1247,266 C 1303.6281296023562,285.7993372606775 1371.8140648011781,259.39966863033874 1440,233 C 1440,233 1440,700 1440,700 Z");
+                    }
+
+                    75% {
+                        d: path("M 0,700 C 0,700 0,233 0,233 C 77.7242268041237,282.8236377025037 155.4484536082474,332.64727540500735 206,318 C 256.5515463917526,303.35272459499265 279.93041237113397,224.2345360824742 339,212 C 398.06958762886603,199.7654639175258 492.8298969072165,254.4145802650957 563,249 C 633.1701030927835,243.5854197349043 678.75,178.10714285714283 733,197 C 787.25,215.89285714285717 850.1701030927834,319.1568483063329 914,318 C 977.8298969072166,316.8431516936671 1042.569587628866,211.26546391752578 1094,189 C 1145.430412371134,166.73453608247422 1183.5515463917527,227.7812960235641 1239,249 C 1294.4484536082473,270.2187039764359 1367.2242268041236,251.60935198821795 1440,233 C 1440,233 1440,700 1440,700 Z");
+                    }
+
+                    100% {
+                        d: path("M 0,700 C 0,700 0,233 0,233 C 45.5360824742268,256.53221649484533 91.0721649484536,280.0644329896907 156,260 C 220.9278350515464,239.93556701030928 305.24742268041234,176.2744845360825 376,193 C 446.75257731958766,209.7255154639175 503.9381443298969,306.83762886597935 558,314 C 612.0618556701031,321.16237113402065 663,238.375 712,211 C 761,183.625 808.0618556701031,211.66237113402062 869,204 C 929.9381443298969,196.33762886597938 1004.7525773195873,152.97551546391753 1080,145 C 1155.2474226804127,137.02448453608247 1230.9278350515465,164.43556701030926 1291,185 C 1351.0721649484535,205.56443298969074 1395.5360824742268,219.2822164948454 1440,233 C 1440,233 1440,700 1440,700 Z");
+                    }
+                }
+            </style>
+            <path
+                d="M 0,700 C 0,700 0,233 0,233 C 45.5360824742268,256.53221649484533 91.0721649484536,280.0644329896907 156,260 C 220.9278350515464,239.93556701030928 305.24742268041234,176.2744845360825 376,193 C 446.75257731958766,209.7255154639175 503.9381443298969,306.83762886597935 558,314 C 612.0618556701031,321.16237113402065 663,238.375 712,211 C 761,183.625 808.0618556701031,211.66237113402062 869,204 C 929.9381443298969,196.33762886597938 1004.7525773195873,152.97551546391753 1080,145 C 1155.2474226804127,137.02448453608247 1230.9278350515465,164.43556701030926 1291,185 C 1351.0721649484535,205.56443298969074 1395.5360824742268,219.2822164948454 1440,233 C 1440,233 1440,700 1440,700 Z"
+                stroke="none" stroke-width="0" fill="#ff008088"
+                class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)">
+            </path>
+            <style>
+                .path-1 {
+                    animation: pathAnim-1 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes pathAnim-1 {
+                    0% {
+                        d: path("M 0,700 C 0,700 0,466 0,466 C 67.8858615611193,499.7161266568483 135.7717231222386,533.4322533136966 183,522 C 230.2282768777614,510.5677466863034 256.7989690721649,453.9871134020618 326,427 C 395.2010309278351,400.0128865979382 507.0324005891017,402.61929307805605 571,432 C 634.9675994108983,461.38070692194395 651.0714285714286,517.5357142857142 704,503 C 756.9285714285714,488.4642857142857 846.6818851251841,403.23784977908696 912,401 C 977.3181148748159,398.76215022091304 1018.2010309278348,479.51288659793806 1067,500 C 1115.7989690721652,520.4871134020619 1172.5139911634758,480.71060382916056 1236,465 C 1299.4860088365242,449.28939617083944 1369.743004418262,457.6446980854197 1440,466 C 1440,466 1440,700 1440,700 Z");
+                    }
+
+                    25% {
+                        d: path("M 0,700 C 0,700 0,466 0,466 C 44.03921207658321,513.0252209131074 88.07842415316642,560.050441826215 147,540 C 205.92157584683358,519.949558173785 279.72551546391753,432.82345360824746 347,430 C 414.27448453608247,427.17654639175254 475.01951399116354,508.6557437407953 537,535 C 598.9804860088365,561.3442562592047 662.1964285714286,532.5535714285713 721,512 C 779.8035714285714,491.4464285714286 834.1947717231222,479.12997054491905 887,479 C 939.8052282768778,478.87002945508095 991.0244845360824,490.9265463917526 1047,493 C 1102.9755154639176,495.0734536082474 1163.7072901325478,487.1638438880707 1230,481 C 1296.2927098674522,474.8361561119293 1368.1463549337261,470.41807805596466 1440,466 C 1440,466 1440,700 1440,700 Z");
+                    }
+
+                    50% {
+                        d: path("M 0,700 C 0,700 0,466 0,466 C 51.021170839469804,448.74558173784976 102.04234167893961,431.4911634756996 156,449 C 209.9576583210604,466.5088365243004 266.85180412371136,518.7809278350514 329,505 C 391.14819587628864,491.2190721649485 458.5504418262151,411.3851251840943 528,410 C 597.4495581737849,408.6148748159057 668.9464285714287,485.67857142857144 727,524 C 785.0535714285713,562.3214285714286 829.6638438880706,561.90058910162 891,534 C 952.3361561119294,506.09941089838 1030.3981958762886,450.7190721649485 1085,422 C 1139.6018041237114,393.2809278350515 1170.7433726067748,391.22312223858614 1226,403 C 1281.2566273932252,414.77687776141386 1360.6283136966126,440.38843888070693 1440,466 C 1440,466 1440,700 1440,700 Z");
+                    }
+
+                    75% {
+                        d: path("M 0,700 C 0,700 0,466 0,466 C 55.00736377025039,430.7205449189985 110.01472754050079,395.441089837997 178,382 C 245.9852724594992,368.558910162003 326.94845360824735,376.95618556701027 385,395 C 443.05154639175265,413.04381443298973 478.1914580265096,440.7341678939618 536,474 C 593.8085419734904,507.2658321060382 674.2857142857142,546.1071428571428 741,550 C 807.7142857142858,553.8928571428572 860.6656848306334,522.8372606774669 914,485 C 967.3343151693666,447.16273932253307 1021.0515463917525,402.5438144329897 1075,398 C 1128.9484536082475,393.4561855670103 1183.1281296023565,428.98748159057436 1244,447 C 1304.8718703976435,465.01251840942564 1372.4359351988219,465.5062592047128 1440,466 C 1440,466 1440,700 1440,700 Z");
+                    }
+
+                    100% {
+                        d: path("M 0,700 C 0,700 0,466 0,466 C 67.8858615611193,499.7161266568483 135.7717231222386,533.4322533136966 183,522 C 230.2282768777614,510.5677466863034 256.7989690721649,453.9871134020618 326,427 C 395.2010309278351,400.0128865979382 507.0324005891017,402.61929307805605 571,432 C 634.9675994108983,461.38070692194395 651.0714285714286,517.5357142857142 704,503 C 756.9285714285714,488.4642857142857 846.6818851251841,403.23784977908696 912,401 C 977.3181148748159,398.76215022091304 1018.2010309278348,479.51288659793806 1067,500 C 1115.7989690721652,520.4871134020619 1172.5139911634758,480.71060382916056 1236,465 C 1299.4860088365242,449.28939617083944 1369.743004418262,457.6446980854197 1440,466 C 1440,466 1440,700 1440,700 Z");
+                    }
+                }
+            </style>
+            <path
+                d="M 0,700 C 0,700 0,466 0,466 C 67.8858615611193,499.7161266568483 135.7717231222386,533.4322533136966 183,522 C 230.2282768777614,510.5677466863034 256.7989690721649,453.9871134020618 326,427 C 395.2010309278351,400.0128865979382 507.0324005891017,402.61929307805605 571,432 C 634.9675994108983,461.38070692194395 651.0714285714286,517.5357142857142 704,503 C 756.9285714285714,488.4642857142857 846.6818851251841,403.23784977908696 912,401 C 977.3181148748159,398.76215022091304 1018.2010309278348,479.51288659793806 1067,500 C 1115.7989690721652,520.4871134020619 1172.5139911634758,480.71060382916056 1236,465 C 1299.4860088365242,449.28939617083944 1369.743004418262,457.6446980854197 1440,466 C 1440,466 1440,700 1440,700 Z"
+                stroke="none" stroke-width="0" fill="#ff0080ff"
+                class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 350)">
+            </path>
+        </svg>
+
+        <div class="about-music-icon animate__animated animate__infinite">
+            <i class="about-music-up big angle chevron circle up icon"></i>
+            <!-- <i class="about-music-2 big angle up icon"></i>
+            <i class="about-music-3 big angle down icon"></i> -->
+            <i class="about-music-down big angle chevron circle down icon"></i>
+        </div>
+    </div>
+
+    <!-- 关于Duu -->
+    <div class="about-all about-duu">
+        <div class="about-music-icon animate__animated animate__infinite">
+            <i class="about-duu-up big angle chevron circle up icon"></i>
+            <!-- <i class="about-music-2 big angle up icon"></i>
+            <i class="about-music-3 big angle down icon"></i> -->
+            <i class="about-duu-down big angle chevron circle down icon"></i>
+        </div>
+    </div>
+
+    <!-- 关于Duuyuu -->
+    <div class="about-all about-duuyuu">
+        <div class="about-music-icon animate__animated animate__infinite">
+            <i class="about-duuyuu-up big angle chevron circle up icon"></i>
+            <!-- <i class="about-music-2 big angle up icon"></i>
+            <i class="about-music-3 big angle down icon"></i> -->
+            <i class="about-duuyuu-down big angle chevron circle down icon"></i>
+        </div>
+    </div>
+
+    <!-- 联系我 -->
+    <div class="about-all about-callme">
+        <div class="about-music-icon animate__animated animate__infinite">
+            <i class="about-callme-up big angle chevron circle up icon"></i>
+            <!-- <i class="about-music-2 big angle up icon"></i>
+            <i class="about-music-3 big angle down icon"></i> -->
+            <i class="about-callme-down big angle chevron circle down icon"></i>
+        </div>
+    </div>
+
+
+
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui stripe segment about-padded-tb-large">
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="seven wide column">
+                        <h3 class="ui header">音乐泉湖</h3>
+                        <p>生活压力下，音乐也许会是浮木。</p>
+                        <div id="aplayer"></div>
+                        <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52
+                            src="//music.163.com/outchain/player?type=2&id=1313358554&auto=1&height=32 ">
+                        </iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52
+                         src="//music.163.com/outchain/player?type=2&id=1310505934&auto=0&height=32">
+                        </iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52 
+                        src="//music.163.com/outchain/player?type=2&id=16139381&auto=0&height=32"></iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52 
+                        src="//music.163.com/outchain/player?type=2&id=1642632&auto=0&height=32"></iframe> -->
+                    </div>
+                    <div class="eight wide right floated column">
+                        <img src="https://picsum.photos/id/1060/900/600"
+                            class="ui large bordered m-img-anim-b  rounded image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="nine wide column">
+                        <h3 class="ui header">关于DUU</h3>
+                        <p>DUU是一个自建的独立网站，主要用于展示和分享作者的垃圾小说、思考心得以及相
+                            关学习资料等，用于巴拉巴拉……"关于我"太难写了，已经放弃。总之就是突然头脑一热，想拥有一个完完全全属于自己的网站，
+                            可以用于保存和分享自己所喜爱的东西，于是Duu就出来了</p>
+                        <p>而契机是自个儿在学习的时候打算做个项目，于是废了挺长时间（主要在前端上，因为某天学前端的时候突然就get到了前端随写随看的乐趣）搭建了这个网站，
+                            这就是这个破网站历史(☆▽☆)wink~</p>
+                    </div>
+                    <div class="seven wide right floated column">
+                        <img src="https://picsum.photos/id/1008/800/600"
+                            class="ui large bordered rounded m-img-anim-b image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="eight wide left floated column">
+                        <img src="https://picsum.photos/id/280/800/600"
+                            class="ui large m-img-anim-b bordered rounded image">
+                    </div>
+                    <div class="eight wide column">
+
+                        <h3 class="ui header">关于DuuYuu</h3>
+                        <p>duuyuu是谁呢？duuyuu就是我（上面非本人），是DUU网站的唯一搭建者，喜欢唱歌、看漫画、看电影、
+                            看动漫、看小说（嘘）、吃火锅儿、玩儿游戏、读文学作品（最近特别特别地爱上了陀思妥耶夫斯基）……
+                            讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法……</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+
+                    <div class="eight wide column">
+                        <h3 class="ui header">联系我</h3>
+                        <p>其实没什么好联系的，所以我啥也不写了(o゜▽゜)o☆~~~~~~~
+                            话说这个“关于我”啥也没关于啊啊啊啊啊啊！
+                        </p>
+                    </div>
+
+                    <div class="eight wide left floated column">
+                        <img src="https://picsum.photos/id/288/800/600"
+                            class="ui large m-img-anim-b bordered rounded image">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <!--弹出框  确认是否可以自动播放音乐  -->
+    <!-- <div class="ui mini basic modal">
+        <div class="ui icon header">
+            <i class="archive icon"></i>
+            Archive Old Messages
+        </div>
+        <div class="content">
+            <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+        </div>
+        <div class="actions">
+            <div class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                No
+            </div>
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Yes
+            </div>
+        </div>
+    </div> -->
+
+    <!--底部footer-->
+    <!-- <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <i class="big home icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">DUU.COM</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big envelope icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570@qq.com</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big qq icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570</p>
+                </div>
+                <div class="seven wide column">
+                    <h3 class="ui inverted header m-text-thin m-text-spaced"
+                        style="color: rgb(214, 174, 174) !important;">Duu</h3>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        这是我的个人网站，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流啊ヾ(≧▽≦*)o
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-size-samll  m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duu Designed
+                by Duu</p>
+        </div>
+    </footer> -->
+
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script th:src="@{/js/APlayer.min.js}" src="../static/js/APlayer.min.js"></script>
+    <script th:src="@{/js/myJs.js}" src="../static/js/myJs.js"></script>
+
+    <script type="text/javascript" th:inline="javascript">
+        // $('.ui.basic.modal')
+        //     .modal('show');
+
+        // particles初始化
+        window.onload = function () {
+            Particles.init
+                ({
+                    selector: '.background',
+                    color: '#ece4e4',
+                    maxParticles: 200, //最大粒子数
+                    connectParticles: false, //连接粒子
+                    //反应灵敏 包含断点和选项的对象数组
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            options: {
+                                maxParticles: 100
+                            }
+                        },
+                        {
+                            breakpoint: 375,
+                            options: {
+                                maxParticles: 150
+                            }
+                        }
+                    ]
+                });
+        };
+
+        // 音乐播放器
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            mutex: true,
+            order: 'random',
+            // mini: true,
+            // autoplay: true,
+            audio: [
+                {
+                    name: 'Samsāra',
+                    artist: '早西',
+                    // url: '../static/audio/早西 - Samsāra.mp3',
+                    url: /*[[@{/audio/早西 - Samsāra.mp3}]]*/"/audio/早西 - Samsāra.mp3",
+                    cover: 'http://p2.music.126.net/iKkX0c0ALQJv1vsm2VL7Ww==/109951163573330292.jpg?param=130y130',
+                },
+                {
+                    name: 'Revolutions',
+                    artist: 'Capo Productions',
+                    // url: '../static/audio/Capo Productions - Revolutions.mp3',
+                    url: /*[[@{/audio/Capo Productions - Revolutions.mp3}]]*/"/audio/Capo Productions - Revolutions.mp3",
+                    cover: 'http://p1.music.126.net/InlptK7PbIvLsvWle_V2YQ==/3306231467710538.jpg?param=130y130',
+                },
+                {
+                    name: 'Ther',
+                    artist: 'Kraffa',
+                    // url: '../static/audio/Kraffa - Ther.mp3',
+                    url: /*[[@{/audio/Kraffa - Ther.mp3}]]*/"/audio/Kraffa - Ther.mp3",
+                    cover: 'http://p2.music.126.net/SOJ1838GtKK6jXq5kFrgVQ==/854320534832434.jpg?param=130y130',
+                },
+                {
+                    name: '3055',
+                    artist: 'Ólafur Arnalds',
+                    // url: '../static/audio/Ólafur Arnalds - 3055.mp3',
+                    url: /*[[@{/audio/Ólafur Arnalds - 3055.mp3}]]*/"/audio/Ólafur Arnalds - 3055.mp3",
+                    cover: 'http://p1.music.126.net/UmeWt9qDVQCbGKffFuHmqg==/109951164434722332.jpg?param=130y130',
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

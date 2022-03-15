@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Duu - 个人网站,用于创作个人小说、分享心得、交流兴趣等。" />
+    <meta name="keywords" content="个人网站, 小说, 影子, Duu, 反乌托邦, 耽, 个人博客, 简约, 漂亮, 玫瑰" />
+    <title>( •̀ ω •́ )✧关于我呢~~~你的灵魂原也是个深渊,绝不比大海少一点辛酸~~~~duuyuu~~~~~duuyuu~~~</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/APlayer.min.css" th:href="@{/css/APlayer.min.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body class="about-body">
+
+    <!--导航-->
+    <div class="blog-top-nav">
+        <!--导航-->
+        <div class="about-top-one">
+            <div class="about-top">
+                <a th:href="@{/index}" class="m-cursor" target="_blank">
+                    <h4 class="ui inverted m-pink header item about-read about-padded-tb m-text-thin">| 进入 |</h4>
+
+                </a>
+            </div>
+        </div>
+        <div class="center">
+            <p class="about-btitle  animate__animated animate__flip">Duu</p>
+            <p class="about-stitle">Love What You Love </p>
+        </div>
+
+        <div class="about-down">
+            <i class="transparent m-white large angle double down icon"></i>
+        </div>
+
+    </div>
+
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui stripe segment about-padded-tb-large">
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="seven wide column">
+                        <h3 class="ui header">音乐泉湖</h3>
+                        <p>生活压力下，音乐也许会是浮木。</p>
+                        <div id="aplayer"></div>
+                        <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52
+                            src="//music.163.com/outchain/player?type=2&id=1313358554&auto=1&height=32 ">
+                        </iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52
+                         src="//music.163.com/outchain/player?type=2&id=1310505934&auto=0&height=32">
+                        </iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52 
+                        src="//music.163.com/outchain/player?type=2&id=16139381&auto=0&height=32"></iframe>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52 
+                        src="//music.163.com/outchain/player?type=2&id=1642632&auto=0&height=32"></iframe> -->
+                    </div>
+                    <div class="eight wide right floated column">
+                        <img src="https://picsum.photos/id/1060/900/600"
+                            class="ui large bordered m-img-anim-b  rounded image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="nine wide column">
+                        <h3 class="ui header">关于DUU</h3>
+                        <p>DUU是一个自建的独立网站，主要用于展示和分享作者的垃圾小说、思考心得以及相
+                            关学习资料等，用于巴拉巴拉……"关于我"太难写了，已经放弃。总之就是突然头脑一热，想拥有一个完完全全属于自己的网站，
+                            可以用于保存和分享自己所喜爱的东西，于是Duu就出来了</p>
+                        <p>而契机是自个儿在学习的时候打算做个项目，于是废了挺长时间（主要在前端上，因为某天学前端的时候突然就get到了前端随写随看的乐趣）搭建了这个网站，
+                            这就是这个破网站历史(☆▽☆)wink~</p>
+                    </div>
+                    <div class="seven wide right floated column">
+                        <img src="https://picsum.photos/id/1008/800/600"
+                            class="ui large bordered rounded m-img-anim-b image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+                    <div class="eight wide left floated column">
+                        <img src="https://picsum.photos/id/280/800/600"
+                            class="ui large m-img-anim-b bordered rounded image">
+                    </div>
+                    <div class="eight wide column">
+
+                        <h3 class="ui header">关于DuuYuu</h3>
+                        <p>duuyuu是谁呢？duuyuu就是我（上面非本人），是DUU网站的唯一搭建者，喜欢唱歌、看漫画、看电影、
+                            看动漫、看小说（嘘）、吃火锅儿、玩儿游戏、读文学作品（最近特别特别地爱上了陀思妥耶夫斯基）……
+                            讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法，讨厌算法……</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ui middle aligned stackable grid container about-padded-b">
+                <div class="row">
+
+                    <div class="eight wide column">
+                        <h3 class="ui header">联系我</h3>
+                        <p>其实没什么好联系的，所以我啥也不写了(o゜▽゜)o☆~~~~~~~
+                            话说这个“关于我”啥也没关于啊啊啊啊啊啊！
+                        </p>
+                    </div>
+
+                    <div class="eight wide left floated column">
+                        <img src="https://picsum.photos/id/288/800/600"
+                            class="ui large m-img-anim-b bordered rounded image">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <!--弹出框  确认是否可以自动播放音乐  -->
+    <!-- <div class="ui mini basic modal">
+        <div class="ui icon header">
+            <i class="archive icon"></i>
+            Archive Old Messages
+        </div>
+        <div class="content">
+            <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+        </div>
+        <div class="actions">
+            <div class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                No
+            </div>
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Yes
+            </div>
+        </div>
+    </div> -->
+
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <i class="big home icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">DUU.COM</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big envelope icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570@qq.com</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big qq icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570</p>
+                </div>
+                <div class="seven wide column">
+                    <h3 class="ui inverted header m-text-thin m-text-spaced"
+                        style="color: rgb(214, 174, 174) !important;">Duu</h3>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        这是我的个人网站，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流啊ヾ(≧▽≦*)o
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-size-samll  m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duu Designed
+                by Duu</p>
+        </div>
+    </footer>
+
+
+    <canvas class="background"></canvas>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script th:src="@{/js/APlayer.min.js}" src="../static/js/APlayer.min.js"></script>
+    <script th:src="@{/js/APlayer.min.js}" src="../static/js/demo-2.js"></script>
+
+    <script type="text/javascript" th:inline="javascript">
+
+        // $('.ui.basic.modal')
+        //     .modal('show');
+
+        // particles初始化
+        window.onload = function () {
+            Particles.init
+                ({
+                    selector: '.background'
+                    
+                });
+        };
+
+        // 音乐播放器
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            mutex: true,
+            order: 'random',
+            // mini: true,
+            // autoplay: true,
+            audio: [
+                {
+                    name: 'Samsāra',
+                    artist: '早西',
+                    // url: '../static/audio/早西 - Samsāra.mp3',
+                    url: /*[[@{/audio/早西 - Samsāra.mp3}]]*/"/audio/早西 - Samsāra.mp3",
+                    cover: 'http://p2.music.126.net/iKkX0c0ALQJv1vsm2VL7Ww==/109951163573330292.jpg?param=130y130',
+                },
+                {
+                    name: 'Revolutions',
+                    artist: 'Capo Productions',
+                    // url: '../static/audio/Capo Productions - Revolutions.mp3',
+                    url: /*[[@{/audio/Capo Productions - Revolutions.mp3}]]*/"/audio/Capo Productions - Revolutions.mp3",
+                    cover: 'http://p1.music.126.net/InlptK7PbIvLsvWle_V2YQ==/3306231467710538.jpg?param=130y130',
+                },
+                {
+                    name: 'Ther',
+                    artist: 'Kraffa',
+                    // url: '../static/audio/Kraffa - Ther.mp3',
+                    url: /*[[@{/audio/Kraffa - Ther.mp3}]]*/"/audio/Kraffa - Ther.mp3",
+                    cover: 'http://p2.music.126.net/SOJ1838GtKK6jXq5kFrgVQ==/854320534832434.jpg?param=130y130',
+                },
+                {
+                    name: '3055',
+                    artist: 'Ólafur Arnalds',
+                    // url: '../static/audio/Ólafur Arnalds - 3055.mp3',
+                    url: /*[[@{/audio/Ólafur Arnalds - 3055.mp3}]]*/"/audio/Ólafur Arnalds - 3055.mp3",
+                    cover: 'http://p1.music.126.net/UmeWt9qDVQCbGKffFuHmqg==/109951164434722332.jpg?param=130y130',
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

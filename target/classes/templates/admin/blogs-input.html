@@ -1,254 +1,222 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <!--移动端预览设置-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>发布</title>
+    <title>发布界面哟呀(●'◡'●>>>~~~</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" th:href="@{/css/myCss.css}">
     <link rel="stylesheet" th:href="@{/lib/editormd/css/editormd.min.css}">
 </head>
+
 <body>
-<!--导航-->
-<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
-    <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
-            <h2 class="ui teal header item">管理后台</h2>
-            <a href="#" class="active m-mobile-hide item m-item">博客</a>
-            <a href="#" class="m-mobile-hide item m-item">分类</a>
-            <a href="#" class="m-mobile-hide item m-item">标签</a>
-            <div class="right m-mobile-hide m-item menu">
-                <div class="ui dropdown item">
-                    <div class="text">
-                        <img src="https://picsum.photos/id/100/100/100" alt="" class="ui avatar image">
-                        D_君悦君
-                    </div>
-                    <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a href="#" class="item">注销</a>
-                    </div>
-                </div>
+    <!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header item">DUu管理后台</h2>
+                <a th:href="@{/admin/blogs}" class="active item">博客</a>
+                <a th:href="@{/admin/types}" class="item">分类</a>
+                <a th:href="@{/admin/tags}" class="item">标签</a>
+            </div>
+        </div>
+        <!-- <a href="#" class="ui  menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a> -->
+    </nav>
+    <!--二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="m-red active item">发布</a>
+                <a th:href="@{/admin/blogs}" class="m-red  item">管理</a>
             </div>
         </div>
     </div>
-    <a href="#" class="ui  menu toggle black icon button m-right-top m-mobile-show">
-        <i class="sidebar icon"></i>
-    </a>
-</nav>
-<!--二级导航-->
-<div class="ui attached pointing menu">
-    <div class="ui container">
-        <div class="right menu">
-            <a href="#" class="teal active item">发布</a>
-            <a th:href="@{/admin/blogs}" class="teal active item">列表</a>
-        </div>
-    </div>
-</div>
 
-<!--中间内容-->
-<div class="m-container  m-padded-tb-big">
-    <div class="ui container">
-        <form id="blog-form" th:action="@{/admin/blogs}" method="post" class="ui form">
-            <input type="hidden" name="published">
-            <input type="hidden" name="id" th:value="${blog.id}">
-            <div class="required field">
-                <div class="ui right labeled input">
-                    <input type="text" name="title" placeholder="标题" th:value="${blog.title}">
-                    <div class="ui selection compact  teal  basic dropdown label">
-                        <input type="hidden" th:default="原创" th:value="${blog.flag}?${blog.flag}:'原创'" name="flag">
-                        <i class="dropdown icon"></i>
-                        <div class="text">原创</div>
-                        <div class="menu">
-                            <div class="item" data-value="原创">原创</div>
-                            <div class="item" data-value="转载">转载</div>
-                            <div class="item" data-value="翻译">翻译</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="required field">
-                <div id="md-content" style="z-index: 1 !important;">
-                    <textarea placeholder="博客内容" name="content" style="display: none" th:text="${blog.content}"></textarea>
-                </div>
-            </div>
-
-            <div class="two fields">
+    <!--中间内容-->
+    <div class="m-container  m-padded-tb-big m-bottom-container ">
+        <div class="ui container">
+            <form id="blog-form" th:action="@{/admin/blogs}" method="post" class="ui form">
+                <input type="hidden" name="published">
+                <input type="hidden" name="id" th:value="${blog.id}">
                 <div class="required field">
-                    <div class="ui left labeled action input">
-                        <label class="ui compat basic teal label">分类</label>
-                        <div class="ui fluid selection dropdown">
-                            <input type="hidden" name="type.id" th:value="${blog?.getType()?.getId()}">
+                    <div class="ui right labeled input">
+                        <input type="text" name="title" placeholder="标题" th:value="${blog.title}">
+                        <div class="ui selection compact  teal  dropdown label">
+                            <input type="hidden" th:default="原创" th:value="${blog.flag}?${blog.flag}:'原创'" name="flag">
                             <i class="dropdown icon"></i>
-                            <div class="default text">分类</div>
+                            <div class="text">原创</div>
                             <div class="menu">
-                                <div th:each="type : ${types}" class="item" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
+                                <div class="item" data-value="原创">原创</div>
+                                <div class="item" data-value="转载">转载</div>
+                                <div class="item" data-value="翻译">翻译</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="field">
-                    <div class="ui left labeled action input">
-                        <label class="ui compat basic teal label">标签</label>
-                        <div class="ui tag fluid selection multiple search  dropdown">
-                            <input type="hidden" name="tagIds" th:value="${blog.tagIds}">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">标签</div>
-                            <div class="menu">
-                                <div th:each="tag : ${tags}" class="item" th:data-value="${tag.id}" th:text="${tag.name}"></div>
+                <div class="required field">
+                    <div id="md-content" style="z-index: 1 !important;">
+                        <textarea placeholder="博客内容" name="content" style="display: none"
+                            th:text="${blog.content}"></textarea>
+                    </div>
+                </div>
+
+                <div class="two fields">
+                    <div class="required field">
+                        <div class="ui left labeled action input">
+                            <label class="ui compat red label">分类</label>
+                            <div class="ui fluid selection dropdown">
+                                <input type="hidden" name="type.id" th:value="${blog?.getType()?.getId()}">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu">
+                                    <div th:each="type : ${types}" class="item" th:data-value="${type.id}"
+                                        th:text="${type.name}">错误日志</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="ui left labeled action input">
+                            <label class="ui compat  red label">标签</label>
+                            <div class="ui tag fluid selection multiple search  dropdown">
+                                <input type="hidden" name="tagIds" th:value="${blog.tagIds}">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">标签</div>
+                                <div class="menu">
+                                    <div th:each="tag : ${tags}" class="item" th:data-value="${tag.id}"
+                                        th:text="${tag.name}"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="required field">
-                <div class="ui left labeled input">
-                    <label class="ui teal basic label">图片</label>
-                    <input type="text" name="firstPicture" th:value="${blog.firstPicture}" placeholder="图片地址">
-                </div>
-            </div>
-
-            <div class="required field">
-                <textarea name="description" th:text="${blog.description}" placeholder="博客描述..." maxlength="200"></textarea>
-            </div>
-
-            <div class="inline fields">
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="recommend" id="recommend"  class="hidden" th:checked="${blog.recommend}">
-                        <label for="recommend">推荐</label>
-                    </div>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="appreciation" id="appreciation" class="hidden" th:checked="${blog.appreciation}">
-                        <label for="appreciation">赞赏</label>
-                    </div>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="commentAble" id="commentAble" class="hidden" th:checked="${blog.commentAble}">
-                        <label for="commentAble">评论</label>
-                    </div>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="shareStatement" id="shareStatement" class="hidden" th:checked="${blog.shareStatement}">
-                        <label for="shareStatement">转载声明</label>
+                <div class="required field">
+                    <div class="ui left labeled input">
+                        <label class="ui orange label">图片</label>
+                        <input type="text" name="firstPicture" th:value="${blog.firstPicture}" placeholder="图片地址">
                     </div>
                 </div>
-            </div>
 
-            <div class="ui right aligned container">
-                <button type="button" class="ui orange button" onclick="window.history.go(-1)">返回</button>
-                <button type="button" id="save-btn" class="ui secondary button">保存</button>
-                <button type="button" id="publish-btn" class="ui teal button">发布</button>
-            </div>
+                <div class="required field">
+                    <textarea name="description" th:text="${blog.description}" placeholder="文章描述..."
+                        maxlength="200"></textarea>
+                </div>
 
-        </form>
-    </div>
-</div>
-
-<br>
-<br>
-
-<!--底部footer-->
-<footer class="ui inverted vertical segment m-padded-tb-massive">
-    <div class="ui center aligned container">
-        <div class="ui inverted divided stackable grid">
-            <div class="three wide column">
-                <div class="ui inverted link list">
-                    <div class="item">
-                        <img src="./static/images/QR.JPG" class="ui rounded image" alt="" style="width: 110px" >
+                <div class="inline fields">
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="recommend" id="recommend" class="hidden"
+                                th:checked="${blog.recommend}">
+                            <label for="recommend">推荐</label>
+                        </div>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="commentAble" id="commentAble" class="hidden"
+                                th:checked="${blog.commentAble}">
+                            <label for="commentAble">评论</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新文章</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">外国文学一二三</a>
-                    <a href="#" class="item">影子的故事</a>
-                    <a href="#" class="item">灵感来源</a>
+
+                <div class="two  fields">
+                    <div class="field">
+                        <div class="ui labeled input">
+                            <div class="ui  compact olive label">
+                                <div class="text">问题</div>
+                            </div>
+                            <input type="text" name="ques" th:value="${blog.ques}">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui labeled input">
+                            <div class="ui  compact olive label">
+                                <div class="text">答案</div>
+                            </div>
+                            <input type="text" name="ans" th:value="${blog.ans}">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">Email: duyu@qq.com</a>
-                    <a href="#" class="item">QQ: 2895241570</a>
+
+                <div class="ui right aligned container">
+                    <button type="button" class="ui orange button" onclick="window.history.go(-1)">返回</button>
+                    <button type="button" id="save-btn" class="ui red button">保存</button>
+                    <button type="button" id="publish-btn" class="ui teal button">发布</button>
                 </div>
-            </div>
-            <div class="seven wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">Duy</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流...</p>
-            </div>
+
+            </form>
         </div>
-        <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duy Designed by Duy</p>
     </div>
-</footer>
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<script  th:src="@{/lib/editormd/editormd.min.js}"></script>
-<script>
 
-    /*---初始化markdown编辑器-----*/
-    var Editor;
-    $(function() {
-        Editor = editormd("md-content", {
-            width   : "100%",
-            height  : 640,
-            syncScrolling : "single",
-            path    : "/lib/editormd/lib/"
+    <br>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script>
+
+        /*---初始化markdown编辑器-----*/
+        var Editor;
+        $(function () {
+            Editor = editormd("md-content", {
+                width: "100%",
+                height: 640,
+                syncScrolling: "single",
+                path: "/lib/editormd/lib/"
+            });
         });
-    });
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+        $('#blog-form').form({
+            fields: {
+                title: {
+                    identifier: 'title',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                },
+                firstPicture: {
+                    identifier: 'firstPicture',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                },
+                tag: {
+                    identifier: 'tag',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                },
+                type: {
+                    identifier: 'type',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                },
+                description: {
+                    identifier: 'description',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                }
 
-    $('.menu.toggle').click(function () {
-        $('.m-item').toggleClass('m-mobile-hide')
-    })
-    $('.ui.dropdown').dropdown({
-        on : 'hover'
-    });
-    $('#blog-form').form({
-        fields : {
-            title : {
-                identifier : 'title',
-                rules :[{
-                    type : 'empty'
-                }]
-            },
-            firstPicture:{
-                identifier : 'firstPicture',
-                rules :[{
-                    type : 'empty'
-                }]
-            },
-            tag:{
-                identifier : 'tag',
-                rules :[{
-                    type : 'empty'
-                }]
-            },
-            type:{
-                identifier : 'type',
-                rules :[{
-                    type : 'empty'
-                }]
-            },
-            description:{
-                identifier : 'description',
-                rules :[{
-                    type : 'empty'
-                }]
             }
-
-        }
-    })
-    $('#save-btn').click(function () {
-        $('[name="published"]').val(false);
-        $('#blog-form').submit();
-    })
-    $('#publish-btn').click(function () {
-        $('[name="published"]').val(true);
-        $('#blog-form').submit();
-    })
-</script>
+        })
+        $('#save-btn').click(function () {
+            $('[name="published"]').val(false);
+            $('#blog-form').submit();
+        })
+        $('#publish-btn').click(function () {
+            $('[name="published"]').val(true);
+            $('#blog-form').submit();
+        })
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>^o^y这是一个加密文章(＾Ｕ＾)ノ~ＹＯ~~我的心真是一座惨遭乌合之众破坏的宫殿~~~duuyuu~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body class="pwdbody">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+
+    <div class="m-container-small m-padded-tb-massive animate__animated animate__fadeIn" style="max-width: 25em !important ;">
+        <div class="ui container">
+            <div class="ui middle aligned aligned grid">
+                <div class="column">
+                    <h2 class="m-white m-pwd-title">
+                        | 加密文章 |
+                    </h2>
+                    <h5 class="m-ques-text" th:text="${ques}">
+                        十五一十五,蓝方的月亮在哪儿十五一十五,你的锕就发人给刚刚从在从去发,在哪儿?
+                    </h5>
+
+                    <form class="ui large form" method="post" th:action="@{/lockpwd(id=${id},ques=${ques})}">
+                        <div class="ui stacked m-pwd-form segment">
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="unlock icon"></i>
+                                    <input class="m-ans-input" type="text" name="ans" placeholder="答案">
+                                </div>
+                            </div>
+                            <button class="ui tiny m-pwd-submit submit button"> 让 我 进 入 </button>
+                            <p class="m-sentence">你也许要把整个世界都引向你这条小街 —— 《恶之花》</p>
+                            <p >
+                                You would take the whole world to bed with you.
+                            </p>
+                        </div>
+
+                        <div class="ui error message"></div>
+
+                        <div class="ui mini negative negative message" th:if="${message}"
+                            th:text="${message}">答案错误(●'◡'●)</div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+        $('.ui.form').form({
+            fields: {
+                password: {
+                    identifier: 'ans',
+                    rules: [{
+                        type: 'empty',
+                    }]
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

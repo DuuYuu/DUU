@@ -19,7 +19,7 @@ public interface BlogDao extends JpaRepository<Blog ,Long>, JpaSpecificationExec
     @Query("select b from Blog b where b.recommend = true")
     List<Blog> findTop(Pageable pageable);
 
-    @Query("select b from Blog  b where b.title like ?1 or b.content like ?1")
+    @Query("select b from Blog  b where b.title like ?1 ")
     Page<Blog> findByQuery(String query ,Pageable pageable);
 
     @Transactional
@@ -32,4 +32,7 @@ public interface BlogDao extends JpaRepository<Blog ,Long>, JpaSpecificationExec
 
     @Query("select  b from Blog b where function('date_format' , b.createTime , '%Y') = ?1 ")
     List<Blog> findByYear(String year);
+
+    @Query("select b from Blog b where b.id = ?1 and b.ans =?2 ")
+    Blog findByIdAndAns(Long id, String ans);
 }

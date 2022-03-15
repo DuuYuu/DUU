@@ -48,7 +48,7 @@ public class BlogController {
     @GetMapping("/blogs")
     public String blogs(@PageableDefault(size = Const.PAGE_SIZE , sort = {"updateTime"} ,
                         direction = Sort.Direction.DESC) Pageable pageable ,
-                        BlogQuery blog, Model model){
+                        BlogQuery blog, Model model,HttpSession session){
 
         List<Type> types = typeService.selectAll();
 
@@ -57,6 +57,10 @@ public class BlogController {
         Page<Blog> page = blogService.listBlog(pageable, blog);
 
         model.addAttribute("page", page);
+
+        Object user = session.getAttribute("user");
+
+        model.addAttribute("user", user);
 
         return LIST;
     }
@@ -108,6 +112,7 @@ public class BlogController {
 
         Blog b;
 
+        //如果id不为空则更新文章  如果为空则创建文章
         if(blog.getId() == null){
             b = blogService.saveBlog(blog);
         }else {
