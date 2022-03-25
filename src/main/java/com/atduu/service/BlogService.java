@@ -33,7 +33,10 @@ public interface BlogService {
 
     Blog getAndConvert(Long id);
 
-    Map<String, List<Blog>> archiveBlog();
+//    Map<String, List<Blog>> archiveBlog();
+
+    //目录
+    Map<String,List<Blog>> categoryBlog();
 
     Long countBlog();
 

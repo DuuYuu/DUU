@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!--移动端预览设置-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>q(≧▽≦q)~~博客详情~~~你也会躺在野草杂化之下,在枯骨中霉烂~~~~duuyuu~~~~</title>
+    <title>博客详情q(≧▽≦q)~~~你也会躺在野草杂化之下,在枯骨中霉烂~~~~duuyuu~~~~</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
@@ -35,7 +35,7 @@
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
                     <div class="item">
-                        <image alt="" ="@{${blog.user.avatar}}" class="ui avatar image">
+                        <image alt="" th:src="@{${blog.user.avatar}}" class="ui avatar image">
 
                             <div class="content"><a href="#" class="m-nickname  m-text-thin"
                                     th:text="${blog.user.nickname}">D_君悦君</a></div>
@@ -72,51 +72,9 @@
                     <div class="ui basic type-button-active m-padded-tiny label m-text-thin"
                         th:each="tag : ${blog.tags}" th:text="${tag.name}">标签</div>
                 </div>
-
-                <!--赞赏-->
-                <!-- <div th:if="${blog.appreciation}">
-                    <div class="ui center aligned basic segment">
-                        <button id="payBtn" class="ui orange basic circular button">赞赏</button>
-                    </div>
-                    <div id="payQR" class="ui payQR flowing popup transition hidden">
-                        <div class="ui orange basic label">
-                            <div class="ui images" style="font-size: inherit !important;">
-                                <div class="image">
-                                    <img src="../static/images/Wpay.JPG" th:src="@{/images/Wpay.JPG}" alt=""
-                                        class="ui rounded bordered image" style="width: 120px">
-                                    <div>微信</div>
-                                </div>
-                                <div class="image">
-                                    <img src="../static/images/Zpay.JPG" th:src="@{/images/Zpay.JPG}" alt=""
-                                        class="ui rounded bordered image" style="width: 120px">
-                                    <div>支付宝</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
 
-            <!--博客信息-->
-            <!-- <div th:if="${blog.shareStatement}" class="ui attached positive message">
-                <div class="ui middle aligned grid">
-                    <div class="eleven wide column">
-                        <ui class="list">
-                            <li>作者：<span th:text="${blog.user.nickname}"></span><a th:href="@{/about}"
-                                    target="_blank">(联系作者)</a></li>
-                            <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm:ss')}"></span>
-                            </li>
-                            <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
-                            <li>公众号转载：请在文末添加作者公众号二维码</li>
-                        </ui>
-                    </div>
-                    <div class="five wide column">
-                        <img src="../static/images/QR.JPG" th:src="@{/images/QR.JPG}" alt=""
-                            class="ui right floated rounded bordered image" style="width: 110px">
-                    </div>
-                </div>
-            </div> -->
+
 
             <br>
             <!--留言区域列表-->
@@ -251,37 +209,7 @@
     <br>
 
     <!--底部footer-->
-    <footer class="ui inverted vertical segment m-padded-tb-massive">
-        <div class="ui center aligned container">
-            <div class="ui inverted divided stackable grid">
-                <div class="three wide column">
-                    <i class="big home icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">DUU.COM</p>
-                </div>
-                <div class="three wide column">
-                    <i class="big envelope icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570@qq.com</p>
-                </div>
-                <div class="three wide column">
-                    <i class="big qq icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570</p>
-                </div>
-                <div class="seven wide column">
-                    <h3 class="ui inverted header m-text-thin m-text-spaced">Duu</h3>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">
-                        这是我的个人网站，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流啊ヾ(≧▽≦*)o
-                    </p>
-                </div>
-            </div>
-            <div class="ui inverted section divider"></div>
-            <p class="m-text-thin m-text-size-samll  m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duu Designed
-                by Duu</p>
-        </div>
-    </footer>
+    <div th:replace ="common :: common_footer"></div>
 
     <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
     <!-- <script src="../static/lib/tocbot/tocbot.js" th:src="@{/lib/tocbot/tocbot.js}"></script> -->

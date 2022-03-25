@@ -18,7 +18,7 @@ public class ArchiveShowController {
     @GetMapping("/archives")
     public String archives(Model model){
 
-        model.addAttribute("archiveMap", blogService.archiveBlog());
+        model.addAttribute("archiveMap", blogService.categoryBlog());
 
         model.addAttribute("blogCount", blogService.countBlog());
 

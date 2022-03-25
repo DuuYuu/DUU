@@ -70,7 +70,10 @@ a {
     padding-top: 4em !important;
     padding-bottom: 4em !important;
 }
-
+.m-padded-top-huge {
+    padding-top: 4em !important;
+    padding-bottom: 1em !important;
+}
 .m-padded-tb-massive {
     padding-top: 5em !important;
     padding-bottom: 5em !important;
@@ -97,6 +100,9 @@ a {
     font-weight: 300 !important;
     letter-spacing: 1px !important;
     line-height: 1.8;
+}
+.m-text-size-mini{
+    font-size: 8px !important;
 }
 .m-text-size-samll{
     font-size: 12px !important;
@@ -213,6 +219,9 @@ a {
 
 .m-container {
     max-width:  72em !important;
+    margin: auto !important;
+}.m-container-big {
+    max-width:  100em !important;
     margin: auto !important;
 }
 .m-mobile-hide {
@@ -558,6 +567,15 @@ a {
 /* -----------------search--------------------- */
 
 /* -----------------archives------------------- */
+.archives-bg{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.archives-bg-top{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: #8a1111 solid 1px !important;
+}
+
 
 /* -----------------blog--------------------- */
 .blog-top{

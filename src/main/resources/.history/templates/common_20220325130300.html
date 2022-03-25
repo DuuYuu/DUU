@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <!-- <link href="https://fonts.font.im/css?family=PT+Sans+Narrow" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body>
+    <!-- 侧边栏和导航栏 -->
+    <div class="ui stackable container m-side-pos">
+        <div class="ui left fixed vertical menu inverted  m-mobile-hide m-hide-side">
+            <!-- <a class=" ui red right corner label  m-x  m-cursor">
+                <i class="x icon"></i>
+            </a> -->
+            <h1 class="ui item header m-item">Duu</h1>
+            <a th:href="@{/index}" class="item m-item">首页</a>
+            <a th:href="@{/types/-1}" target="_blank" class="item m-item">分类</a>
+            <a th:href="@{/tags/-1}" target="_blank" class="item m-item">标签</a>
+            <a th:href="@{/archives}" target="_blank" class="item m-item">目录</a>
+            <a th:href="@{/about}" target="_blank" class="item m-item"><i class="mini info icon"></i>关于我</a>
+            <!-- <div></div> -->
+            <a class="item m-item"><i class="mini hand point down icon"></i>打赏俺</a>
+            <div class="item m-item">
+                <image class="m-pay-img" th:src="@{/images/Wpay.JPG}" src="../static/images/Wpay.JPG" mode="aspectFit|aspectFill|widthFix"
+                    lazy-load="true">
+                </image>
+            </div>
+            <a class="item m-item"><i class="mini linkify icon"></i>友链:[暂未开通]</a>
+        </div>
+    </div>
+
+    <div class="top-nav" th:if="${pageNumber == 0}">
+        <div class="top">
+            <div class="dtop">
+                <div class="right item m-item">
+                    <form name="search" action="#" method="post" th:action="@{/search}" target="_blank">
+                        <div class="ui icon inverted transparent  input">
+                            <input class="m-input" type="text" name="query" placeholder="Search..." th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <span class="ui  black icon button m-toggle m-mobile-show">
+                    <i class="bars icon"></i>
+                </span>
+            </div>
+        </div>
+        <div class="center">
+            <p class="btitle  animate__animated animate__wobble">Duu</p>
+            <p class="stitle">Love What You Love </p>
+        </div>
+    </div>
+
+   
+
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment m-padded-top-massive" th:fragment="common_footer">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <i class="big home icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">DUU.COM</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big envelope icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570@qq.com</p>
+                </div>
+                <div class="three wide column">
+                    <i class="big qq icon m-icon"></i>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570</p>
+                </div>
+                <div class="seven wide column">
+                    <h3 class="ui inverted header m-text-thin m-text-spaced"
+                        style="color: rgb(214, 174, 174) !important;">Duu</h3>
+                    <div class="ui inverted section divider"></div>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        这是我的个人网站，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流啊ヾ(≧▽≦*)o
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-size-samll  m-text-spaced m-opacity-tiny">
+                <img style="padding-top:2px;" src="/images/index/相应静态资源目录下的国徽图标.png">
+                <a class="banquan" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=2022006880" style="color: azure;"
+                target="_blank">蜀ICP备2022006880号</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script th:src="@{/js/myJs.js}" src="../static/js/myJs.js"></script>
+</body>
+
+</html>

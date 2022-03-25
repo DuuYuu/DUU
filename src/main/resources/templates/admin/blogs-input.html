@@ -37,8 +37,8 @@
     </div>
 
     <!--中间内容-->
-    <div class="m-container  m-padded-tb-big m-bottom-container ">
-        <div class="ui container">
+    <div class="m-container-big m-padded-tb-big m-bottom-container ">
+        <div class="ui container ">
             <form id="blog-form" th:action="@{/admin/blogs}" method="post" class="ui form">
                 <input type="hidden" name="published">
                 <input type="hidden" name="id" th:value="${blog.id}">

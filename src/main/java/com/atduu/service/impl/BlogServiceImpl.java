@@ -2,6 +2,7 @@ package com.atduu.service.impl;
 
 import com.atduu.NotFoundException;
 import com.atduu.dao.BlogDao;
+import com.atduu.dao.TypeDao;
 import com.atduu.pojo.Blog;
 import com.atduu.pojo.Type;
 import com.atduu.service.BlogService;
@@ -29,6 +30,9 @@ public class BlogServiceImpl implements BlogService {
 
     @Autowired
     private BlogDao blogDao;
+
+    @Autowired
+    private TypeDao typeDao;
 
     @Transactional
     @Override
@@ -166,15 +170,29 @@ public class BlogServiceImpl implements BlogService {
         return b;
     }
 
-    @Override
-    public Map<String, List<Blog>> archiveBlog() {
+//    @Override
+//    public Map<String, List<Blog>> archiveBlog() {
+//
+//        List<String> years = blogDao.findGroupYears();
+//
+//        Map<String , List<Blog>>  map = new HashMap<>();
+//
+//        for (String year : years){
+//            map.put(year, blogDao.findByYear(year));
+//        }
+//
+//        return map;
+//    }
 
-        List<String> years = blogDao.findGroupYears();
+    @Override
+    public Map<String, List<Blog>> categoryBlog() {
+
+        List<Type> types = typeDao.findAll();
 
         Map<String , List<Blog>>  map = new HashMap<>();
 
-        for (String year : years){
-            map.put(year, blogDao.findByYear(year));
+        for (Type type : types) {
+            map.put(type.getName(), blogDao.findByTypeId(type.getId()));
         }
 
         return map;

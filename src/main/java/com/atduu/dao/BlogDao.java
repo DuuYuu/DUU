@@ -35,4 +35,7 @@ public interface BlogDao extends JpaRepository<Blog ,Long>, JpaSpecificationExec
 
     @Query("select b from Blog b where b.id = ?1 and b.ans =?2 ")
     Blog findByIdAndAns(Long id, String ans);
+
+    @Query("select b from Blog b where b.type.id = ?1")
+    List<Blog> findByTypeId(Long id);
 }

@@ -6,60 +6,19 @@
     <!--移动端预览设置-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="个人网站, 小说, 影子, Duu, 反乌托邦, 耽, 个人博客, 简约, 漂亮, 玫瑰, 目录, 时间线" />
-    <title>(‾◡◝)目录~~~你也许要把整个世界都引向你这条小街~~~~duuyuu~~~~</title>
+    <title>目录哟(‾◡◝)~~~你也许要把整个世界都引向你这条小街~~~~duuyuu~~~~</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
     <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
 </head>
-
-<body>
-    <div class="ui stackable container m-side-pos">
-        <div class="ui left fixed vertical menu inverted  m-mobile-hide m-hide-side">
-            <!-- <a class=" ui red right corner label  m-x  m-cursor">
-                <i class="x icon"></i>
-            </a> -->
-            <h1 class="ui item header m-item">Duu</h1>
-            <a th:href="@{/index}" target="_blank" class=" item m-item">首页</a>
-            <a th:href="@{/types/-1}" target="_blank" class="item m-item">分类</a>
-            <a th:href="@{/tags/-1}" target="_blank" class="item m-item">标签</a>
-            <a th:href="@{/archives}"  class="active item m-item">目录</a>
-            <a th:href="@{/about}" target="_blank" class="item m-item"><i class="mini info icon"></i>关于我</a>
-            <!-- <div></div> -->
-            <a class="item m-item"><i class="mini hand point down icon"></i>打赏俺</a>
-            <div class="item m-item">
-                <image class="m-pay-img" th:src="@{/images/Wpay.JPG}"  src="../static/images/Wpay.JPG" mode="aspectFit|aspectFill|widthFix"
-                    lazy-load="true">
-                </image>
-            </div>
-            <a class="item m-item"><i class="mini linkify icon"></i>友链:[暂未开通]</a>
-        </div>
-    </div>
-    <div class="type-top-nav">
-        <!--导航-->
-        <div class="top">
-            <div class="dtop">
-                <!--搜索-->
-                <div class="right item m-item">
-                    <form name="search" action="#" method="post" th:action="@{/search}" target="_blank">
-                        <div class="ui icon inverted transparent  input">
-                            <input class="m-input" type="text" name="query" placeholder="Search..." th:value="${query}">
-                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                        </div>
-                    </form>
-                </div>
-                <span class="ui  m-toggle black icon button m-mobile-show">
-                    <i class="bars icon"></i>
-                </span>
-            </div>
-        </div>
-    </div>
-
+<body class="archives-bg">
+    
     <!--中间内容-->
     <div class="m-container-small  m-padded-tb-huge">
         <div class="ui container">
             <!--头部-->
-            <div class="ui top padded attached segment">
-                <div class="ui middle aligned two column grid">
+            <div class="ui top padded attached segment archives-bg-top" >
+                <div class="ui middle aligned two column grid " >
                     <div class="column">
                         <h2 class="ui m-red header"><i class="compass outline loading icon"></i>目录</h2>
                     </div>
@@ -70,7 +29,7 @@
             </div>
 
             <th:block th:each="item : ${archiveMap}">
-                <h3 class="ui center aligned header " th:text="${item.key}">2012</h3>
+                <h3 class="ui center aligned header m-white" th:text="${item.key}">分类</h3>
                 <div class="ui fluid vertical menu">
                     <a th:href="@{/ablog(id=${blog.id},ques=${blog.ques})}" target="_blank" class="item"
                         th:each="blog : ${item.value}">
@@ -84,11 +43,10 @@
                         </span>
                         <!-- <div class="ui basic type-button-active m-padded-tiny label m-text-thin" th:text="${blog.flag}">原创</div> -->
                         <div class="ui basic type-button-active m-padded-tiny label m-text-thin"
-                            th:text="${blog.type.name}">分类</div>
+                        th:text="${#dates.format(blog.createTime,'YYYY')}">分类</div>
                     </a>
                 </div>
             </th:block>
-
         </div>
     </div>
 
@@ -105,39 +63,8 @@
         </div>
     </div>
 
-    <!--底部footer-->
-    <footer class="ui inverted vertical segment m-padded-tb-massive">
-        <div class="ui center aligned container">
-            <div class="ui inverted divided stackable grid">
-                <div class="three wide column">
-                    <i class="big home icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">DUU.COM</p>
-                </div>
-                <div class="three wide column">
-                    <i class="big envelope icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570@qq.com</p>
-                </div>
-                <div class="three wide column">
-                    <i class="big qq icon m-icon"></i>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">2895241570</p>
-                </div>
-                <div class="seven wide column">
-                    <h3 class="ui inverted header m-text-thin m-text-spaced"
-                        style="color: rgb(214, 174, 174) !important;">Duu</h3>
-                    <div class="ui inverted section divider"></div>
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">
-                        这是我的个人网站，分享关于小说、写作、思考相关的任何内容，希望可以能和来到这里的小可爱们共同交流啊ヾ(≧▽≦*)o
-                    </p>
-                </div>
-            </div>
-            <div class="ui inverted section divider"></div>
-            <p class="m-text-thin m-text-size-samll  m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 Duu Designed
-                by Duu</p>
-        </div>
-    </footer>
+    <!-- 底部footer
+    <div th:replace="common :: common_footer"></div> -->
 
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
