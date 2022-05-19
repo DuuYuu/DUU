@@ -31,4 +31,4 @@
 2022-05-19 13:34:30.316  WARN 7412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-05-19 13:34:31.422  INFO 7412 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.838 seconds (JVM running for 11.824)
 2022-05-19 13:34:36.485  INFO 7412 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
-2022-05-19 13:34:36.498  INFO 7412 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect                : Result : about
+2022-05-19 13:34:36.498  INFO 7412 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about

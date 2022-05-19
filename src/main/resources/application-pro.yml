@@ -18,4 +18,8 @@ logging:
     name: log/blog-pro.log
 
 server:
+<<<<<<< HEAD
   port: 8089
+=======
+  port: 8081
+>>>>>>> e5fdbf8057d604bade32e9ed88ecc7c5ccd6b2ab
