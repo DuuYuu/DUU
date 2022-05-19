@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="个人网站, 小说, 影子, Duu, 反乌托邦, 耽, 个人博客, 简约, 漂亮, 玫瑰, 目录, 时间线" />
+    <title>(‾◡◝)目录~~~你也许要把整个世界都引向你这条小街~~~~duuyuu~~~~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body class="archives-bg">
+
+    <!-- 侧边栏 -->
+    <div th:replace="common :: common_side"></div>
+
+    <div class="type-top-nav">
+        <!--导航-->
+        <div class="top">
+            <div class="dtop">
+                <!--搜索-->
+                <div class="right item m-item">
+                    <form name="search" action="#" method="post" th:action="@{/search}" target="_blank">
+                        <div class="ui icon inverted transparent  input">
+                            <input class="m-input" type="text" name="query" placeholder="Search..." th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <span class="ui  m-toggle black icon button m-mobile-show">
+                    <i class="bars icon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!--中间内容-->
+    <div class="m-container-small  m-padded-tb-huge">
+        <div class="ui container">
+            <!--头部-->
+            <div class="ui top padded attached segment ">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h2 class="ui m-red header"><i class="compass outline loading icon"></i>目录</h2>
+                    </div>
+                    <div class="right aligned column">
+                        共 <h2 class="ui m-red header m-inline-block m-text-thin" th:text="${blogCount}">12</h2> 篇
+                    </div>
+                </div>
+            </div>
+
+            <th:block th:each="item : ${archiveMap}">
+                <h3 class="ui center aligned header m-white" th:text="${item.key}">分类</h3>
+                <div class="ui fluid vertical menu">
+                    <a th:href="@{/ablog(id=${blog.id},ques=${blog.ques})}" target="_blank" class="item"
+                        th:each="blog : ${item.value}">
+                        <span class="m-padded ">
+                            <i class="mini m-margin-r m-red bookmark icon"></i>
+                            <span class="" style="color: rgb(41, 0, 0);" th:text="${blog.title}">这是文章标题</span>
+
+                            <div class="ui m-red basic left pointing label m-padded-mini"
+                                th:text="${#dates.format(blog.createTime,'MMMdd')}">9月2日</div>
+                            <i class="lock tiny m-red icon" th:if="${blog.ques != '-1'}"></i>
+                        </span>
+                        <!-- <div class="ui basic type-button-active m-padded-tiny label m-text-thin" th:text="${blog.flag}">原创</div> -->
+                        <div class="ui basic type-button-active m-padded-tiny label m-text-thin"
+                        th:text="${#dates.format(blog.createTime,'YYYY')}">分类</div>
+                    </a>
+                </div>
+            </th:block>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--右侧-->
+    <div class="m-padded-tiny m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+            <!-- <button type="button" class="ui toc teal button">目录</button> -->
+            <!-- <a href="#comment-container" class="ui type-button-active button">留言</a> -->
+            <!-- <button id="wechat" class="ui wechat teal icon button"><i class="weixin icon"></i></button> -->
+            <div id="toTop-btn" class="ui icon button"><i class="chevron up m-red icon"></i></div>
+        </div>
+    </div>
+
+    <!--底部footer-->
+    <div th:replace="common :: common_footer"></div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script th:src="@{/js/myJs.js}" src="../static/js/myJs.js"></script>
+</body>
+
+</html>

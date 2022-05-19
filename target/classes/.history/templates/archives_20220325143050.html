@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="个人网站, 小说, 影子, Duu, 反乌托邦, 耽, 个人博客, 简约, 漂亮, 玫瑰, 目录, 时间线" />
+    <title>(‾◡◝)目录~~~你也许要把整个世界都引向你这条小街~~~~duuyuu~~~~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/css/myCss.css" th:href="@{/css/myCss.css}">
+</head>
+
+<body class="archives-bg">
+
+    <!-- 侧边栏 -->
+    <!-- <div th:replace="common :: common_side"></div>
+
+    <div class="type-top-nav">
+        <!--导航-->
+        <!-- <div class="top">
+            <div class="dtop">
+                <!--搜索-->
+                <!-- <div class="right item m-item">
+                    <form name="search" action="#" method="post" th:action="@{/search}" target="_blank">
+                        <div class="ui icon inverted transparent  input">
+                            <input class="m-input" type="text" name="query" placeholder="Search..." th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <span class="ui  m-toggle black icon button m-mobile-show">
+                    <i class="bars icon"></i>
+                </span>
+            </div>
+        </div> -->
+    <!-- </div> --> 
+
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+        .path-0{
+          animation:pathAnim-0 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        @keyframes pathAnim-0{
+          0%{
+            d: path("M 0,400 C 0,400 0,133 0,133 C 126.133971291866,129.755980861244 252.267942583732,126.51196172248802 330,138 C 407.732057416268,149.48803827751198 437.0622009569379,175.7081339712919 524,170 C 610.9377990430621,164.2918660287081 755.4832535885167,126.65550239234449 867,110 C 978.5167464114833,93.34449760765551 1057.0047846889952,97.66985645933013 1147,105 C 1236.9952153110048,112.33014354066987 1338.4976076555024,122.66507177033493 1440,133 C 1440,133 1440,400 1440,400 Z");
+          }
+          25%{
+            d: path("M 0,400 C 0,400 0,133 0,133 C 72.26794258373204,101.55502392344498 144.53588516746407,70.11004784688996 255,86 C 365.4641148325359,101.88995215311004 514.1244019138757,165.1148325358852 617,170 C 719.8755980861243,174.8851674641148 776.9665071770335,121.43062200956938 865,103 C 953.0334928229665,84.56937799043062 1072.0095693779904,101.16267942583733 1173,112 C 1273.9904306220096,122.83732057416267 1356.9952153110048,127.91866028708134 1440,133 C 1440,133 1440,400 1440,400 Z");
+          }
+          50%{
+            d: path("M 0,400 C 0,400 0,133 0,133 C 76.49760765550238,149.82296650717703 152.99521531100476,166.64593301435406 238,153 C 323.00478468899524,139.35406698564594 416.51674641148327,95.23923444976076 526,98 C 635.4832535885167,100.76076555023924 760.9377990430622,150.39712918660285 868,169 C 975.0622009569378,187.60287081339715 1063.732057416268,175.17224880382776 1156,164 C 1248.267942583732,152.82775119617224 1344.1339712918661,142.91387559808612 1440,133 C 1440,133 1440,400 1440,400 Z");
+          }
+          75%{
+            d: path("M 0,400 C 0,400 0,133 0,133 C 116.09569377990428,115.65071770334929 232.19138755980856,98.30143540669857 333,102 C 433.80861244019144,105.69856459330143 519.33014354067,130.444976076555 599,136 C 678.66985645933,141.555023923445 752.4880382775119,127.91866028708134 841,137 C 929.5119617224881,146.08133971291866 1032.7177033492824,177.88038277511964 1135,181 C 1237.2822966507176,184.11961722488036 1338.6411483253587,158.55980861244018 1440,133 C 1440,133 1440,400 1440,400 Z");
+          }
+          100%{
+            d: path("M 0,400 C 0,400 0,133 0,133 C 126.133971291866,129.755980861244 252.267942583732,126.51196172248802 330,138 C 407.732057416268,149.48803827751198 437.0622009569379,175.7081339712919 524,170 C 610.9377990430621,164.2918660287081 755.4832535885167,126.65550239234449 867,110 C 978.5167464114833,93.34449760765551 1057.0047846889952,97.66985645933013 1147,105 C 1236.9952153110048,112.33014354066987 1338.4976076555024,122.66507177033493 1440,133 C 1440,133 1440,400 1440,400 Z");
+          }
+        }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#f78da788"></stop><stop offset="95%" stop-color="#32ded488"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 126.133971291866,129.755980861244 252.267942583732,126.51196172248802 330,138 C 407.732057416268,149.48803827751198 437.0622009569379,175.7081339712919 524,170 C 610.9377990430621,164.2918660287081 755.4832535885167,126.65550239234449 867,110 C 978.5167464114833,93.34449760765551 1057.0047846889952,97.66985645933013 1147,105 C 1236.9952153110048,112.33014354066987 1338.4976076555024,122.66507177033493 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><style>
+        .path-1{
+          animation:pathAnim-1 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        @keyframes pathAnim-1{
+          0%{
+            d: path("M 0,400 C 0,400 0,266 0,266 C 98.23923444976077,287.57894736842104 196.47846889952154,309.15789473684214 295,303 C 393.52153110047846,296.84210526315786 492.32535885167465,262.9473684210526 580,243 C 667.6746411483253,223.0526315789474 744.2200956937799,217.0526315789474 831,217 C 917.7799043062201,216.9473684210526 1014.7942583732058,222.8421052631579 1118,232 C 1221.2057416267942,241.1578947368421 1330.6028708133972,253.57894736842104 1440,266 C 1440,266 1440,400 1440,400 Z");
+          }
+          25%{
+            d: path("M 0,400 C 0,400 0,266 0,266 C 108.80382775119617,241.1866028708134 217.60765550239233,216.3732057416268 313,217 C 408.39234449760767,217.6267942583732 490.37320574162675,243.69377990430624 579,245 C 667.6267942583733,246.30622009569376 762.8995215311006,222.8516746411483 861,218 C 959.1004784688994,213.1483253588517 1060.0287081339711,226.89952153110048 1157,238 C 1253.9712918660289,249.10047846889952 1346.9856459330144,257.55023923444975 1440,266 C 1440,266 1440,400 1440,400 Z");
+          }
+          50%{
+            d: path("M 0,400 C 0,400 0,266 0,266 C 77.89473684210529,261.37799043062205 155.78947368421058,256.75598086124404 250,256 C 344.2105263157894,255.24401913875596 454.736842105263,258.35406698564594 561,253 C 667.263157894737,247.64593301435406 769.2631578947369,233.82775119617224 874,229 C 978.7368421052631,224.17224880382776 1086.2105263157894,228.33492822966508 1181,236 C 1275.7894736842106,243.66507177033492 1357.8947368421054,254.83253588516746 1440,266 C 1440,266 1440,400 1440,400 Z");
+          }
+          75%{
+            d: path("M 0,400 C 0,400 0,266 0,266 C 75.28229665071768,262.6602870813397 150.56459330143537,259.3205741626794 263,267 C 375.43540669856463,274.6794258373206 525.0239234449762,293.377990430622 628,298 C 730.9760765550238,302.622009569378 787.3397129186601,293.16746411483257 878,276 C 968.6602870813399,258.83253588516743 1093.617224880383,233.95215311004785 1193,231 C 1292.382775119617,228.04784688995215 1366.1913875598084,247.02392344497608 1440,266 C 1440,266 1440,400 1440,400 Z");
+          }
+          100%{
+            d: path("M 0,400 C 0,400 0,266 0,266 C 98.23923444976077,287.57894736842104 196.47846889952154,309.15789473684214 295,303 C 393.52153110047846,296.84210526315786 492.32535885167465,262.9473684210526 580,243 C 667.6746411483253,223.0526315789474 744.2200956937799,217.0526315789474 831,217 C 917.7799043062201,216.9473684210526 1014.7942583732058,222.8421052631579 1118,232 C 1221.2057416267942,241.1578947368421 1330.6028708133972,253.57894736842104 1440,266 C 1440,266 1440,400 1440,400 Z");
+          }
+        }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#f78da7ff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 98.23923444976077,287.57894736842104 196.47846889952154,309.15789473684214 295,303 C 393.52153110047846,296.84210526315786 492.32535885167465,262.9473684210526 580,243 C 667.6746411483253,223.0526315789474 744.2200956937799,217.0526315789474 831,217 C 917.7799043062201,216.9473684210526 1014.7942583732058,222.8421052631579 1118,232 C 1221.2057416267942,241.1578947368421 1330.6028708133972,253.57894736842104 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+    <!--中间内容-->
+    <div class="m-container-small  m-padded-tb-huge">
+        <div class="ui container">
+            <!--头部-->
+            <div class="ui top padded attached segment ">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h2 class="ui m-red header"><i class="compass outline loading icon"></i>目录</h2>
+                    </div>
+                    <div class="right aligned column">
+                        共 <h2 class="ui m-red header m-inline-block m-text-thin" th:text="${blogCount}">12</h2> 篇
+                    </div>
+                </div>
+            </div>
+
+            <th:block th:each="item : ${archiveMap}">
+                <h3 class="ui center aligned header m-white" th:text="${item.key}">分类</h3>
+                <div class="ui fluid vertical menu">
+                    <a th:href="@{/ablog(id=${blog.id},ques=${blog.ques})}" target="_blank" class="item"
+                        th:each="blog : ${item.value}">
+                        <span class="m-padded ">
+                            <i class="mini m-margin-r m-red bookmark icon"></i>
+                            <span class="" style="color: rgb(41, 0, 0);" th:text="${blog.title}">这是文章标题</span>
+
+                            <div class="ui m-red basic left pointing label m-padded-mini"
+                                th:text="${#dates.format(blog.createTime,'MMMdd')}">9月2日</div>
+                            <i class="lock tiny m-red icon" th:if="${blog.ques != '-1'}"></i>
+                        </span>
+                        <!-- <div class="ui basic type-button-active m-padded-tiny label m-text-thin" th:text="${blog.flag}">原创</div> -->
+                        <div class="ui basic type-button-active m-padded-tiny label m-text-thin"
+                        th:text="${#dates.format(blog.createTime,'YYYY')}">分类</div>
+                    </a>
+                </div>
+            </th:block>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--右侧-->
+    <div class="m-padded-tiny m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+            <!-- <button type="button" class="ui toc teal button">目录</button> -->
+            <!-- <a href="#comment-container" class="ui type-button-active button">留言</a> -->
+            <!-- <button id="wechat" class="ui wechat teal icon button"><i class="weixin icon"></i></button> -->
+            <div id="toTop-btn" class="ui icon button"><i class="chevron up m-red icon"></i></div>
+        </div>
+    </div>
+
+    <!-- 底部footer
+    <div th:replace="common :: common_footer"></div> -->
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script th:src="@{/js/myJs.js}" src="../static/js/myJs.js"></script>
+</body>
+
+</html>

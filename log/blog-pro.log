@@ -1,0 +1,28 @@
+2022-05-19 13:07:39.428  INFO 7920 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 7920 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-19 13:07:39.436  INFO 7920 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-19 13:07:48.520  WARN 7920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 13:07:49.422  INFO 7920 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 10.991 seconds (JVM running for 13.365)
+2022-05-19 13:08:05.315  INFO 7920 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:08:05.328  INFO 7920 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-19 13:13:30.832  INFO 10332 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 10332 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-19 13:13:30.838  INFO 10332 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-19 13:13:38.012  WARN 10332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 13:13:39.001  INFO 10332 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.128 seconds (JVM running for 11.374)
+2022-05-19 13:13:45.554  INFO 10332 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:13:45.576  INFO 10332 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-19 13:18:22.459  INFO 13272 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 13272 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-19 13:18:22.464  INFO 13272 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-19 13:18:28.547  WARN 13272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 13:18:29.541  INFO 13272 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.099 seconds (JVM running for 10.183)
+2022-05-19 13:18:34.911  INFO 13272 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:18:34.931  INFO 13272 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-19 13:19:28.095  INFO 13272 --- [http-nio-8089-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:19:28.096  INFO 13272 --- [http-nio-8089-exec-9] com.atduu.aspect.LogAspect               : Result : about
+2022-05-19 13:19:36.163  INFO 13272 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:19:36.164  INFO 13272 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Result : about
+2022-05-19 13:21:24.240  INFO 3564 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 3564 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-19 13:21:24.244  INFO 3564 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-19 13:21:30.751  WARN 3564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 13:21:31.707  INFO 3564 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.487 seconds (JVM running for 10.141)
+2022-05-19 13:21:34.552  INFO 3564 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-19 13:21:34.567  INFO 3564 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about

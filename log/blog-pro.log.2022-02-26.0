@@ -1,0 +1,629 @@
+2022-02-26 10:05:53.750  INFO 7820 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 7820 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 10:05:53.758  INFO 7820 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 10:05:59.769  WARN 7820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 10:06:00.842  INFO 7820 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.936 seconds (JVM running for 9.522)
+2022-02-26 10:06:28.685  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-02-26 10:06:28.697  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-02-26 10:07:00.178  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 10:07:00.608  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 10:12:33.958  WARN 7820 --- [http-nio-8081-exec-3] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2022-02-26 10:12:42.566  WARN 7820 --- [http-nio-8081-exec-9] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2022-02-26 10:12:51.231  WARN 7820 --- [http-nio-8081-exec-10] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2022-02-26 10:12:58.514  WARN 7820 --- [http-nio-8081-exec-7] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2022-02-26 10:24:36.475  WARN 7820 --- [http-nio-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: HY000
+2022-02-26 10:24:36.476 ERROR 7820 --- [http-nio-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Incorrect string value: '\xF0\x9F\x98\xB4\x0D\x0A...' for column 'content' at row 1
+2022-02-26 10:24:36.509 ERROR 7820 --- [http-nio-8081-exec-7] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8081/admin/blogs,Exception : {}
+
+org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy119.save(Unknown Source)
+	at com.atduu.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:112)
+	at com.atduu.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c85cee88.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.atduu.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$7e66e76a.saveBlog(<generated>)
+	at com.atduu.controller.admin.BlogController.post(BlogController.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:760)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 71 common frames omitted
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB4\x0D\x0A...' for column 'content' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 124 common frames omitted
+
+2022-02-26 10:24:56.040  WARN 7820 --- [http-nio-8081-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: HY000
+2022-02-26 10:24:56.040 ERROR 7820 --- [http-nio-8081-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Incorrect string value: '\xF0\x9F\x98\xB4\x0D\x0A...' for column 'content' at row 1
+2022-02-26 10:24:56.044 ERROR 7820 --- [http-nio-8081-exec-5] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8081/admin/blogs,Exception : {}
+
+org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy119.save(Unknown Source)
+	at com.atduu.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:112)
+	at com.atduu.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c85cee88.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.atduu.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$7e66e76a.saveBlog(<generated>)
+	at com.atduu.controller.admin.BlogController.post(BlogController.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:760)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 71 common frames omitted
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB4\x0D\x0A...' for column 'content' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 124 common frames omitted
+
+2022-02-26 10:25:50.251  WARN 7820 --- [http-nio-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: HY000
+2022-02-26 10:25:50.252 ERROR 7820 --- [http-nio-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Incorrect string value: '\xF0\x9F\x98\x80 A...' for column 'content' at row 1
+2022-02-26 10:25:50.255 ERROR 7820 --- [http-nio-8081-exec-8] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8081/admin/blogs,Exception : {}
+
+org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy119.save(Unknown Source)
+	at com.atduu.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:112)
+	at com.atduu.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c85cee88.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.atduu.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$7e66e76a.saveBlog(<generated>)
+	at com.atduu.controller.admin.BlogController.post(BlogController.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:760)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy113.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 71 common frames omitted
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80 A...' for column 'content' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 124 common frames omitted
+
+2022-02-26 10:29:21.227  INFO 7820 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 10:29:21.258  INFO 7820 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 10:30:32.784  INFO 7820 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 10:30:32.785  INFO 7820 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 10:31:06.351  INFO 7820 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 10:31:06.448  INFO 7820 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 10:31:07.206  INFO 7820 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 10:31:07.256  INFO 7820 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 10:34:23.895  INFO 7820 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 10:34:23.924  INFO 7820 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 10:34:24.495  INFO 7820 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 10:34:24.499  INFO 7820 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 10:34:41.218 ERROR 7820 --- [http-nio-8081-exec-2] c.a.handler.ControllerExceptionHandler   : Request URL : http://localhost:8081/lockpwd,Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-02-26 10:34:49.279  INFO 7820 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 10:34:49.297  INFO 7820 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 10:34:49.807  INFO 7820 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 10:34:49.813  INFO 7820 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 10:36:19.639  INFO 7820 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 10:36:19.662  INFO 7820 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 10:36:20.197  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 10:36:20.203  INFO 7820 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 10:38:02.674  INFO 7820 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-02-26 10:38:02.674  INFO 7820 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : about
+2022-02-26 13:05:44.070  INFO 16692 --- [main] com.atduu.DuublogApplicationTests        : Starting DuublogApplicationTests using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 16692 (started by 28952 in E:\IDEA Project\duu)
+2022-02-26 13:05:44.074  INFO 16692 --- [main] com.atduu.DuublogApplicationTests        : The following profiles are active: pro
+2022-02-26 13:05:55.698  WARN 16692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 13:05:57.985  INFO 16692 --- [main] com.atduu.DuublogApplicationTests        : Started DuublogApplicationTests in 14.873 seconds (JVM running for 16.779)
+2022-02-26 21:49:28.328  INFO 18992 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 18992 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 21:49:28.335  INFO 18992 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 21:49:35.859  WARN 18992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 21:49:36.874  INFO 18992 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.717 seconds (JVM running for 12.169)
+2022-02-26 21:55:34.666  INFO 11220 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 11220 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 21:55:34.671  INFO 11220 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 21:55:40.597  WARN 11220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 21:55:41.464  INFO 11220 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.658 seconds (JVM running for 9.301)
+2022-02-26 21:56:36.275  INFO 11220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 21:56:36.635  INFO 11220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 21:57:28.613  INFO 11220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 21:57:28.642  INFO 11220 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 21:58:00.903  INFO 11220 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 21:58:00.932  INFO 11220 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 21:58:35.522  INFO 11220 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 21:58:35.550  INFO 11220 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 22:00:53.185  INFO 11220 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 22:00:53.185  INFO 11220 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 22:24:34.402  INFO 22340 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 22340 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 22:24:34.407  INFO 22340 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 22:24:40.690  WARN 22340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 22:24:41.556  INFO 22340 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.246 seconds (JVM running for 10.353)
+2022-02-26 22:24:57.555  INFO 22340 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 22:24:57.776  INFO 22340 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 22:25:12.069  INFO 22340 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/types/25', ip='127.0.0.1', classMethod='class com.atduu.controller.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], 25, {}]}
+2022-02-26 22:25:12.090  WARN 22340 --- [http-nio-8081-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-26 22:25:12.131  INFO 22340 --- [http-nio-8081-exec-5] com.atduu.aspect.LogAspect               : Result : types
+2022-02-26 22:25:31.090  INFO 22340 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 22:25:31.090  INFO 22340 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 22:26:07.375  INFO 22340 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 22:26:07.407  INFO 22340 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 22:26:25.132  INFO 22340 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 22:26:25.133  INFO 22340 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 22:27:18.030  INFO 22800 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 22800 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 22:27:18.036  INFO 22800 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 22:27:24.244  WARN 22800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 22:27:25.212  INFO 22800 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.407 seconds (JVM running for 10.065)
+2022-02-26 22:28:00.486  INFO 22800 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 22:28:00.727  INFO 22800 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 22:28:06.105  INFO 22800 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，最新更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 22:28:06.106  INFO 22800 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 22:53:57.803  INFO 22800 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 22:53:57.847  INFO 22800 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 22:54:04.265  INFO 22800 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 10, sort: updateTime: DESC], {}]}
+2022-02-26 22:54:04.294  INFO 22800 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 23:03:58.688  INFO 1368 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 1368 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-26 23:03:58.694  INFO 1368 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-02-26 23:04:04.358  WARN 1368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-26 23:04:05.221  INFO 1368 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.353 seconds (JVM running for 8.805)
+2022-02-26 23:04:29.370  INFO 1368 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-02-26 23:04:29.575  INFO 1368 --- [http-nio-8081-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 23:05:46.040  INFO 1368 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-02-26 23:05:46.073  INFO 1368 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 23:07:30.004  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-02-26 23:07:30.047  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : index
+2022-02-26 23:07:41.515  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 23:07:41.515  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 23:07:44.983  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 23:07:44.984  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 23:07:52.254  INFO 1368 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 23:07:52.255  INFO 1368 --- [http-nio-8081-exec-3] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 23:07:55.412  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/ablog', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.aBlog', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}]}
+2022-02-26 23:07:55.412  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : pwd
+2022-02-26 23:08:00.823  INFO 1368 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 23:08:00.929  INFO 1368 --- [http-nio-8081-exec-8] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 23:08:01.682  INFO 1368 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 23:08:01.738  INFO 1368 --- [http-nio-8081-exec-4] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 23:08:13.821  INFO 1368 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/lockpwd', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.lockPwd', args=[32, 这是一个简单的问题，更新日志记录的时间是？[ 提示：一个数字 ], {}, 220226, {}]}
+2022-02-26 23:08:13.875  INFO 1368 --- [http-nio-8081-exec-9] com.atduu.aspect.LogAspect               : Result : blog
+2022-02-26 23:08:14.728  INFO 1368 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/comments/32', ip='127.0.0.1', classMethod='class com.atduu.controller.CommentController.comments', args=[32, {}]}
+2022-02-26 23:08:14.735  INFO 1368 --- [http-nio-8081-exec-7] com.atduu.aspect.LogAspect               : Result : blog :: commentList
+2022-02-26 23:09:18.212  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/archives', ip='127.0.0.1', classMethod='class com.atduu.controller.ArchiveShowController.archives', args=[{}]}
+2022-02-26 23:09:18.269  INFO 1368 --- [http-nio-8081-exec-6] com.atduu.aspect.LogAspect               : Result : archives
+2022-02-26 23:11:16.372  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8081/search', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 星河, {}]}
+2022-02-26 23:11:16.389  INFO 1368 --- [http-nio-8081-exec-2] com.atduu.aspect.LogAspect               : Result : search

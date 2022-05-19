@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>标签管理hahahah~~~q(≧▽≦q)~~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="../../static/css/myCss.min.css" rel="stylesheet" th:href="@{/css/myCss.min.css}">
+</head>
+
+<body>
+    <!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header item">DUu管理后台</h2>
+                <a th:href="@{/admin/blogs}" class=" item">博客</a>
+                <a th:href="@{/admin/types}" class="item">分类</a>
+                <a th:href="@{/admin/tags}" class="active item">标签</a>
+            </div>
+        </div>
+        <!-- <a href="#" class="ui  menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a> -->
+    </nav>
+    <!--二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a th:href="@{/admin/tags/input}" class="m-red item">发布</a>
+                <a th:href="@{/admin/tags}" class="m-red active item">标签</a>
+            </div>
+        </div>
+    </div>
+
+    <!--中间内容-->
+    <div class="m-container-small  m-padded-tb-big">
+        <div class="ui container">
+            <div id="message" class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}"></p>
+            </div>
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>名称</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each=" tag, iterStat: ${page.content}">
+                        <td th:text="${iterStat.count}"></td>
+                        <td th:text="${tag.name}"></td>
+                        <td>
+                            <a th:href="@{/admin/tags/{id}/input(id=${tag.id})}" class="ui mini teal button">编辑</a>
+                            <a th:href="@{/admin/tags/{id}/delete(id=${tag.id})}" class="ui mini red button">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6">
+                            <div class="ui pagination menu" th:if="${page.totalPages}>1">
+                                <a th:href="@{/admin/tags(page=${page.number}-1)}" th:unless="${page.isFirst()}"
+                                    class="m-page-l icon item">
+                                    <i class="left arrow icon"></i>
+                                </a>
+                                <a th:href="@{/admin/tags(page=${page.number}+1)}" th:unless="${page.isLast()}"
+                                    class="m-page-r icon item">
+                                    <i class="right arrow icon"></i>
+                                </a>
+                            </div>
+                            <a th:href="@{/admin/tags/input}" class="ui right floated   orange  button">新增</a>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--底部footer-->
+    <div th:replace ="common :: common_footer"></div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+        $('.ui.form').form({
+            fields: {
+                name: {
+                    identifier: 'name',
+                    rules: [{
+                        type: 'empty'
+                    }]
+                }
+            }
+        });
+        // $('#newblog_container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
+</body>
+
+</html>

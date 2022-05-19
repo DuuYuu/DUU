@@ -1,0 +1,220 @@
+2022-02-24 21:02:02.593  INFO 51100 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 51100 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 21:02:02.607 DEBUG 51100 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 21:02:02.607  INFO 51100 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 21:02:03.884  INFO 51100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 21:02:04.008  INFO 51100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
+2022-02-24 21:02:04.919  INFO 51100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 21:02:04.930  INFO 51100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 21:02:04.930  INFO 51100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 21:02:05.114  INFO 51100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 21:02:05.114  INFO 51100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2407 ms
+2022-02-24 21:02:05.407  INFO 51100 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 21:02:05.539  INFO 51100 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 21:02:05.772  INFO 51100 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 21:02:05.903  INFO 51100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 21:02:06.871  INFO 51100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 21:02:06.900  INFO 51100 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 21:02:08.396  INFO 51100 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 21:02:08.408  INFO 51100 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 21:02:09.719  WARN 51100 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 21:02:10.106  INFO 51100 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 21:02:10.499  INFO 51100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 21:02:10.512  INFO 51100 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.853 seconds (JVM running for 10.3)
+2022-02-24 21:27:20.153  INFO 47400 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 47400 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 21:27:20.159 DEBUG 47400 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 21:27:20.159  INFO 47400 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 21:27:21.166  INFO 47400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 21:27:21.303  INFO 47400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
+2022-02-24 21:27:22.379  INFO 47400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 21:27:22.393  INFO 47400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 21:27:22.394  INFO 47400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 21:27:22.591  INFO 47400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 21:27:22.592  INFO 47400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2359 ms
+2022-02-24 21:27:22.878  INFO 47400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 21:27:23.036  INFO 47400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 21:27:23.295  INFO 47400 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 21:27:23.490  INFO 47400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 21:27:24.718  INFO 47400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 21:27:24.761  INFO 47400 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 21:27:27.377  INFO 47400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 21:27:27.398  INFO 47400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 21:27:28.885  WARN 47400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 21:27:29.267  INFO 47400 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 21:27:29.691  INFO 47400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 21:27:29.704  INFO 47400 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 10.579 seconds (JVM running for 12.629)
+2022-02-24 21:48:45.560  INFO 56012 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 56012 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 21:48:45.563 DEBUG 56012 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 21:48:45.564  INFO 56012 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 21:48:46.457  INFO 56012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 21:48:46.572  INFO 56012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
+2022-02-24 21:48:47.548  INFO 56012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 21:48:47.562  INFO 56012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 21:48:47.562  INFO 56012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 21:48:47.746  INFO 56012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 21:48:47.746  INFO 56012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2107 ms
+2022-02-24 21:48:47.999  INFO 56012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 21:48:48.153  INFO 56012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 21:48:48.410  INFO 56012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 21:48:48.555  INFO 56012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 21:48:49.541  INFO 56012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 21:48:49.573  INFO 56012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 21:48:50.942  INFO 56012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 21:48:50.966  INFO 56012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 21:48:52.556  WARN 56012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 21:48:53.048  INFO 56012 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 21:48:53.959  INFO 56012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 21:48:53.979  INFO 56012 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.285 seconds (JVM running for 10.926)
+2022-02-24 21:49:23.392  INFO 56012 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 21:49:23.393  INFO 56012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 21:49:23.394  INFO 56012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 21:55:43.577  INFO 56012 --- [http-nio-8080-exec-2] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 21:55:43.630  WARN 56012 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 21:55:43.648  WARN 56012 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 21:55:43.658  INFO 56012 --- [http-nio-8080-exec-2] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:01:41.445  INFO 57532 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 57532 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 22:01:41.449 DEBUG 57532 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 22:01:41.449  INFO 57532 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 22:01:42.415  INFO 57532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 22:01:42.529  INFO 57532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 5 JPA repository interfaces.
+2022-02-24 22:01:43.663  INFO 57532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 22:01:43.677  INFO 57532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 22:01:43.677  INFO 57532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 22:01:43.928  INFO 57532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 22:01:43.928  INFO 57532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2398 ms
+2022-02-24 22:01:44.222  INFO 57532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 22:01:44.412  INFO 57532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 22:01:44.720  INFO 57532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 22:01:44.946  INFO 57532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 22:01:45.965  INFO 57532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 22:01:45.994  INFO 57532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 22:01:47.335  INFO 57532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 22:01:47.354  INFO 57532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 22:01:48.667  WARN 57532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 22:01:49.046  INFO 57532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 22:01:49.384  INFO 57532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 22:01:49.397  INFO 57532 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.908 seconds (JVM running for 10.48)
+2022-02-24 22:02:26.267  INFO 57532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 22:02:26.268  INFO 57532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 22:02:26.269  INFO 57532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 22:02:26.325  INFO 57532 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 1, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:02:26.500  WARN 57532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:02:26.522  WARN 57532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:02:26.542  INFO 57532 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:02:31.067  INFO 57532 --- [http-nio-8080-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:02:31.120  INFO 57532 --- [http-nio-8080-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:03:58.160  INFO 58112 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 58112 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 22:03:58.163 DEBUG 58112 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 22:03:58.164  INFO 58112 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 22:03:59.113  INFO 58112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 22:03:59.226  INFO 58112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
+2022-02-24 22:04:00.179  INFO 58112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 22:04:00.192  INFO 58112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 22:04:00.192  INFO 58112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 22:04:00.393  INFO 58112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 22:04:00.393  INFO 58112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2152 ms
+2022-02-24 22:04:00.698  INFO 58112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 22:04:00.910  INFO 58112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 22:04:01.207  INFO 58112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 22:04:01.353  INFO 58112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 22:04:02.470  INFO 58112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 22:04:02.500  INFO 58112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 22:04:03.859  INFO 58112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 22:04:03.871  INFO 58112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 22:04:05.183  WARN 58112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 22:04:05.603  INFO 58112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 22:04:06.070  INFO 58112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 22:04:06.087  INFO 58112 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.853 seconds (JVM running for 10.586)
+2022-02-24 22:04:08.913  INFO 58112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 22:04:08.913  INFO 58112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 22:04:08.915  INFO 58112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 22:04:08.960  INFO 58112 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:04:09.172  WARN 58112 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:04:09.196  WARN 58112 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:04:09.209  INFO 58112 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:05:53.953  INFO 50208 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 50208 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 22:05:53.957 DEBUG 50208 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 22:05:53.958  INFO 50208 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 22:05:54.832  INFO 50208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 22:05:54.948  INFO 50208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 5 JPA repository interfaces.
+2022-02-24 22:05:55.829  INFO 50208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 22:05:55.843  INFO 50208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 22:05:55.844  INFO 50208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 22:05:56.026  INFO 50208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 22:05:56.027  INFO 50208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2000 ms
+2022-02-24 22:05:56.269  INFO 50208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 22:05:56.397  INFO 50208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 22:05:56.572  INFO 50208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 22:05:56.707  INFO 50208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 22:05:57.638  INFO 50208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 22:05:57.662  INFO 50208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 22:05:58.689  INFO 50208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 22:05:58.703  INFO 50208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 22:05:59.968  WARN 50208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 22:06:00.323  INFO 50208 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 22:06:00.660  INFO 50208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 22:06:00.671  INFO 50208 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 7.555 seconds (JVM running for 9.05)
+2022-02-24 22:06:06.602  INFO 50208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 22:06:06.603  INFO 50208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 22:06:06.604  INFO 50208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 22:06:06.654  INFO 50208 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:06:06.857  WARN 50208 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:06:06.886  WARN 50208 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:06:06.901  INFO 50208 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:06:42.046  INFO 58472 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 58472 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 22:06:42.052 DEBUG 58472 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 22:06:42.053  INFO 58472 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 22:06:43.090  INFO 58472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 22:06:43.200  INFO 58472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
+2022-02-24 22:06:44.077  INFO 58472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 22:06:44.091  INFO 58472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 22:06:44.092  INFO 58472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 22:06:44.282  INFO 58472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 22:06:44.282  INFO 58472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2139 ms
+2022-02-24 22:06:44.518  INFO 58472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 22:06:44.656  INFO 58472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 22:06:44.840  INFO 58472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 22:06:44.960  INFO 58472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 22:06:45.865  INFO 58472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 22:06:45.906  INFO 58472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 22:06:47.189  INFO 58472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 22:06:47.200  INFO 58472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 22:06:48.548  WARN 58472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 22:06:48.913  INFO 58472 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 22:06:49.261  INFO 58472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 22:06:49.274  INFO 58472 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.099 seconds (JVM running for 9.707)
+2022-02-24 22:07:00.677  INFO 58472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 22:07:00.678  INFO 58472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 22:07:00.679  INFO 58472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 22:07:00.732  INFO 58472 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:07:00.915  WARN 58472 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:07:00.939  WARN 58472 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:07:00.950  INFO 58472 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Result : index
+2022-02-24 22:07:44.275  INFO 58856 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 58856 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-02-24 22:07:44.280 DEBUG 58856 --- [main] com.atduu.DuublogApplication             : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-02-24 22:07:44.281  INFO 58856 --- [main] com.atduu.DuublogApplication             : The following profiles are active: dev
+2022-02-24 22:07:45.371  INFO 58856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 22:07:45.495  INFO 58856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 5 JPA repository interfaces.
+2022-02-24 22:07:46.504  INFO 58856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-24 22:07:46.516  INFO 58856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 22:07:46.517  INFO 58856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-24 22:07:46.719  INFO 58856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 22:07:46.720  INFO 58856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2369 ms
+2022-02-24 22:07:47.052  INFO 58856 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 22:07:47.213  INFO 58856 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-24 22:07:47.446  INFO 58856 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 22:07:47.626  INFO 58856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 22:07:48.759  INFO 58856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 22:07:48.792  INFO 58856 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-24 22:07:50.102  INFO 58856 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 22:07:50.126  INFO 58856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 22:07:51.588  WARN 58856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 22:07:52.019  INFO 58856 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-24 22:07:52.429  INFO 58856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-24 22:07:52.443  INFO 58856 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 9.319 seconds (JVM running for 11.066)
+2022-02-24 22:07:52.549  INFO 58856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 22:07:52.550  INFO 58856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 22:07:52.551  INFO 58856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-24 22:07:52.603  INFO 58856 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8080/index/', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-02-24 22:07:52.808  WARN 58856 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:07:52.835  WARN 58856 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-02-24 22:07:52.847  INFO 58856 --- [http-nio-8080-exec-1] com.atduu.aspect.LogAspect               : Result : index

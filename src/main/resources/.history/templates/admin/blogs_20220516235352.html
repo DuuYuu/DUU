@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>~~Hi 文章管理~~~~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="../../static/css/myCss.min.css" rel="stylesheet" th:href="@{/css/myCss.min.css}">
+</head>
+
+<body>
+    <!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header item">DUu管理后台</h2>
+                <a th:href="@{/admin/blogs}" class="active item">博客</a>
+                <a th:href="@{/admin/types}" class="item">分类</a>
+                <a th:href="@{/admin/tags}" class="item">标签</a>
+                <div class="right menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img th:src="@{${user.avatar}}"
+                                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.vG8sXHO2nUdM1cLAZR2f9gAAAA?pid=ImgDet&rs=1"
+                                alt="" class="ui avatar image">
+                            <span th:text="${user.nickname}">君悦君</span>
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a th:href="@{/admin/logout}" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="ui  menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a> -->
+    </nav>
+    <!--二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a th:href="@{/admin/blogs/{id}/input(id=-1)}" class="m-red item">发布</a>
+                <a class="m-red active item">管理</a>
+            </div>
+        </div>
+    </div>
+
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui secondary segment form">
+                <input type="hidden" name="page">
+                <div class="inline fields">
+                    <div class="field">
+                        <input type="text" name="title" placeholder="标题">
+                    </div>
+                    <div class="field">
+                        <div class="ui labeled action input">
+                            <div class="ui type selection dropdown">
+                                <input type="hidden" name="typeId">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu">
+                                    <div th:each="type :${types}" class="item" th:data-value="${type.id}"
+                                        th:text="${type.name}"></div>
+                                </div>
+                            </div>
+                            <button id="clear-btn" class="ui type-button-active button">清空分类</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="published" name="published">
+                            <label for="published">发布</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button type="button" id="search-btn" class="ui mini type-button-active button"><i
+                                class="search icon"></i>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div id="table-container">
+                <table th:fragment="blogList" class="ui compact blog-border table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>标题</th>
+                            <th>类型</th>
+                            <th>加密</th>
+                            <th>状态</th>
+                            <th>更新时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="blog , iterStae :${page.content}">
+                            <td th:text="${iterStae.count}">1</td>
+                            <td th:text="${blog.title}">哈利波特的一生</td>
+                            <td th:text="${blog.type.name}">文学</td>
+                            <td th:text="${blog.ques != '-1'} ? '是' : '否' ">是</td>
+                            <td th:text="${blog.published} ? '发布' : '草稿' ">是</td>
+                            <td th:text="${blog.updateTime}">2021-12-9 09:23</td>
+                            <td>
+                                <a th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
+                                    class="ui mini teal button">编辑</a>
+                                <a th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}"
+                                    class="ui mini red button">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="7">
+                                <div class="ui pagination menu " th:if="${page.totalPages}>1">
+                                    <a onclick="page(this)" th:attr="data-page=${page.number}-1"
+                                        th:unless="${page.isFirst()}" class="m-page-l icon item">
+                                        <i class="left arrow icon"></i>
+                                    </a>
+                                    <a onclick="page(this)" th:attr="data-page=${page.number}+1"
+                                        th:unless="${page.isLast()}" class="m-page-r icon item">
+                                        <i class="right arrow icon"></i>
+                                    </a>
+                                </div>
+                                <a th:href="@{/admin/blogs/{id}/input(id=-1)}"
+                                    class="ui right floated  orange  button">新增</a>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div id="message" class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                    <i class="close icon"></i>
+                    <div class="header">提示: </div>
+                    <p th:text="${message}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div th:replace ="common :: common_footer"></div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/semantic.min.js}" src="../static/js/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+        function page(obj) {
+            $("[name='page']").val($(obj).data("page"));
+            loaddata();
+        }
+        function loaddata() {
+            $("#table-container").load("/admin/blogs/search", {
+                title: $("[name='title']").val(),
+                typeId: $("[name='typeId']").val(),
+                published: $("[name='published']").prop('checked'),
+                page: $("[name='page']").val()
+            });
+        }
+        $("#search-btn").click(function () {
+            $("[name='page']").val(0);
+            loaddata();
+        })
+        $('.close').on('click', function () {
+            $(this).closest('#message').transition('fade');
+        })
+        $('#clear-btn').on('click', function () {
+            $('.ui.type.dropdown').dropdown('clear')
+        })
+    </script>
+</body>
+
+</html>

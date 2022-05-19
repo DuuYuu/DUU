@@ -1,0 +1,46 @@
+2022-05-16 22:51:45.004  INFO 12728 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 12728 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-16 22:51:45.022  INFO 12728 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-16 22:51:51.591  WARN 12728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 22:51:52.716  INFO 12728 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.918 seconds (JVM running for 11.13)
+2022-05-16 22:52:30.080  INFO 12728 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 22:52:30.096  INFO 12728 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 22:52:38.982  INFO 12728 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 22:52:38.982  INFO 12728 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 22:52:55.471  INFO 12728 --- [http-nio-8089-exec-10] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 22:52:55.472  INFO 12728 --- [http-nio-8089-exec-10] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 22:54:42.189  INFO 12728 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 22:54:42.190  INFO 12728 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 22:55:06.101  INFO 12728 --- [http-nio-8089-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 22:55:06.632  INFO 12728 --- [http-nio-8089-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 22:55:17.157  INFO 12728 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 22:55:17.195  INFO 12728 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 22:55:22.296  INFO 12728 --- [http-nio-8089-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 22:55:22.328  INFO 12728 --- [http-nio-8089-exec-5] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 22:56:08.101  INFO 12728 --- [http-nio-8089-exec-6] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 22:56:08.132  INFO 12728 --- [http-nio-8089-exec-6] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 22:57:26.035  INFO 12728 --- [http-nio-8089-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 22:57:26.061  INFO 12728 --- [http-nio-8089-exec-8] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 23:08:28.663  INFO 14024 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 14024 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-16 23:08:28.671  INFO 14024 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-16 23:08:37.478  WARN 14024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 23:08:39.081  INFO 14024 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 12.19 seconds (JVM running for 14.676)
+2022-05-16 23:08:47.965  INFO 14024 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 23:08:47.983  INFO 14024 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 23:08:54.299  INFO 14024 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 23:08:54.629  INFO 14024 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 23:12:54.355  INFO 8948 --- [main] com.atduu.DuublogApplication             : Starting DuublogApplication using Java 1.8.0_301 on LAPTOP-L5L41I5N with PID 8948 (E:\IDEA Project\duu\target\classes started by 28952 in E:\IDEA Project\duu)
+2022-05-16 23:12:54.360  INFO 8948 --- [main] com.atduu.DuublogApplication             : The following profiles are active: pro
+2022-05-16 23:13:00.645  WARN 8948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 23:13:01.736  INFO 8948 --- [main] com.atduu.DuublogApplication             : Started DuublogApplication in 8.34 seconds (JVM running for 10.321)
+2022-05-16 23:15:33.777  INFO 8948 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 23:15:33.798  INFO 8948 --- [http-nio-8089-exec-1] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 23:16:58.431  INFO 8948 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 23:16:58.432  INFO 8948 --- [http-nio-8089-exec-7] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 23:19:52.392  INFO 8948 --- [http-nio-8089-exec-8] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/', ip='127.0.0.1', classMethod='class com.atduu.controller.AboutShowController.about', args=[]}
+2022-05-16 23:19:52.392  INFO 8948 --- [http-nio-8089-exec-8] com.atduu.aspect.LogAspect               : Result : about
+2022-05-16 23:21:11.070  INFO 8948 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 23:21:11.454  INFO 8948 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 23:25:14.850  INFO 8948 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 23:25:14.885  INFO 8948 --- [http-nio-8089-exec-3] com.atduu.aspect.LogAspect               : Result : index
+2022-05-16 23:26:34.098  INFO 8948 --- [http-nio-8089-exec-5] com.atduu.aspect.LogAspect               : Request : {url='http://localhost:8089/index', ip='127.0.0.1', classMethod='class com.atduu.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]}
+2022-05-16 23:26:34.131  INFO 8948 --- [http-nio-8089-exec-5] com.atduu.aspect.LogAspect               : Result : index
